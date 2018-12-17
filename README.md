@@ -1,15 +1,24 @@
 # Programming for behavioral scientists
 
-**Contact details**
+## Contact details
 
 Dieter Vanderelst
-Office location: Edwards 1, 4th floor, office 4150F
+Office location: Edwards 1, 4th floor, office 4150K
 
-vanderdt@ucmail.uc.edu
+Email: vanderdt@ucmail.uc.edu
 
 My website: https://bitsofbats.weebly.com/
 
 Syllabus: [syllabus.md](syllabus.md)
+
+## Using the GitHub files
+
+All materials for the course are available on the UC GitHub. Every section of the course has a dedicated folder with a number of files and folders in it:
+
+- File ending in```ipynb```: These are the course note files I use in class. When clicked, these files render in your browser.
+- Files ending in ```md```: These are formatted text files. When clicked, they will render in your browser allowing you to read them.
+- Files ending in ```odp```: These files are presentations. If you click these files, you will get a notice that the file can not be displayed. However, a *download* button will appear. Clicking this button will allow you to download the file and open it in PowerPoint or OpenOffice.
+- Data files (ending in ```csv```, ```txt``` or ```dat```): For some sections of the course, you will need to download data files. These can typically be found in a sub folder called *data*. To download a data file click it.  You will see a rendering of the data file. Now click the *raw* button. This will give you access to the data file itself. Now, use your browser menu to save the file (For example, ```File> Save Page...```).
 
 ## Quizzes FAQ
 
@@ -19,7 +28,7 @@ Syllabus: [syllabus.md](syllabus.md)
 
 **When should I submit an assignment?** Each assignment has a due date, typically one week after being assigned, unless specified differently.
 
-# Course package
+## Course package
 
 For some parts of the course, we will be using a Python package I wrote for this course. This package can be downloaded here:  https://github.uc.edu/vanderdt/Course
 
@@ -29,7 +38,9 @@ We will be using the pyboard, based on the [Micro Maestro 6](https://www.pololu.
 
 In this course, we use the Anaconda Python distribution. This is a version of Python that comes with many scientific modules included. Also, it comes with a package manager that allows installing additional packages more easily. https://anaconda.org/. You do not need to make an account to download/use Anaconda. Head over to the download page at https://www.anaconda.com/download/.
 
-## Online resources
+## On-line Resources
+
+This is a list of resources that might be helpful while learning Python:
 
 + A list of free Python books: https://www.onlineprogrammingbooks.com/python/. *Automate the Boring Stuff with Python* is a popular book, often recommended to beginners focusing on completing practical tasks using Python. https://automatetheboringstuff.com/
 + An interactive book on Python: https://runestone.academy/runestone/static/thinkcspy/index.html

@@ -1,0 +1,15 @@
+#Expyriment 0.9.0 (Python 3.6.4), .xpe-file, coding: UTF-8
+#date: Fri Aug 03 2018 20:41:06
+#sha1: None
+#modules: 
+#display: size=(800, 600), window_mode=True, open_gl=2
+#os: uname_result(system='Linux', node='xps', release='4.15.0-29-generic', version='#31~16.04.1-Ubuntu SMP Wed Jul 18 08:54:04 UTC 2018', machine='x86_64', processor='x86_64')
+Time,Type,Event,Value,Detail,Detail2
+3249,stderr,received,'Traceback (most recent call last):'
+3249,stderr,received,'  File "/home/dieter/Dropbox/PythonCourse/22_Experiment_Analysis/Experiment.py", line 46, in <module>'
+3249,stderr,received,'    expyriment.control.start()'
+3249,stderr,received,'  File "/home/dieter/anaconda3/lib/python3.6/site-packages/expyriment/control/_experiment_control.py", line 215, in start'
+3249,stderr,received,'    experiment.keyboard.wait()'
+3249,stderr,received,'  File "/home/dieter/anaconda3/lib/python3.6/site-packages/expyriment/io/_keyboard.py", line 307, in wait'
+3249,stderr,received,'    time.sleep(0.0005)'
+3249,stderr,received,'KeyboardInterrupt'

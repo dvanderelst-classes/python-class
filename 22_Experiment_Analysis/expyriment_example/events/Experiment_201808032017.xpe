@@ -1,0 +1,15 @@
+#Expyriment 0.9.0 (Python 3.6.4), .xpe-file, coding: UTF-8
+#date: Fri Aug 03 2018 20:17:48
+#sha1: None
+#modules: 
+#display: size=(1920, 1080), window_mode=False, open_gl=2
+#os: uname_result(system='Linux', node='xps', release='4.15.0-29-generic', version='#31~16.04.1-Ubuntu SMP Wed Jul 18 08:54:04 UTC 2018', machine='x86_64', processor='x86_64')
+Time,Type,Event,Value,Detail,Detail2
+1207,Stimulus,presented,60
+2209,Stimulus,presented,12
+3716,Keyboard,received,275,wait
+3716,stdout,received,'None'
+3716,stderr,received,'Traceback (most recent call last):'
+3716,stderr,received,'  File "/home/dieter/Dropbox/PythonCourse/22_Experiment_Analysis/Experiment.py", line 50, in <module>'
+3717,stderr,received,'    exp.data.add([block.name, trial.id, trial.condition, trial.valence, key, rt])'
+3717,stderr,received,"AttributeError: 'NoneType' object has no attribute 'add'"

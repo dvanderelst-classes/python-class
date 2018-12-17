@@ -1,0 +1,25 @@
+version: 2.4.3
+server-time: 2018-04-05-17-02
+user_agent: mozilla/5.0 (windows nt 6.3; win64; x64; rv:59.0) gecko/20100101 firefox/59.0
+screen_width: 1536
+screen_height: 864
+html_width: 1536
+html_height: 605
+user_time: Thu, 05 Apr 2018 15:02:53 GMT
+T: 137528
+l: gender
+stime: 2018-04-05-17-02
+T: 6414
+t: radio
+a: 2
+l: nick
+stime: 2018-04-05-17-03
+T: 11336
+t: textline
+a: Daniel
+l: Experiment
+stime: 2018-04-05-17-07
+T: 254904
+t: experiment
+endcode: 
+end 2018-04-05-17-07

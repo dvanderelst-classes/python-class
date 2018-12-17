@@ -1,0 +1,25 @@
+version: 2.5.2
+server-time: 2018-11-29-20-17
+user_agent: mozilla/5.0 (windows nt 10.0; win64; x64; rv:63.0) gecko/20100101 firefox/63.0
+screen_width: 1536
+screen_height: 864
+html_width: 1536
+html_height: 581
+user_time: Thu, 29 Nov 2018 19:17:59 GMT
+T: 11118
+l: gender
+stime: 2018-11-29-20-18
+T: 3719
+t: radio
+a: 1
+l: nick
+stime: 2018-11-29-20-18
+T: 19277
+t: textline
+a: Dorothy
+l: Experiment
+stime: 2018-11-29-20-20
+T: 96241
+t: experiment
+endcode: 
+end 2018-11-29-20-20

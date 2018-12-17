@@ -1,0 +1,924 @@
+
+% Default to the notebook output style
+
+    
+
+
+% Inherit from the specified cell style.
+
+
+
+
+    
+\documentclass[11pt]{article}
+
+    
+    
+    \usepackage[T1]{fontenc}
+    % Nicer default font (+ math font) than Computer Modern for most use cases
+    \usepackage{mathpazo}
+
+    % Basic figure setup, for now with no caption control since it's done
+    % automatically by Pandoc (which extracts ![](path) syntax from Markdown).
+    \usepackage{graphicx}
+    % We will generate all images so they have a width \maxwidth. This means
+    % that they will get their normal width if they fit onto the page, but
+    % are scaled down if they would overflow the margins.
+    \makeatletter
+    \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
+    \else\Gin@nat@width\fi}
+    \makeatother
+    \let\Oldincludegraphics\includegraphics
+    % Set max figure width to be 80% of text width, for now hardcoded.
+    \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth]{#1}}
+    % Ensure that by default, figures have no caption (until we provide a
+    % proper Figure object with a Caption API and a way to capture that
+    % in the conversion process - todo).
+    \usepackage{caption}
+    \DeclareCaptionLabelFormat{nolabel}{}
+    \captionsetup{labelformat=nolabel}
+
+    \usepackage{adjustbox} % Used to constrain images to a maximum size 
+    \usepackage{xcolor} % Allow colors to be defined
+    \usepackage{enumerate} % Needed for markdown enumerations to work
+    \usepackage{geometry} % Used to adjust the document margins
+    \usepackage{amsmath} % Equations
+    \usepackage{amssymb} % Equations
+    \usepackage{textcomp} % defines textquotesingle
+    % Hack from http://tex.stackexchange.com/a/47451/13684:
+    \AtBeginDocument{%
+        \def\PYZsq{\textquotesingle}% Upright quotes in Pygmentized code
+    }
+    \usepackage{upquote} % Upright quotes for verbatim code
+    \usepackage{eurosym} % defines \euro
+    \usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
+    \usepackage[utf8x]{inputenc} % Allow utf-8 characters in the tex document
+    \usepackage{fancyvrb} % verbatim replacement that allows latex
+    \usepackage{grffile} % extends the file name processing of package graphics 
+                         % to support a larger range 
+    % The hyperref package gives us a pdf with properly built
+    % internal navigation ('pdf bookmarks' for the table of contents,
+    % internal cross-reference links, web links for URLs, etc.)
+    \usepackage{hyperref}
+    \usepackage{longtable} % longtable support required by pandoc >1.10
+    \usepackage{booktabs}  % table support for pandoc > 1.12.2
+    \usepackage[inline]{enumitem} % IRkernel/repr support (it uses the enumerate* environment)
+    \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
+                                % normalem makes italics be italics, not underlines
+    
+
+    
+    
+    % Colors for the hyperref package
+    \definecolor{urlcolor}{rgb}{0,.145,.698}
+    \definecolor{linkcolor}{rgb}{.71,0.21,0.01}
+    \definecolor{citecolor}{rgb}{.12,.54,.11}
+
+    % ANSI colors
+    \definecolor{ansi-black}{HTML}{3E424D}
+    \definecolor{ansi-black-intense}{HTML}{282C36}
+    \definecolor{ansi-red}{HTML}{E75C58}
+    \definecolor{ansi-red-intense}{HTML}{B22B31}
+    \definecolor{ansi-green}{HTML}{00A250}
+    \definecolor{ansi-green-intense}{HTML}{007427}
+    \definecolor{ansi-yellow}{HTML}{DDB62B}
+    \definecolor{ansi-yellow-intense}{HTML}{B27D12}
+    \definecolor{ansi-blue}{HTML}{208FFB}
+    \definecolor{ansi-blue-intense}{HTML}{0065CA}
+    \definecolor{ansi-magenta}{HTML}{D160C4}
+    \definecolor{ansi-magenta-intense}{HTML}{A03196}
+    \definecolor{ansi-cyan}{HTML}{60C6C8}
+    \definecolor{ansi-cyan-intense}{HTML}{258F8F}
+    \definecolor{ansi-white}{HTML}{C5C1B4}
+    \definecolor{ansi-white-intense}{HTML}{A1A6B2}
+
+    % commands and environments needed by pandoc snippets
+    % extracted from the output of `pandoc -s`
+    \providecommand{\tightlist}{%
+      \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+    % Add ',fontsize=\small' for more characters per line
+    \newenvironment{Shaded}{}{}
+    \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+    \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+    \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+    \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+    \newcommand{\RegionMarkerTok}[1]{{#1}}
+    \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\NormalTok}[1]{{#1}}
+    
+    % Additional commands for more recent versions of Pandoc
+    \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{{#1}}}
+    \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{{#1}}}
+    \newcommand{\ImportTok}[1]{{#1}}
+    \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{{#1}}}}
+    \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{{#1}}}
+    \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{{#1}}}
+    \newcommand{\BuiltInTok}[1]{{#1}}
+    \newcommand{\ExtensionTok}[1]{{#1}}
+    \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{{#1}}}
+    \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{{#1}}}
+    \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    
+    
+    % Define a nice break command that doesn't care if a line doesn't already
+    % exist.
+    \def\br{\hspace*{\fill} \\* }
+    % Math Jax compatability definitions
+    \def\gt{>}
+    \def\lt{<}
+    % Document parameters
+    \title{Statistics}
+    
+    
+    
+
+    % Pygments definitions
+    
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+\def\PY@tok#1{\csname PY@tok@#1\endcsname}
+\def\PY@toks#1+{\ifx\relax#1\empty\else%
+    \PY@tok{#1}\expandafter\PY@toks\fi}
+\def\PY@do#1{\PY@bc{\PY@tc{\PY@ul{%
+    \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
+\def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
+
+\expandafter\def\csname PY@tok@w\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\expandafter\def\csname PY@tok@c\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.74,0.48,0.00}{##1}}}
+\expandafter\def\csname PY@tok@k\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@ne\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.82,0.25,0.23}{##1}}}
+\expandafter\def\csname PY@tok@nv\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@no\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ni\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.60,0.60,0.60}{##1}}}
+\expandafter\def\csname PY@tok@na\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.49,0.56,0.16}{##1}}}
+\expandafter\def\csname PY@tok@nt\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@s\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sd\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@si\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@se\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sr\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@ss\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sx\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@m\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@gh\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gu\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gr\endcsname{\def\PY@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ge\endcsname{\let\PY@it=\textit}
+\expandafter\def\csname PY@tok@gs\endcsname{\let\PY@bf=\textbf}
+\expandafter\def\csname PY@tok@gp\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@go\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PY@tok@gt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\expandafter\def\csname PY@tok@err\endcsname{\def\PY@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
+\expandafter\def\csname PY@tok@kc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kd\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kr\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@bp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@fm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@vc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vg\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sa\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@dl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s2\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s1\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@mb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@il\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mo\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ch\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cm\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cpf\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@c1\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cs\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+
+\def\PYZbs{\char`\\}
+\def\PYZus{\char`\_}
+\def\PYZob{\char`\{}
+\def\PYZcb{\char`\}}
+\def\PYZca{\char`\^}
+\def\PYZam{\char`\&}
+\def\PYZlt{\char`\<}
+\def\PYZgt{\char`\>}
+\def\PYZsh{\char`\#}
+\def\PYZpc{\char`\%}
+\def\PYZdl{\char`\$}
+\def\PYZhy{\char`\-}
+\def\PYZsq{\char`\'}
+\def\PYZdq{\char`\"}
+\def\PYZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYZat{@}
+\def\PYZlb{[}
+\def\PYZrb{]}
+\makeatother
+
+
+    % Exact colors from NB
+    \definecolor{incolor}{rgb}{0.0, 0.0, 0.5}
+    \definecolor{outcolor}{rgb}{0.545, 0.0, 0.0}
+
+
+
+    
+    % Prevent overflowing lines due to hard-to-break entities
+    \sloppy 
+    % Setup hyperref package
+    \hypersetup{
+      breaklinks=true,  % so long urls are correctly broken across lines
+      colorlinks=true,
+      urlcolor=urlcolor,
+      linkcolor=linkcolor,
+      citecolor=citecolor,
+      }
+    % Slightly bigger margins than the latex defaults
+    
+    \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+    
+    
+
+    \begin{document}
+    
+    
+    \maketitle
+    
+    
+
+    
+    \section{Free book}\label{free-book}
+
+http://greenteapress.com/thinkstats2/html/index.html
+
+\section{Statistical Tests}\label{statistical-tests}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}1}]:} \PY{o}{\PYZpc{}}\PY{k}{matplotlib} inline
+        \PY{k+kn}{import} \PY{n+nn}{pandas}
+        \PY{n}{data} \PY{o}{=} \PY{n}{pandas}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{data/body.csv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{data}\PY{o}{.}\PY{n}{head}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}1}]:}    Biacromial  Biiliac  Bitrochanteric  ChestDepth  ChestDia  ElbowDia  \textbackslash{}
+        0        42.9     26.0            31.5        17.7      28.0      13.1   
+        1        43.7     28.5            33.5        16.9      30.8      14.0   
+        2        40.1     28.2            33.3        20.9      31.7      13.9   
+        3        44.3     29.9            34.0        18.4      28.2      13.9   
+        4        42.5     29.9            34.0        21.5      29.4      15.2   
+        
+           WristDia  KneeDia  AnkleDia  Shoulder   {\ldots}    Bicep  Forearm  Knee  Calf  \textbackslash{}
+        0      10.4     18.8      14.1     106.2   {\ldots}     32.5     26.0  34.5  36.5   
+        1      11.8     20.6      15.1     110.5   {\ldots}     34.4     28.0  36.5  37.5   
+        2      10.9     19.7      14.1     115.1   {\ldots}     33.4     28.8  37.0  37.3   
+        3      11.2     20.9      15.0     104.5   {\ldots}     31.0     26.2  37.0  34.8   
+        4      11.6     20.7      14.9     107.5   {\ldots}     32.0     28.4  37.7  38.6   
+        
+           Ankle  Wrist  Age  Weight  Height  Gender  
+        0   23.5   16.5   21    65.6   174.0       1  
+        1   24.5   17.0   23    71.8   175.3       1  
+        2   21.9   16.9   28    80.7   193.5       1  
+        3   23.0   16.6   23    72.6   186.5       1  
+        4   24.4   18.0   22    78.8   187.2       1  
+        
+        [5 rows x 25 columns]
+\end{Verbatim}
+            
+    \subsection{Scipy.stats}\label{scipy.stats}
+
+The statistical functions in the scipy package are listed and documented
+here: https://docs.scipy.org/doc/scipy-0.14.0/reference/stats.html
+
+\subsubsection{Correlations}\label{correlations}
+
+\paragraph{Pearson Correlations}\label{pearson-correlations}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}4}]:} \PY{k+kn}{from} \PY{n+nn}{scipy}\PY{n+nn}{.}\PY{n+nn}{stats} \PY{k}{import} \PY{n}{pearsonr}
+        \PY{n}{result} \PY{o}{=} \PY{n}{pearsonr}\PY{p}{(}\PY{n}{data}\PY{o}{.}\PY{n}{Bicep}\PY{p}{,} \PY{n}{data}\PY{o}{.}\PY{n}{Weight}\PY{p}{)}
+        \PY{n}{result}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}4}]:} (0.86667220281222956, 1.2563310442380804e-154)
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}2}]:} \PY{k+kn}{from} \PY{n+nn}{matplotlib} \PY{k}{import} \PY{n}{pyplot}
+        \PY{n}{pyplot}\PY{o}{.}\PY{n}{scatter}\PY{p}{(}\PY{n}{data}\PY{o}{.}\PY{n}{Bicep}\PY{p}{,} \PY{n}{data}\PY{o}{.}\PY{n}{Weight}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}2}]:} <matplotlib.collections.PathCollection at 0x7f448d0c95c0>
+\end{Verbatim}
+            
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_4_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \paragraph{Spearman Correlation}\label{spearman-correlation}
+
+The Spearman correlation coefficient is defined as the Pearson
+correlation coefficient between the ranked variables.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}10}]:} \PY{k+kn}{from} \PY{n+nn}{scipy}\PY{n+nn}{.}\PY{n+nn}{stats} \PY{k}{import} \PY{n}{spearmanr}
+         \PY{n}{result} \PY{o}{=} \PY{n}{spearmanr}\PY{p}{(}\PY{n}{data}\PY{o}{.}\PY{n}{Bicep}\PY{p}{,} \PY{n}{data}\PY{o}{.}\PY{n}{Weight}\PY{p}{)}
+         \PY{n}{result}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}10}]:} SpearmanrResult(correlation=0.8876879908710833, pvalue=3.2105704401558423e-172)
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}11}]:} \PY{n}{result}\PY{o}{.}\PY{n}{correlation}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}11}]:} 0.8876879908710833
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}12}]:} \PY{n}{result}\PY{o}{.}\PY{n}{pvalue}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}12}]:} 3.2105704401558423e-172
+\end{Verbatim}
+            
+    \emph{Note: This gives the same result}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}13}]:} \PY{k+kn}{from} \PY{n+nn}{scipy}\PY{n+nn}{.}\PY{n+nn}{stats} \PY{k}{import} \PY{n}{rankdata}
+         \PY{n}{a} \PY{o}{=} \PY{n}{rankdata}\PY{p}{(}\PY{n}{data}\PY{o}{.}\PY{n}{Bicep}\PY{p}{)}
+         \PY{n}{b} \PY{o}{=} \PY{n}{rankdata}\PY{p}{(}\PY{n}{data}\PY{o}{.}\PY{n}{Weight}\PY{p}{)}
+         \PY{n}{result} \PY{o}{=} \PY{n}{spearmanr}\PY{p}{(}\PY{n}{a}\PY{p}{,}\PY{n}{b}\PY{p}{)}
+         \PY{n}{result}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}13}]:} SpearmanrResult(correlation=0.8876879908710833, pvalue=3.2105704401558423e-172)
+\end{Verbatim}
+            
+    \subsubsection{Independent samples}\label{independent-samples}
+
+\paragraph{Independent t-test}\label{independent-t-test}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}6}]:} \PY{k+kn}{from} \PY{n+nn}{scipy}\PY{n+nn}{.}\PY{n+nn}{stats} \PY{k}{import} \PY{n}{ttest\PYZus{}ind}
+        
+        \PY{n}{women} \PY{o}{=} \PY{n}{data}\PY{p}{[}\PY{n}{data}\PY{o}{.}\PY{n}{Gender}\PY{o}{==}\PY{l+m+mi}{0}\PY{p}{]}
+        \PY{n}{men} \PY{o}{=} \PY{n}{data}\PY{p}{[}\PY{n}{data}\PY{o}{.}\PY{n}{Gender}\PY{o}{==}\PY{l+m+mi}{1}\PY{p}{]}
+        
+        
+        \PY{n}{result} \PY{o}{=} \PY{n}{ttest\PYZus{}ind}\PY{p}{(}\PY{n}{women}\PY{o}{.}\PY{n}{Height}\PY{p}{,} \PY{n}{men}\PY{o}{.}\PY{n}{Height}\PY{p}{)}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n}{result}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+Ttest\_indResult(statistic=-21.109478245457304, pvalue=2.2340956600230777e-71)
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}9}]:} \PY{n}{pyplot}\PY{o}{.}\PY{n}{hist}\PY{p}{(}\PY{n}{data}\PY{o}{.}\PY{n}{Bicep}\PY{p}{)}\PY{p}{;}
+\end{Verbatim}
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_13_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \paragraph{Kruskal-Wallis H-test for independent
+samples}\label{kruskal-wallis-h-test-for-independent-samples}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}15}]:} \PY{k+kn}{from} \PY{n+nn}{scipy}\PY{n+nn}{.}\PY{n+nn}{stats} \PY{k}{import} \PY{n}{kruskal}
+         \PY{n}{kruskal}\PY{p}{(}\PY{n}{women}\PY{o}{.}\PY{n}{Height}\PY{p}{,} \PY{n}{men}\PY{o}{.}\PY{n}{Height}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}15}]:} KruskalResult(statistic=251.74374665038718, pvalue=1.0821622106154e-56)
+\end{Verbatim}
+            
+    \subsubsection{Paired Samples}\label{paired-samples}
+
+\paragraph{Paired t-test}\label{paired-t-test}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}16}]:} \PY{k+kn}{from} \PY{n+nn}{scipy}\PY{n+nn}{.}\PY{n+nn}{stats} \PY{k}{import} \PY{n}{ttest\PYZus{}rel}
+         \PY{n}{ttest\PYZus{}rel}\PY{p}{(}\PY{n}{data}\PY{o}{.}\PY{n}{Calf}\PY{p}{,} \PY{n}{data}\PY{o}{.}\PY{n}{Wrist}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}16}]:} Ttest\_relResult(statistic=202.77692883597399, pvalue=0.0)
+\end{Verbatim}
+            
+    \paragraph{Wilcoxon signed-rank test}\label{wilcoxon-signed-rank-test}
+
+The Wilcoxon signed-rank test tests the null hypothesis that two related
+paired samples come from the same distribution. In particular, it tests
+whether the distribution of the differences x - y is symmetric about
+zero. It is a non-parametric version of the paired T-test.
+
+See here for an explanation:
+http://users.sussex.ac.uk/\textasciitilde{}grahamh/RM1web/WilcoxonHandoout2011.pdf
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}17}]:} \PY{k+kn}{from} \PY{n+nn}{scipy}\PY{n+nn}{.}\PY{n+nn}{stats} \PY{k}{import} \PY{n}{wilcoxon}
+         \PY{n}{w} \PY{o}{=} \PY{n}{wilcoxon}\PY{p}{(}\PY{n}{data}\PY{o}{.}\PY{n}{Calf}\PY{p}{,} \PY{n}{data}\PY{o}{.}\PY{n}{Wrist}\PY{p}{)}
+         \PY{n}{w}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}17}]:} WilcoxonResult(statistic=0.0, pvalue=9.0584198199670578e-85)
+\end{Verbatim}
+            
+    \subsubsection{Counts and proportions: Chi-Square
+Test}\label{counts-and-proportions-chi-square-test}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}18}]:} \PY{k+kn}{from} \PY{n+nn}{scipy}\PY{n+nn}{.}\PY{n+nn}{stats} \PY{k}{import} \PY{n}{chisquare}
+         \PY{k+kn}{from} \PY{n+nn}{matplotlib} \PY{k}{import} \PY{n}{pyplot}
+         \PY{n}{pyplot}\PY{o}{.}\PY{n}{hist}\PY{p}{(}\PY{n}{data}\PY{o}{.}\PY{n}{Age}\PY{p}{)}\PY{p}{;}
+\end{Verbatim}
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_21_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}4}]:} \PY{n}{frequencies} \PY{o}{=} \PY{n}{data}\PY{o}{.}\PY{n}{Age}\PY{o}{.}\PY{n}{value\PYZus{}counts}\PY{p}{(}\PY{p}{)}
+        \PY{n}{frequencies}\PY{o}{.}\PY{n}{head}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}4}]:} 23    39
+        20    34
+        25    34
+        22    28
+        24    28
+        Name: Age, dtype: int64
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}20}]:} \PY{n}{chisquare}\PY{p}{(}\PY{n}{frequencies}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}20}]:} Power\_divergenceResult(statistic=403.98224852071007, pvalue=3.4454165120109696e-60)
+\end{Verbatim}
+            
+    \subsection{StatModels}\label{statmodels}
+
+Statmodels is a package dedicted to statistical analysis, focused on the
+(generalized) linair model: http://www.statsmodels.org/stable/index.html
+
+    \subsubsection{Regression Analysis: Single
+predictor}\label{regression-analysis-single-predictor}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}11}]:} \PY{k+kn}{from} \PY{n+nn}{statsmodels}\PY{n+nn}{.}\PY{n+nn}{regression}\PY{n+nn}{.}\PY{n+nn}{linear\PYZus{}model} \PY{k}{import} \PY{n}{OLS}
+         \PY{k+kn}{import} \PY{n+nn}{statsmodels}\PY{n+nn}{.}\PY{n+nn}{api} \PY{k}{as} \PY{n+nn}{sm}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}12}]:} \PY{n}{X} \PY{o}{=} \PY{n}{sm}\PY{o}{.}\PY{n}{add\PYZus{}constant}\PY{p}{(}\PY{n}{data}\PY{o}{.}\PY{n}{Height}\PY{p}{)}
+         \PY{n}{X}\PY{o}{.}\PY{n}{head}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}12}]:}    const  Height
+         0    1.0   174.0
+         1    1.0   175.3
+         2    1.0   193.5
+         3    1.0   186.5
+         4    1.0   187.2
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}13}]:} \PY{n}{X} \PY{o}{=} \PY{n}{sm}\PY{o}{.}\PY{n}{add\PYZus{}constant}\PY{p}{(}\PY{n}{data}\PY{o}{.}\PY{n}{Height}\PY{p}{)}
+         \PY{n}{model} \PY{o}{=} \PY{n}{OLS}\PY{p}{(}\PY{n}{data}\PY{o}{.}\PY{n}{Weight}\PY{p}{,} \PY{n}{X}\PY{p}{)}
+         \PY{n}{fitted} \PY{o}{=} \PY{n}{model}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{p}{)}
+         \PY{n}{fitted}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}13}]:} <class 'statsmodels.iolib.summary.Summary'>
+         """
+                                     OLS Regression Results                            
+         ==============================================================================
+         Dep. Variable:                 Weight   R-squared:                       0.515
+         Model:                            OLS   Adj. R-squared:                  0.514
+         Method:                 Least Squares   F-statistic:                     535.2
+         Date:                Tue, 10 Apr 2018   Prob (F-statistic):           2.83e-81
+         Time:                        11:42:41   Log-Likelihood:                -1849.5
+         No. Observations:                 507   AIC:                             3703.
+         Df Residuals:                     505   BIC:                             3711.
+         Df Model:                           1                                         
+         Covariance Type:            nonrobust                                         
+         ==============================================================================
+                          coef    std err          t      P>|t|      [95.0\% Conf. Int.]
+         ------------------------------------------------------------------------------
+         const       -105.0113      7.539    -13.928      0.000      -119.824   -90.199
+         Height         1.0176      0.044     23.135      0.000         0.931     1.104
+         ==============================================================================
+         Omnibus:                       63.269   Durbin-Watson:                   1.894
+         Prob(Omnibus):                  0.000   Jarque-Bera (JB):               93.738
+         Skew:                           0.840   Prob(JB):                     4.42e-21
+         Kurtosis:                       4.270   Cond. No.                     3.13e+03
+         ==============================================================================
+         
+         Warnings:
+         [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+         [2] The condition number is large, 3.13e+03. This might indicate that there are
+         strong multicollinearity or other numerical problems.
+         """
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}24}]:} \PY{n}{prediction} \PY{o}{=} \PY{n}{fitted}\PY{o}{.}\PY{n}{predict}\PY{p}{(}\PY{n}{X}\PY{p}{)}
+         \PY{n}{prediction}\PY{o}{.}\PY{n}{shape}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}24}]:} (507,)
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}25}]:} \PY{k+kn}{from} \PY{n+nn}{matplotlib} \PY{k}{import} \PY{n}{pyplot}
+         \PY{n}{pyplot}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{data}\PY{o}{.}\PY{n}{Height}\PY{p}{,} \PY{n}{prediction}\PY{p}{)}
+         \PY{n}{pyplot}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{data}\PY{o}{.}\PY{n}{Height}\PY{p}{,} \PY{n}{data}\PY{o}{.}\PY{n}{Weight}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{.}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}25}]:} [<matplotlib.lines.Line2D at 0x7f29a4bf0588>]
+\end{Verbatim}
+            
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_30_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}17}]:} \PY{n}{independent} \PY{o}{=} \PY{n}{data}\PY{o}{.}\PY{n}{Bicep}
+         \PY{n}{dependent} \PY{o}{=} \PY{n}{data}\PY{o}{.}\PY{n}{Weight}
+         
+         \PY{n}{X} \PY{o}{=} \PY{n}{sm}\PY{o}{.}\PY{n}{add\PYZus{}constant}\PY{p}{(}\PY{n}{independent}\PY{p}{)}
+         \PY{n}{model} \PY{o}{=} \PY{n}{OLS}\PY{p}{(}\PY{n}{dependent}\PY{p}{,} \PY{n}{X}\PY{p}{)}
+         \PY{n}{fitted} \PY{o}{=} \PY{n}{model}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{fitted}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+         
+         \PY{n}{prediction} \PY{o}{=} \PY{n}{fitted}\PY{o}{.}\PY{n}{predict}\PY{p}{(}\PY{n}{X}\PY{p}{)}
+         \PY{n}{pyplot}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{independent}\PY{p}{,} \PY{n}{prediction}\PY{p}{)}
+         \PY{n}{pyplot}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{independent}\PY{p}{,} \PY{n}{dependent}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{.}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 Weight   R-squared:                       0.751
+Model:                            OLS   Adj. R-squared:                  0.751
+Method:                 Least Squares   F-statistic:                     1524.
+Date:                Tue, 10 Apr 2018   Prob (F-statistic):          1.26e-154
+Time:                        11:52:58   Log-Likelihood:                -1680.1
+No. Observations:                 507   AIC:                             3364.
+Df Residuals:                     505   BIC:                             3373.
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [95.0\% Conf. Int.]
+------------------------------------------------------------------------------
+const        -15.7419      2.194     -7.173      0.000       -20.053   -11.430
+Bicep          2.7235      0.070     39.040      0.000         2.586     2.861
+==============================================================================
+Omnibus:                       18.082   Durbin-Watson:                   2.033
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               22.531
+Skew:                           0.355   Prob(JB):                     1.28e-05
+Kurtosis:                       3.749   Cond. No.                         233.
+==============================================================================
+
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+    \end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}17}]:} [<matplotlib.lines.Line2D at 0x7f444b1229b0>]
+\end{Verbatim}
+            
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_31_2.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \subsubsection{Regression Analysis: Multiple
+predictors}\label{regression-analysis-multiple-predictors}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}26}]:} \PY{n}{X} \PY{o}{=} \PY{n}{data}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{p}{:}\PY{p}{,}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Height}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Age}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{]}
+         \PY{n}{X} \PY{o}{=} \PY{n}{sm}\PY{o}{.}\PY{n}{add\PYZus{}constant}\PY{p}{(}\PY{n}{X}\PY{p}{)}
+         \PY{n}{X}\PY{o}{.}\PY{n}{head}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}26}]:}    const  Height  Age
+         0      1   174.0   21
+         1      1   175.3   23
+         2      1   193.5   28
+         3      1   186.5   23
+         4      1   187.2   22
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}27}]:} \PY{n}{X} \PY{o}{=} \PY{n}{data}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{p}{:}\PY{p}{,}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Height}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Age}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Forearm}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{]}
+         \PY{n}{X} \PY{o}{=} \PY{n}{sm}\PY{o}{.}\PY{n}{add\PYZus{}constant}\PY{p}{(}\PY{n}{X}\PY{p}{)}
+         
+         \PY{n}{model} \PY{o}{=} \PY{n}{OLS}\PY{p}{(}\PY{n}{data}\PY{o}{.}\PY{n}{Bicep}\PY{p}{,} \PY{n}{X}\PY{p}{)}
+         \PY{n}{fitted} \PY{o}{=} \PY{n}{model}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{p}{)}
+         \PY{n}{fitted}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}27}]:} <class 'statsmodels.iolib.summary.Summary'>
+         """
+                                     OLS Regression Results                            
+         ==============================================================================
+         Dep. Variable:                  Bicep   R-squared:                       0.891
+         Model:                            OLS   Adj. R-squared:                  0.890
+         Method:                 Least Squares   F-statistic:                     1372.
+         Date:                Thu, 05 Apr 2018   Prob (F-statistic):          1.12e-241
+         Time:                        16:16:00   Log-Likelihood:                -890.05
+         No. Observations:                 507   AIC:                             1788.
+         Df Residuals:                     503   BIC:                             1805.
+         Df Model:                           3                                         
+         Covariance Type:            nonrobust                                         
+         ==============================================================================
+                          coef    std err          t      P>|t|      [95.0\% Conf. Int.]
+         ------------------------------------------------------------------------------
+         const         -3.3028      1.171     -2.820      0.005        -5.603    -1.002
+         Height        -0.0219      0.009     -2.492      0.013        -0.039    -0.005
+         Age            0.0177      0.007      2.686      0.007         0.005     0.031
+         Forearm        1.4528      0.029     49.263      0.000         1.395     1.511
+         ==============================================================================
+         Omnibus:                       16.176   Durbin-Watson:                   1.928
+         Prob(Omnibus):                  0.000   Jarque-Bera (JB):               16.870
+         Skew:                           0.420   Prob(JB):                     0.000217
+         Kurtosis:                       3.304   Cond. No.                     3.30e+03
+         ==============================================================================
+         
+         Warnings:
+         [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+         [2] The condition number is large, 3.3e+03. This might indicate that there are
+         strong multicollinearity or other numerical problems.
+         """
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}18}]:} \PY{n}{independent} \PY{o}{=} \PY{n}{data}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{p}{:}\PY{p}{,}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Height}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Age}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Forearm}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{]}
+         \PY{n}{dependent} \PY{o}{=} \PY{n}{data}\PY{o}{.}\PY{n}{Weight}
+         
+         \PY{n}{X} \PY{o}{=} \PY{n}{sm}\PY{o}{.}\PY{n}{add\PYZus{}constant}\PY{p}{(}\PY{n}{independent}\PY{p}{)}
+         \PY{n}{model} \PY{o}{=} \PY{n}{OLS}\PY{p}{(}\PY{n}{dependent}\PY{p}{,} \PY{n}{X}\PY{p}{)}
+         \PY{n}{fitted} \PY{o}{=} \PY{n}{model}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{p}{)}
+         \PY{n}{fitted}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}18}]:} <class 'statsmodels.iolib.summary.Summary'>
+         """
+                                     OLS Regression Results                            
+         ==============================================================================
+         Dep. Variable:                 Weight   R-squared:                       0.802
+         Model:                            OLS   Adj. R-squared:                  0.801
+         Method:                 Least Squares   F-statistic:                     679.4
+         Date:                Tue, 10 Apr 2018   Prob (F-statistic):          1.91e-176
+         Time:                        11:55:36   Log-Likelihood:                -1622.0
+         No. Observations:                 507   AIC:                             3252.
+         Df Residuals:                     503   BIC:                             3269.
+         Df Model:                           3                                         
+         Covariance Type:            nonrobust                                         
+         ==============================================================================
+                          coef    std err          t      P>|t|      [95.0\% Conf. Int.]
+         ------------------------------------------------------------------------------
+         const        -82.1522      4.961    -16.560      0.000       -91.899   -72.406
+         Height         0.3733      0.037     10.017      0.000         0.300     0.447
+         Age            0.1235      0.028      4.429      0.000         0.069     0.178
+         Forearm        3.2255      0.125     25.817      0.000         2.980     3.471
+         ==============================================================================
+         Omnibus:                       67.763   Durbin-Watson:                   1.975
+         Prob(Omnibus):                  0.000   Jarque-Bera (JB):              120.532
+         Skew:                           0.805   Prob(JB):                     6.71e-27
+         Kurtosis:                       4.765   Cond. No.                     3.30e+03
+         ==============================================================================
+         
+         Warnings:
+         [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+         [2] The condition number is large, 3.3e+03. This might indicate that there are
+         strong multicollinearity or other numerical problems.
+         """
+\end{Verbatim}
+            
+    \section{Anova}\label{anova}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}19}]:} \PY{k+kn}{import} \PY{n+nn}{pandas}
+         \PY{n}{data}\PY{o}{=} \PY{n}{pandas}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{data/data.csv}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{n}{index\PYZus{}col}\PY{o}{=}\PY{l+m+mi}{0}\PY{p}{)}
+         \PY{n}{data}\PY{o}{.}\PY{n}{head}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}19}]:}    gender  nick  subject dummy        stimulus        response  color  \textbackslash{}
+         0       1  Name        1  test  right\_stimulus   left\_response    red   
+         1       1  Name        1  test  right\_stimulus  right\_response  green   
+         2       1  Name        1  test   left\_stimulus   left\_response    red   
+         3       1  Name        1  test  right\_stimulus  right\_response  green   
+         4       1  Name        1  test  right\_stimulus  right\_response  green   
+         
+            condition  pressed  correct   rt congruent  
+         0          2        1        1  898     False  
+         1          3        2        1  556      True  
+         2          1        1        1  505      True  
+         3          3        2        1  419      True  
+         4          3        2        1  384      True  
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}27}]:} \PY{n}{data} \PY{o}{=} \PY{n}{data}\PY{p}{[}\PY{n}{data}\PY{o}{.}\PY{n}{rt}\PY{o}{\PYZlt{}}\PY{l+m+mi}{1000}\PY{p}{]}
+         \PY{n}{data} \PY{o}{=} \PY{n}{data}\PY{p}{[}\PY{n}{data}\PY{o}{.}\PY{n}{correct}\PY{o}{==}\PY{l+m+mi}{1}\PY{p}{]}
+         \PY{n}{data} \PY{o}{=} \PY{n}{data}\PY{p}{[}\PY{o}{\PYZti{}}\PY{n}{data}\PY{o}{.}\PY{n}{nick}\PY{o}{.}\PY{n}{isin}\PY{p}{(}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{dieter}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{]}
+         
+         \PY{n}{data}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{congruent}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{data}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{congruent}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{*} \PY{l+m+mf}{1.0}
+         
+         \PY{n}{grp} \PY{o}{=}  \PY{n}{data}\PY{o}{.}\PY{n}{groupby}\PY{p}{(}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{subject}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{congruent}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+         \PY{n}{table} \PY{o}{=} \PY{n}{grp}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{p}{)}
+         \PY{n}{table} \PY{o}{=} \PY{n}{table}\PY{o}{.}\PY{n}{reset\PYZus{}index}\PY{p}{(}\PY{p}{)}
+         \PY{n}{table}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}27}]:}     subject  congruent  gender  condition   pressed  correct          rt
+         0         1        0.0     1.0   3.111111  1.555556      1.0  462.000000
+         1         1        1.0     1.0   2.047619  1.523810      1.0  435.095238
+         2         2        0.0     1.0   3.125000  1.562500      1.0  516.562500
+         3         2        1.0     1.0   2.166667  1.583333      1.0  515.583333
+         4         3        0.0     1.0   3.400000  1.700000      1.0  426.400000
+         5         3        1.0     1.0   1.500000  1.250000      1.0  368.166667
+         6         4        0.0     2.0   2.666667  1.333333      1.0  530.800000
+         7         4        1.0     2.0   2.333333  1.666667      1.0  472.190476
+         8         5        0.0     1.0   2.909091  1.454545      1.0  418.545455
+         9         5        1.0     1.0   2.250000  1.625000      1.0  445.875000
+         10        6        0.0     1.0   3.375000  1.687500      1.0  437.375000
+         11        6        1.0     1.0   1.952381  1.476190      1.0  405.809524
+         12        7        0.0     2.0   3.222222  1.611111      1.0  477.888889
+         13        7        1.0     2.0   1.823529  1.411765      1.0  426.117647
+         14        9        0.0     2.0   2.800000  1.400000      1.0  484.200000
+         15        9        1.0     2.0   2.000000  1.500000      1.0  434.000000
+         16       10        0.0     1.0   3.066667  1.533333      1.0  525.066667
+         17       10        1.0     1.0   2.043478  1.521739      1.0  440.130435
+         18       11        0.0     1.0   2.769231  1.384615      1.0  575.923077
+         19       11        1.0     1.0   2.285714  1.642857      1.0  668.785714
+         20       12        0.0     1.0   2.888889  1.444444      1.0  476.888889
+         21       12        1.0     1.0   1.700000  1.350000      1.0  393.500000
+\end{Verbatim}
+            
+    We need to run an ANOVA. This is an example:
+http://www.statsmodels.org/stable/examples/notebooks/generated/interactions\_anova.html.
+This requires us to specify the model using a formula:
+http://patsy.readthedocs.io/en/latest/formulas.html.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}25}]:} \PY{k+kn}{import} \PY{n+nn}{statsmodels}\PY{n+nn}{.}\PY{n+nn}{formula}\PY{n+nn}{.}\PY{n+nn}{api} \PY{k}{as} \PY{n+nn}{sm}
+         \PY{k+kn}{from} \PY{n+nn}{statsmodels}\PY{n+nn}{.}\PY{n+nn}{stats}\PY{n+nn}{.}\PY{n+nn}{api} \PY{k}{import} \PY{n}{anova\PYZus{}lm}
+         
+         \PY{n}{formula} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{rt \PYZti{} C(gender)}\PY{l+s+s1}{\PYZsq{}}
+         \PY{n}{lm} \PY{o}{=} \PY{n}{sm}\PY{o}{.}\PY{n}{ols}\PY{p}{(}\PY{n}{formula}\PY{o}{=}\PY{n}{formula}\PY{p}{,} \PY{n}{data}\PY{o}{=}\PY{n}{table}\PY{p}{)}
+         \PY{n}{result} \PY{o}{=} \PY{n}{lm}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{p}{)}
+         \PY{n}{result}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}25}]:} <class 'statsmodels.iolib.summary.Summary'>
+         """
+                                     OLS Regression Results                            
+         ==============================================================================
+         Dep. Variable:                     rt   R-squared:                       0.064
+         Model:                            OLS   Adj. R-squared:                 -0.092
+         Method:                 Least Squares   F-statistic:                    0.4111
+         Date:                Tue, 10 Apr 2018   Prob (F-statistic):              0.747
+         Time:                        12:10:04   Log-Likelihood:                -122.44
+         No. Observations:                  22   AIC:                             252.9
+         Df Residuals:                      18   BIC:                             257.3
+         Df Model:                           3                                         
+         Covariance Type:            nonrobust                                         
+         ======================================================================================================
+                                                  coef    std err          t      P>|t|      [95.0\% Conf. Int.]
+         ------------------------------------------------------------------------------------------------------
+         Intercept                            479.8452     24.712     19.418      0.000       427.928   531.762
+         C(congruent)[T.1.0]                  -20.7270     34.947     -0.593      0.561       -94.149    52.695
+         C(gender)[T.2.0]:C(congruent)[0.0]    17.7844     47.319      0.376      0.711       -81.629   117.198
+         C(gender)[T.2.0]:C(congruent)[1.0]   -15.0155     47.319     -0.317      0.755      -114.429    84.398
+         ==============================================================================
+         Omnibus:                       16.643   Durbin-Watson:                   1.455
+         Prob(Omnibus):                  0.000   Jarque-Bera (JB):               18.195
+         Skew:                           1.582   Prob(JB):                     0.000112
+         Kurtosis:                       6.137   Cond. No.                         4.24
+         ==============================================================================
+         
+         Warnings:
+         [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+         """
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}26}]:} \PY{n}{anova} \PY{o}{=} \PY{n}{anova\PYZus{}lm}\PY{p}{(}\PY{n}{result}\PY{p}{)}
+         \PY{n}{anova}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+/home/dieter/anaconda3/lib/python3.6/site-packages/scipy/stats/\_distn\_infrastructure.py:875: RuntimeWarning: invalid value encountered in greater
+  return (self.a < x) \& (x < self.b)
+/home/dieter/anaconda3/lib/python3.6/site-packages/scipy/stats/\_distn\_infrastructure.py:875: RuntimeWarning: invalid value encountered in less
+  return (self.a < x) \& (x < self.b)
+/home/dieter/anaconda3/lib/python3.6/site-packages/scipy/stats/\_distn\_infrastructure.py:1814: RuntimeWarning: invalid value encountered in less\_equal
+  cond2 = cond0 \& (x <= self.a)
+
+    \end{Verbatim}
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}26}]:}                           df        sum\_sq      mean\_sq         F    PR(>F)
+         C(gender):C(congruent)   3.0   6024.488241  2008.162747  0.411062  0.747019
+         Residual                18.0  87935.374385  4885.298577       NaN       NaN
+\end{Verbatim}
+            
+
+    % Add a bibliography block to the postdoc
+    
+    
+    
+    \end{document}

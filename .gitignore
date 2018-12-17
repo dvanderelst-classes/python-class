@@ -1,3 +1,9 @@
+# When updating this file, do
+# git rm -r --cached . 
+# git add .
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -56,3 +62,16 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Quiz preparations
+*Quiz*.ipynb
+
+*.odp#
+
+*.txt#
+
+*.odt#
+
+# Hidden files
+.*
+!/.gitignore

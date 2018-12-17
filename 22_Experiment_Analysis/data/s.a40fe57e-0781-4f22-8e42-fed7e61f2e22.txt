@@ -1,0 +1,25 @@
+version: 2.5.2
+server-time: 2018-11-29-20-18
+user_agent: mozilla/5.0 (macintosh; intel mac os x 10_13_6) applewebkit/537.36 (khtml, like gecko) chrome/64.0.3282.140 safari/537.36
+screen_width: 1280
+screen_height: 800
+html_width: 1107
+html_height: 581
+user_time: Thu, 29 Nov 2018 19:18:33 GMT
+T: 4179
+l: gender
+stime: 2018-11-29-20-18
+T: 2851
+t: radio
+a: 2
+l: nick
+stime: 2018-11-29-20-18
+T: 10502
+t: textline
+a: Alex
+l: Experiment
+stime: 2018-11-29-20-19
+T: 71655
+t: experiment
+endcode: 
+end 2018-11-29-20-19

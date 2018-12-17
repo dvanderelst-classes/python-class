@@ -1,0 +1,255 @@
+#Expyriment 0.9.0 (Python 3.6.4), .xpe-file, coding: UTF-8
+#date: Fri Aug 03 2018 20:24:38
+#sha1: None
+#modules: 
+#display: size=(800, 600), window_mode=True, open_gl=2
+#os: uname_result(system='Linux', node='xps', release='4.15.0-29-generic', version='#31~16.04.1-Ubuntu SMP Wed Jul 18 08:54:04 UTC 2018', machine='x86_64', processor='x86_64')
+Time,Type,Event,Value,Detail,Detail2
+4079,design,log,
+#design: #exp: First Experiment
+#design: #dvn: block,trial,btn,RT
+#design: block_cnt,block_id,trial_cnt,trial_id,valence,condition
+#design: 0,0,0,46,positive,long
+#design: 0,0,1,19,positive,short
+#design: 0,0,2,47,positive,long
+#design: 0,0,3,39,negative,long
+#design: 0,0,4,9,negative,short
+#design: 0,0,5,51,positive,long
+#design: 0,0,6,11,negative,short
+#design: 0,0,7,32,negative,long
+#design: 0,0,8,35,negative,long
+#design: 0,0,9,1,negative,short
+#design: 0,0,10,36,negative,long
+#design: 0,0,11,59,positive,long
+#design: 0,0,12,57,positive,long
+#design: 0,0,13,42,negative,long
+#design: 0,0,14,22,positive,short
+#design: 0,0,15,5,negative,short
+#design: 0,0,16,45,positive,long
+#design: 0,0,17,4,negative,short
+#design: 0,0,18,53,positive,long
+#design: 0,0,19,56,positive,long
+#design: 0,0,20,43,negative,long
+#design: 0,0,21,16,positive,short
+#design: 0,0,22,7,negative,short
+#design: 0,0,23,52,positive,long
+#design: 0,0,24,6,negative,short
+#design: 0,0,25,34,negative,long
+#design: 0,0,26,8,negative,short
+#design: 0,0,27,17,positive,short
+#design: 0,0,28,24,positive,short
+#design: 0,0,29,10,negative,short
+#design: 0,0,30,26,positive,short
+#design: 0,0,31,49,positive,long
+#design: 0,0,32,38,negative,long
+#design: 0,0,33,14,negative,short
+#design: 0,0,34,12,negative,short
+#design: 0,0,35,48,positive,long
+#design: 0,0,36,33,negative,long
+#design: 0,0,37,54,positive,long
+#design: 0,0,38,31,negative,long
+#design: 0,0,39,55,positive,long
+#design: 0,0,40,23,positive,short
+#design: 0,0,41,41,negative,long
+#design: 0,0,42,20,positive,short
+#design: 0,0,43,2,negative,short
+#design: 0,0,44,37,negative,long
+#design: 0,0,45,18,positive,short
+#design: 0,0,46,40,negative,long
+#design: 0,0,47,13,negative,short
+#design: 0,0,48,3,negative,short
+#design: 0,0,49,58,positive,long
+#design: 0,0,50,15,positive,short
+#design: 0,0,51,27,positive,short
+#design: 0,0,52,0,negative,short
+#design: 0,0,53,50,positive,long
+#design: 0,0,54,25,positive,short
+#design: 0,0,55,30,negative,long
+#design: 0,0,56,28,positive,short
+#design: 0,0,57,29,positive,short
+#design: 0,0,58,21,positive,short
+#design: 0,0,59,44,negative,long
+4080,design,logged,
+4080,Experiment,started
+4081,Stimulus,presented,60
+4584,Stimulus,presented,46
+7975,Keyboard,received,275,wait
+7976,Stimulus,presented,60
+8478,Stimulus,presented,19
+8731,Keyboard,received,276,wait
+8732,Stimulus,presented,60
+9234,Stimulus,presented,47
+9508,Keyboard,received,275,wait
+9510,Stimulus,presented,60
+10011,Stimulus,presented,39
+10229,Keyboard,received,276,wait
+10231,Stimulus,presented,60
+10732,Stimulus,presented,9
+10972,Keyboard,received,276,wait
+10973,Stimulus,presented,60
+11475,Stimulus,presented,51
+11625,Keyboard,received,276,wait
+11627,Stimulus,presented,60
+12128,Stimulus,presented,11
+12203,Keyboard,received,276,wait
+12204,Stimulus,presented,60
+12706,Stimulus,presented,32
+12709,Keyboard,received,276,wait
+12711,Stimulus,presented,60
+13212,Stimulus,presented,35
+13284,Keyboard,received,276,wait
+13286,Stimulus,presented,60
+13787,Stimulus,presented,1
+13790,Keyboard,received,276,wait
+13791,Stimulus,presented,60
+14293,Stimulus,presented,36
+14297,Keyboard,received,276,wait
+14298,Stimulus,presented,60
+14800,Stimulus,presented,59
+14803,Keyboard,received,276,wait
+14804,Stimulus,presented,60
+15306,Stimulus,presented,57
+15310,Keyboard,received,276,wait
+15311,Stimulus,presented,60
+15813,Stimulus,presented,42
+15844,Keyboard,received,276,wait
+15845,Stimulus,presented,60
+16347,Stimulus,presented,22
+16350,Keyboard,received,276,wait
+16352,Stimulus,presented,60
+16853,Stimulus,presented,5
+16856,Keyboard,received,276,wait
+16857,Stimulus,presented,60
+17359,Stimulus,presented,45
+17362,Keyboard,received,276,wait
+17363,Stimulus,presented,60
+17865,Stimulus,presented,4
+17868,Keyboard,received,276,wait
+17869,Stimulus,presented,60
+18371,Stimulus,presented,53
+18593,Keyboard,received,276,wait
+18594,Stimulus,presented,60
+19096,Stimulus,presented,56
+19424,Keyboard,received,276,wait
+19426,Stimulus,presented,60
+19928,Stimulus,presented,43
+20182,Keyboard,received,276,wait
+20184,Stimulus,presented,60
+20685,Stimulus,presented,16
+20989,Keyboard,received,276,wait
+20990,Stimulus,presented,60
+21491,Stimulus,presented,7
+21779,Keyboard,received,276,wait
+21780,Stimulus,presented,60
+22281,Stimulus,presented,52
+22565,Keyboard,received,276,wait
+22567,Stimulus,presented,60
+23068,Stimulus,presented,6
+23315,Keyboard,received,276,wait
+23316,Stimulus,presented,60
+23818,Stimulus,presented,34
+23973,Keyboard,received,276,wait
+23974,Stimulus,presented,60
+24476,Stimulus,presented,8
+24680,Keyboard,received,276,wait
+24682,Stimulus,presented,60
+25183,Stimulus,presented,17
+25452,Keyboard,received,276,wait
+25453,Stimulus,presented,60
+25954,Stimulus,presented,24
+26219,Keyboard,received,276,wait
+26221,Stimulus,presented,60
+26722,Stimulus,presented,10
+26936,Keyboard,received,276,wait
+26937,Stimulus,presented,60
+27439,Stimulus,presented,26
+27628,Keyboard,received,276,wait
+27629,Stimulus,presented,60
+28131,Stimulus,presented,49
+28343,Keyboard,received,276,wait
+28345,Stimulus,presented,60
+28846,Stimulus,presented,38
+29051,Keyboard,received,276,wait
+29052,Stimulus,presented,60
+29554,Stimulus,presented,14
+29739,Keyboard,received,276,wait
+29741,Stimulus,presented,60
+30242,Stimulus,presented,12
+30449,Keyboard,received,276,wait
+30451,Stimulus,presented,60
+30952,Stimulus,presented,48
+31137,Keyboard,received,276,wait
+31138,Stimulus,presented,60
+31640,Stimulus,presented,33
+31875,Keyboard,received,276,wait
+31876,Stimulus,presented,60
+32378,Stimulus,presented,54
+32607,Keyboard,received,276,wait
+32609,Stimulus,presented,60
+33111,Stimulus,presented,31
+33309,Keyboard,received,276,wait
+33310,Stimulus,presented,60
+33812,Stimulus,presented,55
+34038,Keyboard,received,276,wait
+34040,Stimulus,presented,60
+34545,Stimulus,presented,23
+34824,Keyboard,received,276,wait
+34826,Stimulus,presented,60
+35328,Stimulus,presented,41
+35628,Keyboard,received,276,wait
+35629,Stimulus,presented,60
+36131,Stimulus,presented,20
+36406,Keyboard,received,276,wait
+36407,Stimulus,presented,60
+36909,Stimulus,presented,2
+37214,Keyboard,received,276,wait
+37215,Stimulus,presented,60
+37717,Stimulus,presented,37
+37945,Keyboard,received,276,wait
+37947,Stimulus,presented,60
+38448,Stimulus,presented,18
+38617,Keyboard,received,276,wait
+38618,Stimulus,presented,60
+39120,Stimulus,presented,40
+39359,Keyboard,received,276,wait
+39360,Stimulus,presented,60
+39862,Stimulus,presented,13
+40214,Keyboard,received,276,wait
+40215,Stimulus,presented,60
+40717,Stimulus,presented,3
+40940,Keyboard,received,276,wait
+40941,Stimulus,presented,60
+41443,Stimulus,presented,58
+41615,Keyboard,received,276,wait
+41616,Stimulus,presented,60
+42118,Stimulus,presented,15
+42258,Keyboard,received,276,wait
+42260,Stimulus,presented,60
+42761,Stimulus,presented,27
+42953,Keyboard,received,276,wait
+42955,Stimulus,presented,60
+43457,Stimulus,presented,0
+43808,Keyboard,received,276,wait
+43809,Stimulus,presented,60
+44311,Stimulus,presented,50
+44601,Keyboard,received,276,wait
+44603,Stimulus,presented,60
+45105,Stimulus,presented,25
+45363,Keyboard,received,276,wait
+45364,Stimulus,presented,60
+45866,Stimulus,presented,30
+46130,Keyboard,received,276,wait
+46131,Stimulus,presented,60
+46633,Stimulus,presented,28
+46897,Keyboard,received,276,wait
+46898,Stimulus,presented,60
+47400,Stimulus,presented,29
+47704,Keyboard,received,276,wait
+47705,Stimulus,presented,60
+48207,Stimulus,presented,21
+48395,Keyboard,received,276,wait
+48397,Stimulus,presented,60
+48898,Stimulus,presented,44
+49116,Keyboard,received,276,wait
+49116,Experiment,ended
+49117,Data,saved

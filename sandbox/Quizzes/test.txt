@@ -1,0 +1,4 @@
+MC	Which of the following is a vowel?	a	correct	b	incorrect	c	incorrect	
+TF	Do pigs fly?	false
+TF	Do birds fly?	true
+ESS	Do birds fly?	Yes, birds have feathers, therefore...	

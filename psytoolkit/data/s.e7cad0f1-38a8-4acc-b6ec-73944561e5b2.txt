@@ -1,0 +1,25 @@
+version: 2.4.3
+server-time: 2018-04-05-17-14
+user_agent: mozilla/5.0 (macintosh; intel mac os x 10_13_3) applewebkit/537.36 (khtml, like gecko) chrome/65.0.3325.181 safari/537.36
+screen_width: 1440
+screen_height: 900
+html_width: 1440
+html_height: 581
+user_time: Thu, 05 Apr 2018 15:14:35 GMT
+T: 2362
+l: gender
+stime: 2018-04-05-17-14
+T: 2180
+t: radio
+a: 1
+l: nick
+stime: 2018-04-05-17-14
+T: 18522
+t: textline
+a: Nicholas
+l: Experiment
+stime: 2018-04-05-17-15
+T: 52059
+t: experiment
+endcode: 
+end 2018-04-05-17-15

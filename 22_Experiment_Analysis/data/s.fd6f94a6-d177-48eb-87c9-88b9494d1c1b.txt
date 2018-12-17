@@ -1,0 +1,25 @@
+version: 2.5.2
+server-time: 2018-11-29-20-13
+user_agent: mozilla/5.0 (x11; ubuntu; linux x86_64; rv:63.0) gecko/20100101 firefox/63.0
+screen_width: 1680
+screen_height: 1050
+html_width: 1680
+html_height: 565
+user_time: Thu, 29 Nov 2018 19:13:21 GMT
+T: 154195
+l: gender
+stime: 2018-11-29-20-13
+T: 24295
+t: radio
+a: 2
+l: nick
+stime: 2018-11-29-20-14
+T: 17985
+t: textline
+a: zorro
+l: Experiment
+stime: 2018-11-29-20-16
+T: 155986
+t: experiment
+endcode: 
+end 2018-11-29-20-16

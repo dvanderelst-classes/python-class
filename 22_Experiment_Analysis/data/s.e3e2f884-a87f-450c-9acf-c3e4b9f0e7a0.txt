@@ -1,0 +1,25 @@
+version: 2.5.2
+server-time: 2018-11-29-20-18
+user_agent: mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/70.0.3538.110 safari/537.36
+screen_width: 1368
+screen_height: 912
+html_width: 1368
+html_height: 583
+user_time: Thu, 29 Nov 2018 19:18:17 GMT
+T: 32267
+l: gender
+stime: 2018-11-29-20-18
+T: 3402
+t: radio
+a: 1
+l: nick
+stime: 2018-11-29-20-18
+T: 11027
+t: textline
+a: tingfang
+l: Experiment
+stime: 2018-11-29-20-19
+T: 79877
+t: experiment
+endcode: 
+end 2018-11-29-20-19

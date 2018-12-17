@@ -1,0 +1,25 @@
+version: 2.5.2
+server-time: 2018-11-29-20-16
+user_agent: mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/70.0.3538.110 safari/537.36
+screen_width: 1280
+screen_height: 720
+html_width: 1263
+html_height: 586
+user_time: Thu, 29 Nov 2018 19:17:03 GMT
+T: 167776
+l: gender
+stime: 2018-11-29-20-16
+T: 3363
+t: radio
+a: 1
+l: nick
+stime: 2018-11-29-20-17
+T: 10736
+t: textline
+a: Erin
+l: Experiment
+stime: 2018-11-29-20-18
+T: 69397
+t: experiment
+endcode: 
+end 2018-11-29-20-18

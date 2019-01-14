@@ -1,0 +1,6 @@
+#!/bin/bash
+cd ~/Dropbox/PythonCourse
+source activate default
+jupyter-notebook
+conda info
+

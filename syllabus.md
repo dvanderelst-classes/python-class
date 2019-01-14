@@ -1,13 +1,12 @@
 # Syllabus  
 
-+ Course Title: PSYC3010: PROGRAMMING FOR BEHAVIORAL 
-SCIENTISTS 
++ Course Title:  PSYC3010: PROGRAMMING FOR BEHAVIORAL 
+  SCIENTISTS 
 + Instructor: Dieter Vanderelst, PhD 
 + Contact information: 
-+ Email: vanderdt@ucmail.uc.edu 
-+ Office: Edwards 4150F + Office phone: 513-556-4058 
-+ Office hours: By appointment only. 
-+ Course meetings: Twice a week (Tuesday and Thursday)  
+  + Email: vanderdt@ucmail.uc.edu 
+  + Office hours: By appointment only. 
+  + Course meetings: Twice a week (Tuesday and Thursday)  
 
 ## Instructor Bio  
 
@@ -39,8 +38,6 @@ Demonstrating basic programming skills, Write programs to control behavioral exp
 + Quizzes (75% of the grade): After most weeks, I will open up quizzes on blackboard concerning the covered topic(s). Each quiz consists of one or more questions, each graded on a scale from 1 to 10. The sum of these grades for the whole course will be converted to 75% of your final grade.
 
 + Project (25% of the grades): At the end of the course, a final project will be assigned. The project will be graded on a scale from 0 to 10. In this project, you will be expected to demonstrate the programming skills you learned
-
-Grading scale: A: 90.0% to 100.0%; A-: 89.5% to 89.9%; B+: 87.5% to 89.4%; B: 80.0% to 87.4%; B-: 79.5% to 79.9%; C+: 77.5% to 79.4%; C: 70.0% to 77.4%; C-: 69.5% to 69.9%; D+: 67.5% to 69.4%; D: 60.0% to 67.4%; D-: 59.5% to 59.9%; F: 00.0% to 59.4%.
 
 
 ## Missed assignments

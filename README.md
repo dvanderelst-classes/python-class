@@ -38,6 +38,12 @@ We will be using the pyboard, based on the [Micro Maestro 6](https://www.pololu.
 
 In this course, we use the Anaconda Python distribution. This is a version of Python that comes with many scientific modules included. Also, it comes with a package manager that allows installing additional packages more easily. https://anaconda.org/. You do not need to make an account to download/use Anaconda. Head over to the download page at https://www.anaconda.com/download/.
 
+Some helpful resources on Anaconda:
+
+- This is a 2 page pdf document explaining what Anaconda is: http://docs.anaconda.com/anaconda/user-guide/cheatsheet/. 
+- Managing the Anaconda installation can be done using the Anaconda Navigator. This link explains how to start the Navigator on Windows, Mac and Linux: http://docs.anaconda.com/anaconda/navigator/getting-started/#navigator-starting-navigator
+- Anaconda comes with a command line tool to install and update packages. There is a cheat sheet for this: https://conda.io/docs/user-guide/cheatsheet.html
+
 ## On-line Resources
 
 This is a list of resources that might be helpful while learning Python:

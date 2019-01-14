@@ -7,13 +7,13 @@ Office location: Edwards 1, 4th floor, office 4150K
 
 Email: vanderdt@ucmail.uc.edu
 
-My website: https://bitsofbats.weebly.com/
+My website: www.bitsofbats.net
 
 Syllabus: [syllabus.md](syllabus.md)
 
 ## Using the GitHub files
 
-All materials for the course are available on the UC GitHub. Every section of the course has a dedicated folder with a number of files and folders in it:
+All materials for the course are available on the UC GitHub. Every section of the class has a dedicated folder with some files and folders in it:
 
 - File ending in```ipynb```: These are the course note files I use in class. When clicked, these files render in your browser.
 - Files ending in ```md```: These are formatted text files. When clicked, they will render in your browser allowing you to read them.
@@ -22,7 +22,7 @@ All materials for the course are available on the UC GitHub. Every section of th
 
 ## Quizzes FAQ
 
-**Where can I find the Quizzes?** All quizzes can be found on the GitHub page, in the `Quizzes` folder: https://github.uc.edu/vanderdt/PythonCourse/tree/master/Quizzes. 
+**Where can I find the Quizzes?** All quizzes can be found on the GitHub page, in the `Quizzes` folder.
 
 **How should I submit a quiz?** Copy paste your answers into a Word file or any other text document. Please include the question numbers, you name and the quiz name into the document. You can use the Word template in the Quizzes folder. Quizzes should be submitted in Blackboard. Goto `Course Content` and submit the quiz under the appropriate Assignment.
 
@@ -40,11 +40,11 @@ In this course, we use the Anaconda Python distribution. This is a version of Py
 
 Some helpful resources on Anaconda:
 
-- This is a 2 page pdf document explaining what Anaconda is: http://docs.anaconda.com/anaconda/user-guide/cheatsheet/. 
-- Managing the Anaconda installation can be done using the Anaconda Navigator. This link explains how to start the Navigator on Windows, Mac and Linux: http://docs.anaconda.com/anaconda/navigator/getting-started/#navigator-starting-navigator
+- This is a 2-page pdf document explaining what Anaconda is: http://docs.anaconda.com/anaconda/user-guide/cheatsheet/. 
+- Managing the Anaconda installation can be done using the Anaconda Navigator. This link describes how to start the Navigator on Windows, Mac, and Linux: http://docs.anaconda.com/anaconda/navigator/getting-started/#navigator-starting-navigator
 - Anaconda comes with a command line tool to install and update packages. There is a cheat sheet for this: https://conda.io/docs/user-guide/cheatsheet.html
 
-## On-line Resources
+## Online Resources
 
 This is a list of resources that might be helpful while learning Python:
 
@@ -61,7 +61,7 @@ This is a list of resources that might be helpful while learning Python:
 ## Sources of data
 
 * This website lists datasets and the python code to read them in:
-  * https://think.cs.vt.edu/corgis/python/index.html. The data is formated as a list of nested dictionaries. However, the following code  shows how to transform this a Pandas dataframe. 
+  * https://think.cs.vt.edu/corgis/python/index.html. The data is formatted as a list of nested dictionaries. However, the following code shows how to transform this a Pandas dataframe. 
 
 ```python
 import collections
@@ -103,11 +103,11 @@ data = data2frame(list_of_report)
 
 ## Dealing with common errors and bugs
 
-![Common errors](http://i.imgur.com/ZG4VcOp.jpg)
+[Click here to find a handy diagram to help you deal with common errors in Python.](http://i.imgur.com/ZG4VcOp.jpg)
 
 ## Applications
 
-- **Games** I often get the question whether Python can be used to make games. The answer: yes. There is pygame for 2D games: https://www.pygame.org. Here is a series of youtube lectures to get started: https://is.gd/rj8NIi. For 3D games, you need an engine you can script. This means you can use  Python to program the logic of the game while the engine handles graphics, physics and the design of the world.One possibility is to use blender: blender.org. Wikipedia has a list of 3d game engines. https://en.wikipedia.org/wiki/List_of_game_engines. Look at the scripting column to find engines that work with Python.
+- **Games** I often get the question whether Python can be used to make games. The answer: yes. There is pygame for 2D games: https://www.pygame.org. Here is a series of youtube lectures to get started: https://is.gd/rj8NIi. For 3D games, you need an engine you can script. This means you can use  Python to program the logic of the game while the engine handles graphics, physics and the design of the world. One possibility is to use blender: blender.org. Wikipedia has a list of 3d game engines. https://en.wikipedia.org/wiki/List_of_game_engines. Look at the scripting column to find engines that work with Python.
 - **Signal processing** A free book on signal processing in Python: http://greenteapress.com/wp/think-dsp/
 - **Scientific programming** Scipy lecture notes: http://www.scipy-lectures.org/index.html
 - **Image processing** in Python: http://scikit-image.org/

@@ -10,7 +10,7 @@
 
 ## Instructor Bio  
 
-I obtained my Master degree in Experimental Psychology from Ghent University (Belgium). I completed my Ph.D. on modeling the echolocation system of bats at the University of Antwerp (Belgium). After a postdoctoral fellowship at the University of Bristol and the University of the West of England in the UK, I joined UC in August 2016.  More here: http://bitsofbats.weebly.com/
+I obtained my Master degree in Experimental Psychology from Ghent University (Belgium). I completed my Ph.D. on modeling the echolocation system of bats at the University of Antwerp (Belgium). After a postdoctoral fellowship at the University of Bristol and the University of the West of England in the UK, I joined UC in August 2016.  More here: www.bitsofbats.net
 
 
 ## Resources   

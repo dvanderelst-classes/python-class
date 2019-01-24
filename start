@@ -1,6 +1,6 @@
 #!/bin/bash
 cd ~/Dropbox/PythonCourse
 source activate default
-jupyter-notebook
+spyder & jupyter-notebook &
 conda info
 

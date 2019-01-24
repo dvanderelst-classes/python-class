@@ -13,8 +13,8 @@ choices = ["pick up", "stop"]
 while True:
     reply = easygui.buttonbox(msg, choices=choices)
     if reply == 'stop': break
-    robot.goto(x=100,y=150, z=20)
-    robot.goto(z=10)
+    robot.goto(x=200,y=150, z=20)
+    robot.goto(z=15)
     robot.set_pump(True)
     time.sleep(3)
     robot.goto(z=150)

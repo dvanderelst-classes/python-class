@@ -54,8 +54,5 @@ for letter in word:
         print(letter,'is not a vowel')
         
         
-for x in range(1000,2500):
-    #check whether x can divided by 3
-    #if so, print x
     
     

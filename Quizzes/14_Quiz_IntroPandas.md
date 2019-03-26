@@ -2,7 +2,7 @@
 
 ## Question 1
 
-Download the `wages1833.csv` data file (from the data folder) and save it to your computer.
+Download the `wages1833.csv` data file (from the data folder) and save it to your computer. You can also use this direct url: http://tinyurl.com/y6orr2bg
 
 This file contains data on the wages of Lancashire cotton factory workers in 1833.  For each age category, the file lists the following:
 

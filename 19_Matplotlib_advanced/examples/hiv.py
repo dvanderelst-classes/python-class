@@ -104,7 +104,7 @@ ax1.text(1988,4.5,'Keeping the pressure up',fontsize=24,weight='bold')
 ## We'll leave it at this. Further tuning would include trying to use the exact same font and drawing the legends.
 ## If I were to draw the legends for this figure, I draw them manually using the annotatation tools in matplotlib. 
 ## These allow drawing arrows, boxes, etc. on the plot.
-## We could also measure the locations of annotations and titles on the figure to try and match  their exact positions.
+## We could also measure the grid_locations of annotations and titles on the figure to try and match  their exact positions.
 #
 ## Let's save this piece of art.
 pyplot.savefig('my_hiv_plot.png')

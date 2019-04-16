@@ -46,3 +46,23 @@ print(result['summary'])
 result = stats.linear_regression('wage ~ school + exper * C(sex)', data)
 print(result['summary'])
 
+
+#Write code running two Kruskal-Wallis H-tests for independent samples:
+#Test 1: Compare the level of experience for males and females.
+#Test 2: Compare the wages for males and females.
+from scipy.stats import kruskal, ttest_ind
+men = data.query('sex == "male"')
+women = data.query('sex == "female"')
+result = kruskal(men.exper,women.exper)
+print(result)
+
+result = kruskal(men.wage,women.wage)
+print(result)
+
+
+result = ttest_ind(men.exper,women.exper)
+print(result)
+
+result = ttest_ind(men.wage,women.wage)
+print(result)
+

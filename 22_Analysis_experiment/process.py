@@ -7,23 +7,23 @@ from scipy.stats import ttest_rel, wilcoxon
 
 data = pandas.read_csv('data.csv')
 
+# %%
 ## Add a column that indicates whether the trial was consistent
 ## Consistent means that the arrow pointed to the same side as the
 ## required response
-
 response = data['response']
 stimulus = data['stimulus']
 consistent = response.str[0:3] == stimulus.str[0:3]
 data['consistent'] = consistent
 
-#
+# %%
 ## Initial Look at some descriptives
 
 print('+' * 30)
 print('Raw Descriptives')
 print(data['rt'].describe())
 
-#
+# %%
 ## Throw out some of the reaction time that do not look ok
 #
 
@@ -33,7 +33,7 @@ print('+' * 30)
 print('Filtered Descriptives')
 print(data['rt'].describe())
 
-#
+# %%
 ##
 ## Reaction time analysis
 ##
@@ -45,7 +45,7 @@ print('+' * 30)
 print('Correct Descriptives')
 print(correct_data['rt'].describe())
 
-#
+# %%
 ## Get the means per consistent value and subject name
 #
 grp = correct_data.groupby(['consistent', 'name'])
@@ -56,7 +56,10 @@ table_rt = mns_rt.pivot(index='name',columns='consistent', values='rt')
 print('+' * 30)
 print('Mean Reaction Time per subject')
 print(table_rt)
-#
+
+seaborn.barplot(x='name', y='rt', hue='consistent', data=correct_data)
+
+# %%
 ##
 ## Error analysis
 ##
@@ -80,7 +83,8 @@ print('+' * 30)
 print('Proportion correct (descriptives)')
 print(table_cr.describe())
 
-#
+seaborn.barplot(x='name', y='correct', hue='consistent', data=data)
+# %%
 ##
 ## Run statistical test
 ##
@@ -104,7 +108,8 @@ result = wilcoxon(table_cr[True], table_cr[False])
 text = 'W = %.2f, p = %.2f' % result
 print(result)
 print(text)
-#
+
+# %%
 ##
 ## Plot result
 ##

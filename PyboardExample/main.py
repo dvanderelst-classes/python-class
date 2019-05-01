@@ -102,3 +102,19 @@ while True:
     
     
 
+
+
+
+#lcd.rect(55,130, 20, 30)
+#lcd.set_pos(60,145)
+#lcd.write('P')
+
+#lcd.rect(100,130, 20,30)
+#lcd.set_pos(105,145)
+#lcd.write('S')
+
+
+
+
+
+

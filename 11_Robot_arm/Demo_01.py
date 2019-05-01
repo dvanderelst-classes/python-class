@@ -15,3 +15,5 @@ robot.set_wrist(90)
 robot.goto(200, 0, 0)
 time.sleep(10)
 robot.disconnect()
+
+angles = robot.robot.get_servo_angle()

@@ -1,441 +1,241 @@
 experiment,stimulus,response,color,tablerow,key,status,rt,name,gender
-test,right_stimulus,left_response,red,2,1,1,701,tingfang,1
-test,left_stimulus,left_response,red,1,1,1,758,tingfang,1
-test,left_stimulus,right_response,green,4,2,1,560,tingfang,1
-test,left_stimulus,left_response,red,1,1,1,516,tingfang,1
-test,left_stimulus,right_response,green,4,2,1,594,tingfang,1
-test,right_stimulus,right_response,green,3,2,1,494,tingfang,1
-test,left_stimulus,right_response,green,4,2,1,510,tingfang,1
-test,left_stimulus,left_response,red,1,1,1,528,tingfang,1
-test,right_stimulus,left_response,red,2,1,1,517,tingfang,1
-test,left_stimulus,right_response,green,4,2,1,573,tingfang,1
-test,right_stimulus,right_response,green,3,2,1,553,tingfang,1
-test,left_stimulus,right_response,green,4,2,1,629,tingfang,1
-test,left_stimulus,left_response,red,1,1,1,695,tingfang,1
-test,left_stimulus,left_response,red,1,1,1,610,tingfang,1
-test,left_stimulus,right_response,green,4,2,1,505,tingfang,1
-test,left_stimulus,left_response,red,1,1,1,474,tingfang,1
-test,right_stimulus,left_response,red,2,1,1,592,tingfang,1
-test,right_stimulus,left_response,red,2,1,1,471,tingfang,1
-test,right_stimulus,left_response,red,2,1,1,430,tingfang,1
-test,right_stimulus,left_response,red,2,1,1,435,tingfang,1
-test,left_stimulus,left_response,red,1,1,1,608,tingfang,1
-test,left_stimulus,left_response,red,1,1,1,427,tingfang,1
-test,left_stimulus,left_response,red,1,1,1,415,tingfang,1
-test,left_stimulus,left_response,red,1,1,1,452,tingfang,1
-test,left_stimulus,right_response,green,4,2,1,509,tingfang,1
-test,left_stimulus,left_response,red,1,1,1,698,tingfang,1
-test,left_stimulus,left_response,red,1,1,1,793,tingfang,1
-test,left_stimulus,right_response,green,4,2,1,595,tingfang,1
-test,right_stimulus,left_response,red,2,1,1,1502,tingfang,1
-test,left_stimulus,left_response,red,1,1,1,758,tingfang,1
-test,left_stimulus,left_response,red,1,1,1,483,tingfang,1
-test,left_stimulus,right_response,green,4,2,1,588,tingfang,1
-test,left_stimulus,right_response,green,4,2,1,992,tingfang,1
-test,left_stimulus,right_response,green,4,2,1,536,tingfang,1
-test,left_stimulus,left_response,red,1,1,1,698,tingfang,1
-test,right_stimulus,right_response,green,3,2,1,513,tingfang,1
-test,right_stimulus,left_response,red,2,1,1,678,tingfang,1
-test,right_stimulus,left_response,red,2,1,1,447,tingfang,1
-test,right_stimulus,right_response,green,3,2,1,453,tingfang,1
-test,left_stimulus,left_response,red,1,1,1,693,tingfang,1
-test,right_stimulus,left_response,red,2,1,1,510,Erin,1
-test,left_stimulus,left_response,red,1,1,1,540,Erin,1
-test,right_stimulus,left_response,red,2,1,1,486,Erin,1
-test,left_stimulus,left_response,red,1,1,1,384,Erin,1
-test,right_stimulus,right_response,green,3,2,1,409,Erin,1
-test,left_stimulus,right_response,green,4,2,1,397,Erin,1
-test,left_stimulus,right_response,green,4,2,1,358,Erin,1
-test,left_stimulus,left_response,red,1,1,1,384,Erin,1
-test,left_stimulus,left_response,red,1,1,1,307,Erin,1
-test,left_stimulus,right_response,green,4,2,1,383,Erin,1
-test,left_stimulus,left_response,red,1,1,1,402,Erin,1
-test,left_stimulus,right_response,green,4,2,1,402,Erin,1
-test,right_stimulus,left_response,red,2,1,1,480,Erin,1
-test,left_stimulus,right_response,green,4,2,1,331,Erin,1
-test,right_stimulus,right_response,green,3,2,1,446,Erin,1
-test,left_stimulus,left_response,red,1,1,1,320,Erin,1
-test,right_stimulus,left_response,red,2,1,1,557,Erin,1
-test,right_stimulus,right_response,green,3,2,1,372,Erin,1
-test,right_stimulus,right_response,green,3,2,1,414,Erin,1
-test,right_stimulus,left_response,red,2,1,1,416,Erin,1
-test,right_stimulus,left_response,red,2,1,1,403,Erin,1
-test,right_stimulus,left_response,red,2,1,1,387,Erin,1
-test,right_stimulus,left_response,red,2,1,1,392,Erin,1
-test,left_stimulus,left_response,red,1,1,1,431,Erin,1
-test,right_stimulus,right_response,green,3,2,1,369,Erin,1
-test,left_stimulus,right_response,green,4,2,1,495,Erin,1
-test,left_stimulus,left_response,red,1,1,1,451,Erin,1
-test,left_stimulus,right_response,green,4,2,1,474,Erin,1
-test,right_stimulus,right_response,green,3,2,1,475,Erin,1
-test,right_stimulus,right_response,green,3,2,1,466,Erin,1
-test,left_stimulus,left_response,red,1,1,1,436,Erin,1
-test,left_stimulus,left_response,red,1,1,1,423,Erin,1
-test,left_stimulus,left_response,red,1,1,1,363,Erin,1
-test,right_stimulus,right_response,green,3,2,1,378,Erin,1
-test,left_stimulus,left_response,red,1,1,1,455,Erin,1
-test,left_stimulus,left_response,red,1,1,1,426,Erin,1
-test,right_stimulus,right_response,green,3,2,1,384,Erin,1
-test,left_stimulus,right_response,green,4,2,1,392,Erin,1
-test,right_stimulus,right_response,green,3,2,1,365,Erin,1
-test,right_stimulus,left_response,red,2,1,1,398,Erin,1
-test,left_stimulus,right_response,green,4,2,1,777,alliehaq,1
-test,right_stimulus,left_response,red,2,1,1,622,alliehaq,1
-test,left_stimulus,left_response,red,1,2,2,587,alliehaq,1
-test,left_stimulus,left_response,red,1,1,1,2070,alliehaq,1
-test,left_stimulus,left_response,red,1,1,1,808,alliehaq,1
-test,left_stimulus,left_response,red,1,1,1,605,alliehaq,1
-test,left_stimulus,right_response,green,4,2,1,593,alliehaq,1
-test,right_stimulus,left_response,red,2,1,1,732,alliehaq,1
-test,left_stimulus,right_response,green,4,2,1,2363,alliehaq,1
-test,left_stimulus,left_response,red,1,1,1,951,alliehaq,1
-test,left_stimulus,left_response,red,1,1,1,496,alliehaq,1
-test,right_stimulus,left_response,red,2,1,1,1306,alliehaq,1
-test,left_stimulus,left_response,red,1,1,1,759,alliehaq,1
-test,right_stimulus,left_response,red,2,1,1,670,alliehaq,1
-test,left_stimulus,left_response,red,1,1,1,644,alliehaq,1
-test,right_stimulus,left_response,red,2,1,1,652,alliehaq,1
-test,right_stimulus,left_response,red,2,1,1,478,alliehaq,1
-test,left_stimulus,right_response,green,4,2,1,531,alliehaq,1
-test,left_stimulus,right_response,green,4,2,1,505,alliehaq,1
-test,left_stimulus,right_response,green,4,2,1,493,alliehaq,1
-test,right_stimulus,right_response,green,3,2,1,543,alliehaq,1
-test,right_stimulus,right_response,green,3,2,1,385,alliehaq,1
-test,left_stimulus,left_response,red,1,1,1,645,alliehaq,1
-test,left_stimulus,left_response,red,1,1,1,391,alliehaq,1
-test,left_stimulus,left_response,red,1,1,1,430,alliehaq,1
-test,left_stimulus,left_response,red,1,1,1,372,alliehaq,1
-test,left_stimulus,right_response,green,4,1,2,352,alliehaq,1
-test,left_stimulus,left_response,red,1,1,1,691,alliehaq,1
-test,left_stimulus,left_response,red,1,1,1,447,alliehaq,1
-test,right_stimulus,right_response,green,3,2,1,519,alliehaq,1
-test,left_stimulus,left_response,red,1,1,1,882,alliehaq,1
-test,left_stimulus,right_response,green,4,2,1,711,alliehaq,1
-test,left_stimulus,left_response,red,1,1,1,479,alliehaq,1
-test,right_stimulus,left_response,red,2,1,1,1086,alliehaq,1
-test,right_stimulus,right_response,green,3,2,1,637,alliehaq,1
-test,left_stimulus,right_response,green,4,2,1,544,alliehaq,1
-test,left_stimulus,right_response,green,4,2,1,395,alliehaq,1
-test,right_stimulus,right_response,green,3,2,1,495,alliehaq,1
-test,left_stimulus,left_response,red,1,1,1,524,alliehaq,1
-test,left_stimulus,right_response,green,4,2,1,662,alliehaq,1
-test,left_stimulus,right_response,green,4,1,2,1974,zorro,2
-test,right_stimulus,right_response,green,3,2,1,658,zorro,2
-test,right_stimulus,left_response,red,2,1,1,576,zorro,2
-test,right_stimulus,left_response,red,2,1,1,618,zorro,2
-test,left_stimulus,left_response,red,1,1,1,577,zorro,2
-test,left_stimulus,left_response,red,1,1,1,1485,zorro,2
-test,right_stimulus,left_response,red,2,1,1,535,zorro,2
-test,right_stimulus,right_response,green,3,2,1,387,zorro,2
-test,left_stimulus,right_response,green,4,1,3,5000,zorro,2
-test,left_stimulus,right_response,green,4,1,3,5000,zorro,2
-test,left_stimulus,left_response,red,1,1,3,5000,zorro,2
-test,right_stimulus,right_response,green,3,1,3,5000,zorro,2
-test,right_stimulus,right_response,green,3,1,3,5000,zorro,2
-test,left_stimulus,right_response,green,4,1,3,5000,zorro,2
-test,right_stimulus,right_response,green,3,2,1,725,zorro,2
-test,right_stimulus,right_response,green,3,2,1,446,zorro,2
-test,right_stimulus,left_response,red,2,1,1,441,zorro,2
-test,right_stimulus,right_response,green,3,2,1,423,zorro,2
-test,left_stimulus,left_response,red,1,1,1,468,zorro,2
-test,left_stimulus,right_response,green,4,1,2,487,zorro,2
-test,right_stimulus,right_response,green,3,1,2,795,zorro,2
-test,right_stimulus,right_response,green,3,2,1,373,zorro,2
-test,left_stimulus,left_response,red,1,1,1,403,zorro,2
-test,right_stimulus,right_response,green,3,2,1,383,zorro,2
-test,right_stimulus,left_response,red,2,1,1,703,zorro,2
-test,left_stimulus,right_response,green,4,2,1,653,zorro,2
-test,left_stimulus,left_response,red,1,1,1,924,zorro,2
-test,left_stimulus,left_response,red,1,1,1,600,zorro,2
-test,left_stimulus,left_response,red,1,1,1,435,zorro,2
-test,left_stimulus,left_response,red,1,1,1,416,zorro,2
-test,left_stimulus,left_response,red,1,1,1,716,zorro,2
-test,left_stimulus,right_response,green,4,2,1,408,zorro,2
-test,right_stimulus,left_response,red,2,2,2,465,zorro,2
-test,right_stimulus,right_response,green,3,2,1,726,zorro,2
-test,right_stimulus,left_response,red,2,1,1,469,zorro,2
-test,left_stimulus,left_response,red,1,2,2,765,zorro,2
-test,right_stimulus,left_response,red,2,2,2,487,zorro,2
-test,right_stimulus,right_response,green,3,1,2,584,zorro,2
-test,right_stimulus,left_response,red,2,1,1,692,zorro,2
-test,left_stimulus,right_response,green,4,2,1,447,zorro,2
-test,left_stimulus,right_response,green,4,1,2,527,dr,2
-test,left_stimulus,left_response,red,1,1,1,582,dr,2
-test,left_stimulus,right_response,green,4,2,1,533,dr,2
-test,right_stimulus,left_response,red,2,1,1,626,dr,2
-test,left_stimulus,right_response,green,4,2,1,577,dr,2
-test,left_stimulus,left_response,red,1,1,1,664,dr,2
-test,right_stimulus,left_response,red,2,1,1,551,dr,2
-test,left_stimulus,right_response,green,4,2,1,517,dr,2
-test,right_stimulus,left_response,red,2,1,1,777,dr,2
-test,right_stimulus,right_response,green,3,2,1,533,dr,2
-test,right_stimulus,right_response,green,3,2,1,377,dr,2
-test,left_stimulus,left_response,red,1,1,1,400,dr,2
-test,left_stimulus,left_response,red,1,1,1,364,dr,2
-test,right_stimulus,left_response,red,2,1,1,426,dr,2
-test,left_stimulus,right_response,green,4,2,1,495,dr,2
-test,right_stimulus,left_response,red,2,1,1,446,dr,2
-test,right_stimulus,left_response,red,2,1,1,346,dr,2
-test,right_stimulus,right_response,green,3,2,1,399,dr,2
-test,right_stimulus,left_response,red,2,1,1,477,dr,2
-test,left_stimulus,left_response,red,1,1,1,723,dr,2
-test,right_stimulus,right_response,green,3,2,1,365,dr,2
-test,left_stimulus,left_response,red,1,1,1,329,dr,2
-test,left_stimulus,left_response,red,1,1,1,379,dr,2
-test,right_stimulus,right_response,green,3,2,1,295,dr,2
-test,left_stimulus,left_response,red,1,1,1,346,dr,2
-test,left_stimulus,left_response,red,1,1,1,304,dr,2
-test,left_stimulus,left_response,red,1,1,1,371,dr,2
-test,right_stimulus,right_response,green,3,2,1,297,dr,2
-test,left_stimulus,right_response,green,4,2,1,428,dr,2
-test,left_stimulus,right_response,green,4,2,1,331,dr,2
-test,right_stimulus,right_response,green,3,2,1,367,dr,2
-test,right_stimulus,left_response,red,2,1,1,428,dr,2
-test,left_stimulus,left_response,red,1,1,1,383,dr,2
-test,right_stimulus,right_response,green,3,2,1,389,dr,2
-test,right_stimulus,right_response,green,3,2,1,341,dr,2
-test,right_stimulus,left_response,red,2,1,1,390,dr,2
-test,left_stimulus,left_response,red,1,1,1,632,dr,2
-test,left_stimulus,right_response,green,4,1,2,960,dr,2
-test,left_stimulus,right_response,green,4,2,1,598,dr,2
-test,right_stimulus,right_response,green,3,2,1,322,dr,2
-test,left_stimulus,left_response,red,1,1,1,437,Joel,2
-test,left_stimulus,right_response,green,4,1,2,360,Joel,2
-test,left_stimulus,left_response,red,1,1,1,500,Joel,2
-test,right_stimulus,left_response,red,2,1,1,529,Joel,2
-test,right_stimulus,left_response,red,2,1,1,440,Joel,2
-test,right_stimulus,left_response,red,2,1,1,467,Joel,2
-test,right_stimulus,right_response,green,3,2,1,452,Joel,2
-test,left_stimulus,left_response,red,1,1,1,463,Joel,2
-test,right_stimulus,right_response,green,3,2,1,368,Joel,2
-test,left_stimulus,right_response,green,4,2,1,489,Joel,2
-test,right_stimulus,right_response,green,3,2,1,403,Joel,2
-test,left_stimulus,left_response,red,1,1,1,444,Joel,2
-test,right_stimulus,left_response,red,2,1,1,449,Joel,2
-test,left_stimulus,right_response,green,4,2,1,456,Joel,2
-test,left_stimulus,left_response,red,1,1,1,379,Joel,2
-test,right_stimulus,left_response,red,2,1,1,474,Joel,2
-test,right_stimulus,left_response,red,2,1,1,373,Joel,2
-test,right_stimulus,right_response,green,3,2,1,429,Joel,2
-test,left_stimulus,right_response,green,4,2,1,431,Joel,2
-test,right_stimulus,right_response,green,3,2,1,362,Joel,2
-test,left_stimulus,right_response,green,4,2,1,366,Joel,2
-test,left_stimulus,left_response,red,1,1,1,387,Joel,2
-test,left_stimulus,left_response,red,1,1,1,376,Joel,2
-test,right_stimulus,right_response,green,3,2,1,383,Joel,2
-test,right_stimulus,left_response,red,2,1,1,453,Joel,2
-test,left_stimulus,right_response,green,4,1,2,360,Joel,2
-test,right_stimulus,right_response,green,3,2,1,460,Joel,2
-test,left_stimulus,right_response,green,4,2,1,398,Joel,2
-test,left_stimulus,left_response,red,1,1,1,429,Joel,2
-test,left_stimulus,left_response,red,1,1,1,352,Joel,2
-test,left_stimulus,left_response,red,1,1,1,368,Joel,2
-test,left_stimulus,right_response,green,4,2,1,468,Joel,2
-test,right_stimulus,right_response,green,3,2,1,357,Joel,2
-test,right_stimulus,left_response,red,2,1,1,479,Joel,2
-test,right_stimulus,right_response,green,3,2,1,398,Joel,2
-test,right_stimulus,left_response,red,2,1,1,424,Joel,2
-test,left_stimulus,left_response,red,1,1,1,422,Joel,2
-test,left_stimulus,left_response,red,1,1,1,450,Joel,2
-test,left_stimulus,right_response,green,4,2,1,502,Joel,2
-test,left_stimulus,left_response,red,1,1,1,401,Joel,2
-test,right_stimulus,right_response,green,3,2,1,522,Alex,2
-test,left_stimulus,left_response,red,1,1,1,453,Alex,2
-test,left_stimulus,left_response,red,1,1,1,389,Alex,2
-test,left_stimulus,right_response,green,4,2,1,468,Alex,2
-test,left_stimulus,right_response,green,4,2,1,389,Alex,2
-test,right_stimulus,left_response,red,2,1,1,447,Alex,2
-test,right_stimulus,left_response,red,2,1,1,412,Alex,2
-test,right_stimulus,right_response,green,3,2,1,438,Alex,2
-test,left_stimulus,right_response,green,4,2,1,405,Alex,2
-test,left_stimulus,left_response,red,1,1,1,400,Alex,2
-test,right_stimulus,left_response,red,2,1,1,361,Alex,2
-test,left_stimulus,right_response,green,4,1,2,351,Alex,2
-test,left_stimulus,right_response,green,4,2,1,2356,Alex,2
-test,right_stimulus,right_response,green,3,2,1,602,Alex,2
-test,left_stimulus,right_response,green,4,2,1,468,Alex,2
-test,left_stimulus,right_response,green,4,2,1,419,Alex,2
-test,left_stimulus,left_response,red,1,1,1,374,Alex,2
-test,right_stimulus,right_response,green,3,2,1,479,Alex,2
-test,right_stimulus,left_response,red,2,1,1,484,Alex,2
-test,right_stimulus,left_response,red,2,1,1,484,Alex,2
-test,right_stimulus,right_response,green,3,2,1,483,Alex,2
-test,right_stimulus,left_response,red,2,1,1,811,Alex,2
-test,left_stimulus,right_response,green,4,2,1,692,Alex,2
-test,right_stimulus,right_response,green,3,1,2,681,Alex,2
-test,right_stimulus,right_response,green,3,2,1,737,Alex,2
-test,left_stimulus,right_response,green,4,2,1,599,Alex,2
-test,left_stimulus,right_response,green,4,2,1,474,Alex,2
-test,right_stimulus,right_response,green,3,2,1,442,Alex,2
-test,right_stimulus,left_response,red,2,1,1,464,Alex,2
-test,right_stimulus,right_response,green,3,2,1,400,Alex,2
-test,right_stimulus,right_response,green,3,2,1,387,Alex,2
-test,left_stimulus,left_response,red,1,1,1,434,Alex,2
-test,right_stimulus,left_response,red,2,1,1,504,Alex,2
-test,left_stimulus,left_response,red,1,1,1,436,Alex,2
-test,right_stimulus,left_response,red,2,1,1,401,Alex,2
-test,left_stimulus,left_response,red,1,1,1,415,Alex,2
-test,left_stimulus,left_response,red,1,1,1,362,Alex,2
-test,left_stimulus,left_response,red,1,1,1,368,Alex,2
-test,right_stimulus,right_response,green,3,2,1,399,Alex,2
-test,left_stimulus,left_response,red,1,1,1,427,Alex,2
-test,right_stimulus,right_response,green,3,2,1,554,N Desai,1
-test,left_stimulus,right_response,green,4,2,1,532,N Desai,1
-test,right_stimulus,left_response,red,2,1,1,434,N Desai,1
-test,right_stimulus,right_response,green,3,2,1,506,N Desai,1
-test,left_stimulus,right_response,green,4,2,1,526,N Desai,1
-test,left_stimulus,left_response,red,1,1,1,322,N Desai,1
-test,right_stimulus,right_response,green,3,2,1,451,N Desai,1
-test,left_stimulus,left_response,red,1,1,1,365,N Desai,1
-test,right_stimulus,right_response,green,3,2,1,451,N Desai,1
-test,left_stimulus,left_response,red,1,1,1,563,N Desai,1
-test,right_stimulus,left_response,red,2,1,1,487,N Desai,1
-test,left_stimulus,left_response,red,1,1,1,418,N Desai,1
-test,right_stimulus,right_response,green,3,2,1,308,N Desai,1
-test,left_stimulus,right_response,green,4,2,1,379,N Desai,1
-test,left_stimulus,right_response,green,4,2,1,372,N Desai,1
-test,left_stimulus,right_response,green,4,2,1,346,N Desai,1
-test,right_stimulus,left_response,red,2,1,1,487,N Desai,1
-test,right_stimulus,right_response,green,3,2,1,462,N Desai,1
-test,right_stimulus,left_response,red,2,1,1,551,N Desai,1
-test,right_stimulus,right_response,green,3,2,1,572,N Desai,1
-test,left_stimulus,right_response,green,4,2,1,491,N Desai,1
-test,right_stimulus,left_response,red,2,1,1,451,N Desai,1
-test,right_stimulus,left_response,red,2,1,1,390,N Desai,1
-test,left_stimulus,right_response,green,4,2,1,429,N Desai,1
-test,left_stimulus,left_response,red,1,1,1,597,N Desai,1
-test,left_stimulus,right_response,green,4,2,1,742,N Desai,1
-test,right_stimulus,right_response,green,3,2,1,467,N Desai,1
-test,right_stimulus,left_response,red,2,1,1,480,N Desai,1
-test,right_stimulus,right_response,green,3,2,1,650,N Desai,1
-test,right_stimulus,right_response,green,3,2,1,463,N Desai,1
-test,right_stimulus,left_response,red,2,1,1,492,N Desai,1
-test,left_stimulus,right_response,green,4,2,1,551,N Desai,1
-test,left_stimulus,right_response,green,4,2,1,445,N Desai,1
-test,right_stimulus,right_response,green,3,2,1,454,N Desai,1
-test,right_stimulus,right_response,green,3,2,1,395,N Desai,1
-test,left_stimulus,left_response,red,1,1,1,556,N Desai,1
-test,left_stimulus,left_response,red,1,1,1,416,N Desai,1
-test,right_stimulus,left_response,red,2,1,1,505,N Desai,1
-test,right_stimulus,left_response,red,2,1,1,453,N Desai,1
-test,left_stimulus,left_response,red,1,1,1,438,N Desai,1
-test,right_stimulus,right_response,green,3,2,1,413,stacey,1
-test,right_stimulus,left_response,red,2,1,1,437,stacey,1
-test,right_stimulus,right_response,green,3,2,1,281,stacey,1
-test,right_stimulus,left_response,red,2,1,1,317,stacey,1
-test,right_stimulus,left_response,red,2,2,2,339,stacey,1
-test,left_stimulus,left_response,red,1,1,1,543,stacey,1
-test,left_stimulus,right_response,green,4,2,1,356,stacey,1
-test,left_stimulus,left_response,red,1,1,1,385,stacey,1
-test,left_stimulus,right_response,green,4,2,1,355,stacey,1
-test,left_stimulus,right_response,green,4,2,1,438,stacey,1
-test,right_stimulus,right_response,green,3,2,1,397,stacey,1
-test,left_stimulus,left_response,red,1,1,1,334,stacey,1
-test,right_stimulus,right_response,green,3,2,1,347,stacey,1
-test,right_stimulus,left_response,red,2,2,2,363,stacey,1
-test,right_stimulus,left_response,red,2,1,1,518,stacey,1
-test,right_stimulus,right_response,green,3,2,1,401,stacey,1
-test,left_stimulus,right_response,green,4,2,1,405,stacey,1
-test,right_stimulus,right_response,green,3,2,1,383,stacey,1
-test,right_stimulus,left_response,red,2,1,1,431,stacey,1
-test,left_stimulus,left_response,red,1,1,1,317,stacey,1
-test,left_stimulus,left_response,red,1,1,1,320,stacey,1
-test,left_stimulus,left_response,red,1,1,1,333,stacey,1
-test,left_stimulus,left_response,red,1,1,1,298,stacey,1
-test,left_stimulus,left_response,red,1,1,1,298,stacey,1
-test,left_stimulus,right_response,green,4,2,1,408,stacey,1
-test,left_stimulus,right_response,green,4,1,2,293,stacey,1
-test,left_stimulus,right_response,green,4,2,1,350,stacey,1
-test,left_stimulus,left_response,red,1,1,1,350,stacey,1
-test,right_stimulus,right_response,green,3,2,1,331,stacey,1
-test,right_stimulus,right_response,green,3,2,1,299,stacey,1
-test,right_stimulus,left_response,red,2,2,2,317,stacey,1
-test,right_stimulus,left_response,red,2,1,1,480,stacey,1
-test,right_stimulus,right_response,green,3,2,1,406,stacey,1
-test,left_stimulus,left_response,red,1,1,1,315,stacey,1
-test,left_stimulus,right_response,green,4,2,1,403,stacey,1
-test,left_stimulus,right_response,green,4,2,1,361,stacey,1
-test,right_stimulus,left_response,red,2,1,1,331,stacey,1
-test,left_stimulus,left_response,red,1,1,1,414,stacey,1
-test,right_stimulus,right_response,green,3,2,1,284,stacey,1
-test,left_stimulus,left_response,red,1,1,1,312,stacey,1
-test,right_stimulus,right_response,green,3,2,1,365,Dat boi,2
-test,right_stimulus,right_response,green,3,2,1,326,Dat boi,2
-test,left_stimulus,right_response,green,4,1,2,337,Dat boi,2
-test,right_stimulus,right_response,green,3,2,1,369,Dat boi,2
-test,left_stimulus,left_response,red,1,1,1,581,Dat boi,2
-test,left_stimulus,left_response,red,1,1,1,353,Dat boi,2
-test,right_stimulus,right_response,green,3,2,1,361,Dat boi,2
-test,left_stimulus,left_response,red,1,1,1,437,Dat boi,2
-test,right_stimulus,left_response,red,2,1,1,438,Dat boi,2
-test,right_stimulus,right_response,green,3,2,1,390,Dat boi,2
-test,right_stimulus,right_response,green,3,2,1,340,Dat boi,2
-test,left_stimulus,right_response,green,4,2,1,492,Dat boi,2
-test,left_stimulus,left_response,red,1,1,1,546,Dat boi,2
-test,right_stimulus,left_response,red,2,1,1,479,Dat boi,2
-test,left_stimulus,right_response,green,4,2,1,439,Dat boi,2
-test,right_stimulus,left_response,red,2,1,1,517,Dat boi,2
-test,right_stimulus,left_response,red,2,1,1,487,Dat boi,2
-test,right_stimulus,right_response,green,3,2,1,651,Dat boi,2
-test,left_stimulus,right_response,green,4,2,1,604,Dat boi,2
-test,right_stimulus,left_response,red,2,1,1,607,Dat boi,2
-test,right_stimulus,right_response,green,3,2,1,491,Dat boi,2
-test,left_stimulus,right_response,green,4,2,1,738,Dat boi,2
-test,left_stimulus,left_response,red,1,1,1,478,Dat boi,2
-test,left_stimulus,right_response,green,4,2,1,598,Dat boi,2
-test,left_stimulus,left_response,red,1,1,1,637,Dat boi,2
-test,left_stimulus,right_response,green,4,2,1,469,Dat boi,2
-test,left_stimulus,right_response,green,4,2,1,864,Dat boi,2
-test,left_stimulus,right_response,green,4,2,1,365,Dat boi,2
-test,right_stimulus,right_response,green,3,2,1,382,Dat boi,2
-test,right_stimulus,right_response,green,3,2,1,485,Dat boi,2
-test,right_stimulus,right_response,green,3,2,1,315,Dat boi,2
-test,left_stimulus,left_response,red,1,1,1,408,Dat boi,2
-test,right_stimulus,right_response,green,3,2,1,378,Dat boi,2
-test,right_stimulus,left_response,red,2,1,1,439,Dat boi,2
-test,left_stimulus,left_response,red,1,1,1,397,Dat boi,2
-test,right_stimulus,right_response,green,3,2,1,341,Dat boi,2
-test,right_stimulus,left_response,red,2,1,1,430,Dat boi,2
-test,left_stimulus,right_response,green,4,2,1,498,Dat boi,2
-test,right_stimulus,left_response,red,2,1,1,431,Dat boi,2
-test,left_stimulus,right_response,green,4,2,1,449,Dat boi,2
-test,left_stimulus,left_response,red,1,1,1,2222,Dorothy,1
-test,right_stimulus,left_response,red,2,1,1,960,Dorothy,1
-test,left_stimulus,right_response,green,4,2,1,1766,Dorothy,1
-test,right_stimulus,right_response,green,3,2,1,928,Dorothy,1
-test,right_stimulus,left_response,red,2,1,1,995,Dorothy,1
-test,right_stimulus,left_response,red,2,1,1,677,Dorothy,1
-test,left_stimulus,left_response,red,1,1,1,836,Dorothy,1
-test,left_stimulus,left_response,red,1,1,1,562,Dorothy,1
-test,right_stimulus,left_response,red,2,1,1,773,Dorothy,1
-test,left_stimulus,left_response,red,1,1,1,640,Dorothy,1
-test,left_stimulus,right_response,green,4,2,1,672,Dorothy,1
-test,right_stimulus,left_response,red,2,1,1,677,Dorothy,1
-test,right_stimulus,right_response,green,3,2,1,2299,Dorothy,1
-test,left_stimulus,left_response,red,1,1,1,617,Dorothy,1
-test,left_stimulus,left_response,red,1,1,1,520,Dorothy,1
-test,right_stimulus,right_response,green,3,2,1,623,Dorothy,1
-test,right_stimulus,left_response,red,2,1,1,1602,Dorothy,1
-test,left_stimulus,right_response,green,4,2,1,666,Dorothy,1
-test,left_stimulus,right_response,green,4,2,1,1593,Dorothy,1
-test,right_stimulus,left_response,red,2,1,1,599,Dorothy,1
-test,right_stimulus,right_response,green,3,2,1,1487,Dorothy,1
-test,right_stimulus,right_response,green,3,2,1,722,Dorothy,1
-test,right_stimulus,left_response,red,2,1,1,946,Dorothy,1
-test,right_stimulus,right_response,green,3,2,1,506,Dorothy,1
-test,left_stimulus,right_response,green,4,2,1,578,Dorothy,1
-test,left_stimulus,right_response,green,4,2,1,650,Dorothy,1
-test,right_stimulus,right_response,green,3,2,1,460,Dorothy,1
-test,right_stimulus,left_response,red,2,1,1,630,Dorothy,1
-test,right_stimulus,left_response,red,2,1,1,402,Dorothy,1
-test,right_stimulus,left_response,red,2,1,1,437,Dorothy,1
-test,right_stimulus,left_response,red,2,1,1,354,Dorothy,1
-test,left_stimulus,left_response,red,1,1,1,644,Dorothy,1
-test,left_stimulus,left_response,red,1,1,1,377,Dorothy,1
-test,right_stimulus,right_response,green,3,2,1,493,Dorothy,1
-test,left_stimulus,left_response,red,1,1,1,508,Dorothy,1
-test,right_stimulus,left_response,red,2,1,1,610,Dorothy,1
-test,left_stimulus,left_response,red,1,1,1,420,Dorothy,1
-test,right_stimulus,right_response,green,3,2,1,438,Dorothy,1
-test,left_stimulus,right_response,green,4,2,1,574,Dorothy,1
-test,right_stimulus,right_response,green,3,2,1,535,Dorothy,1
+test,right_stimulus,right_response,green,3,2,1,2825,dieter,1
+test,left_stimulus,right_response,green,4,2,1,923,dieter,1
+test,left_stimulus,left_response,red,1,1,1,481,dieter,1
+test,left_stimulus,left_response,red,1,1,1,476,dieter,1
+test,left_stimulus,left_response,red,1,1,1,419,dieter,1
+test,left_stimulus,right_response,green,4,2,1,574,dieter,1
+test,left_stimulus,right_response,green,4,2,1,636,dieter,1
+test,right_stimulus,left_response,red,2,1,1,654,dieter,1
+test,right_stimulus,left_response,red,2,1,1,477,dieter,1
+test,right_stimulus,right_response,green,3,2,1,348,dieter,1
+test,left_stimulus,right_response,green,4,1,2,257,dieter,1
+test,right_stimulus,right_response,green,3,2,1,801,dieter,1
+test,right_stimulus,left_response,red,2,1,1,483,dieter,1
+test,right_stimulus,right_response,green,3,2,1,345,dieter,1
+test,left_stimulus,left_response,red,1,1,1,449,dieter,1
+test,right_stimulus,left_response,red,2,1,3,5000,dieter,1
+test,left_stimulus,left_response,red,1,1,3,5000,dieter,1
+test,right_stimulus,left_response,red,2,1,3,5000,dieter,1
+test,left_stimulus,right_response,green,4,2,1,1640,dieter,1
+test,right_stimulus,left_response,red,2,1,1,1001,dieter,1
+test,left_stimulus,left_response,red,1,1,1,468,dieter,1
+test,right_stimulus,left_response,red,2,2,2,557,dieter,1
+test,right_stimulus,right_response,green,3,2,1,425,dieter,1
+test,right_stimulus,right_response,green,3,2,1,389,dieter,1
+test,left_stimulus,right_response,green,4,2,1,385,dieter,1
+test,right_stimulus,left_response,red,2,1,1,452,dieter,1
+test,right_stimulus,left_response,red,2,2,2,476,dieter,1
+test,right_stimulus,left_response,red,2,1,1,523,dieter,1
+test,right_stimulus,left_response,red,2,1,1,412,dieter,1
+test,right_stimulus,right_response,green,3,2,1,471,dieter,1
+test,left_stimulus,right_response,green,4,2,1,572,dieter,1
+test,left_stimulus,right_response,green,4,2,1,422,dieter,1
+test,right_stimulus,right_response,green,3,2,1,421,dieter,1
+test,left_stimulus,left_response,red,1,1,1,388,dieter,1
+test,right_stimulus,right_response,green,3,2,1,400,dieter,1
+test,left_stimulus,right_response,green,4,2,1,481,dieter,1
+test,left_stimulus,left_response,red,1,1,1,308,dieter,1
+test,right_stimulus,left_response,red,2,1,1,409,dieter,1
+test,right_stimulus,right_response,green,3,2,1,325,dieter,1
+test,right_stimulus,left_response,red,2,2,2,454,dieter,1
+test,left_stimulus,right_response,green,4,2,1,1735,Mana,1
+test,right_stimulus,left_response,red,2,1,1,662,Mana,1
+test,right_stimulus,right_response,green,3,2,1,466,Mana,1
+test,right_stimulus,left_response,red,2,1,1,516,Mana,1
+test,left_stimulus,left_response,red,1,1,1,589,Mana,1
+test,right_stimulus,left_response,red,2,1,1,541,Mana,1
+test,left_stimulus,right_response,green,4,2,1,503,Mana,1
+test,left_stimulus,left_response,red,1,1,1,617,Mana,1
+test,left_stimulus,right_response,green,4,2,1,516,Mana,1
+test,left_stimulus,right_response,green,4,2,1,427,Mana,1
+test,left_stimulus,right_response,green,4,2,1,439,Mana,1
+test,right_stimulus,right_response,green,3,2,1,493,Mana,1
+test,left_stimulus,left_response,red,1,1,1,519,Mana,1
+test,left_stimulus,right_response,green,4,2,1,497,Mana,1
+test,left_stimulus,right_response,green,4,2,1,453,Mana,1
+test,left_stimulus,right_response,green,4,2,1,402,Mana,1
+test,left_stimulus,right_response,green,4,2,1,433,Mana,1
+test,right_stimulus,right_response,green,3,2,1,446,Mana,1
+test,left_stimulus,right_response,green,4,2,1,396,Mana,1
+test,left_stimulus,right_response,green,4,2,1,389,Mana,1
+test,right_stimulus,right_response,green,3,2,1,405,Mana,1
+test,left_stimulus,left_response,red,1,1,1,361,Mana,1
+test,left_stimulus,right_response,green,4,2,1,541,Mana,1
+test,right_stimulus,left_response,red,2,1,1,686,Mana,1
+test,right_stimulus,right_response,green,3,2,1,431,Mana,1
+test,right_stimulus,left_response,red,2,1,1,411,Mana,1
+test,right_stimulus,left_response,red,2,1,1,487,Mana,1
+test,left_stimulus,left_response,red,1,1,1,435,Mana,1
+test,right_stimulus,right_response,green,3,2,1,408,Mana,1
+test,left_stimulus,left_response,red,1,1,1,404,Mana,1
+test,right_stimulus,left_response,red,2,1,1,518,Mana,1
+test,right_stimulus,left_response,red,2,1,1,498,Mana,1
+test,left_stimulus,left_response,red,1,1,1,449,Mana,1
+test,left_stimulus,left_response,red,1,1,1,468,Mana,1
+test,left_stimulus,left_response,red,1,1,1,366,Mana,1
+test,left_stimulus,right_response,green,4,2,1,491,Mana,1
+test,right_stimulus,right_response,green,3,2,1,411,Mana,1
+test,right_stimulus,right_response,green,3,2,1,333,Mana,1
+test,right_stimulus,right_response,green,3,2,1,352,Mana,1
+test,left_stimulus,left_response,red,1,1,1,367,Mana,1
+test,left_stimulus,right_response,green,4,2,1,1112,AustinMay,2
+test,right_stimulus,left_response,red,2,1,1,508,AustinMay,2
+test,left_stimulus,left_response,red,1,1,1,415,AustinMay,2
+test,right_stimulus,right_response,green,3,2,1,369,AustinMay,2
+test,left_stimulus,left_response,red,1,1,1,339,AustinMay,2
+test,right_stimulus,left_response,red,2,1,1,405,AustinMay,2
+test,right_stimulus,left_response,red,2,1,1,462,AustinMay,2
+test,left_stimulus,right_response,green,4,2,1,463,AustinMay,2
+test,right_stimulus,left_response,red,2,1,1,422,AustinMay,2
+test,right_stimulus,right_response,green,3,1,2,425,AustinMay,2
+test,left_stimulus,left_response,red,1,1,1,437,AustinMay,2
+test,right_stimulus,right_response,green,3,2,1,378,AustinMay,2
+test,right_stimulus,left_response,red,2,1,1,438,AustinMay,2
+test,right_stimulus,right_response,green,3,2,1,343,AustinMay,2
+test,left_stimulus,left_response,red,1,1,1,321,AustinMay,2
+test,left_stimulus,left_response,red,1,1,1,406,AustinMay,2
+test,left_stimulus,right_response,green,4,2,1,354,AustinMay,2
+test,right_stimulus,left_response,red,2,1,1,350,AustinMay,2
+test,right_stimulus,left_response,red,2,1,1,580,AustinMay,2
+test,left_stimulus,right_response,green,4,2,1,387,AustinMay,2
+test,right_stimulus,left_response,red,2,1,1,339,AustinMay,2
+test,right_stimulus,left_response,red,2,1,1,420,AustinMay,2
+test,left_stimulus,left_response,red,1,1,1,362,AustinMay,2
+test,right_stimulus,left_response,red,2,1,1,421,AustinMay,2
+test,left_stimulus,left_response,red,1,1,1,348,AustinMay,2
+test,right_stimulus,right_response,green,3,2,1,340,AustinMay,2
+test,left_stimulus,right_response,green,4,2,1,469,AustinMay,2
+test,right_stimulus,left_response,red,2,1,1,359,AustinMay,2
+test,right_stimulus,right_response,green,3,2,1,450,AustinMay,2
+test,right_stimulus,right_response,green,3,2,1,408,AustinMay,2
+test,right_stimulus,left_response,red,2,1,1,436,AustinMay,2
+test,left_stimulus,left_response,red,1,1,1,376,AustinMay,2
+test,left_stimulus,left_response,red,1,1,1,349,AustinMay,2
+test,right_stimulus,right_response,green,3,2,1,286,AustinMay,2
+test,left_stimulus,right_response,green,4,2,1,370,AustinMay,2
+test,left_stimulus,left_response,red,1,1,1,366,AustinMay,2
+test,left_stimulus,left_response,red,1,1,1,367,AustinMay,2
+test,right_stimulus,left_response,red,2,2,2,406,AustinMay,2
+test,right_stimulus,right_response,green,3,2,1,358,AustinMay,2
+test,left_stimulus,right_response,green,4,2,1,394,AustinMay,2
+test,right_stimulus,right_response,green,3,2,1,567,Maria,1
+test,left_stimulus,right_response,green,4,1,2,321,Maria,1
+test,left_stimulus,right_response,green,4,2,1,403,Maria,1
+test,right_stimulus,right_response,green,3,2,1,289,Maria,1
+test,left_stimulus,left_response,red,1,1,1,367,Maria,1
+test,left_stimulus,right_response,green,4,2,1,432,Maria,1
+test,left_stimulus,right_response,green,4,2,1,305,Maria,1
+test,left_stimulus,left_response,red,1,1,1,393,Maria,1
+test,right_stimulus,right_response,green,3,2,1,352,Maria,1
+test,left_stimulus,right_response,green,4,2,1,354,Maria,1
+test,right_stimulus,left_response,red,2,1,1,361,Maria,1
+test,right_stimulus,right_response,green,3,2,1,325,Maria,1
+test,left_stimulus,right_response,green,4,2,1,505,Maria,1
+test,left_stimulus,left_response,red,1,1,1,469,Maria,1
+test,left_stimulus,left_response,red,1,1,1,373,Maria,1
+test,right_stimulus,left_response,red,2,1,1,378,Maria,1
+test,left_stimulus,right_response,green,4,2,1,349,Maria,1
+test,left_stimulus,right_response,green,4,2,1,330,Maria,1
+test,right_stimulus,left_response,red,2,1,1,350,Maria,1
+test,right_stimulus,right_response,green,3,2,1,403,Maria,1
+test,left_stimulus,right_response,green,4,2,1,388,Maria,1
+test,left_stimulus,right_response,green,4,2,1,438,Maria,1
+test,left_stimulus,left_response,red,1,1,1,289,Maria,1
+test,right_stimulus,left_response,red,2,1,1,332,Maria,1
+test,right_stimulus,left_response,red,2,1,1,327,Maria,1
+test,right_stimulus,right_response,green,3,2,1,381,Maria,1
+test,right_stimulus,right_response,green,3,2,1,343,Maria,1
+test,right_stimulus,right_response,green,3,2,1,314,Maria,1
+test,left_stimulus,right_response,green,4,1,2,320,Maria,1
+test,right_stimulus,left_response,red,2,1,1,433,Maria,1
+test,right_stimulus,right_response,green,3,2,1,558,Maria,1
+test,left_stimulus,left_response,red,1,1,1,572,Maria,1
+test,right_stimulus,right_response,green,3,2,1,467,Maria,1
+test,right_stimulus,right_response,green,3,2,1,367,Maria,1
+test,right_stimulus,left_response,red,2,1,1,390,Maria,1
+test,right_stimulus,right_response,green,3,2,1,441,Maria,1
+test,right_stimulus,right_response,green,3,2,1,359,Maria,1
+test,left_stimulus,right_response,green,4,2,1,481,Maria,1
+test,right_stimulus,right_response,green,3,2,1,321,Maria,1
+test,right_stimulus,right_response,green,3,2,1,366,Maria,1
+test,right_stimulus,left_response,red,2,1,3,5000,wrewrwer,1
+test,right_stimulus,left_response,red,2,1,3,5000,wrewrwer,1
+test,left_stimulus,right_response,green,4,1,3,5000,wrewrwer,1
+test,right_stimulus,left_response,red,2,1,3,5000,wrewrwer,1
+test,right_stimulus,left_response,red,2,1,3,5000,wrewrwer,1
+test,left_stimulus,right_response,green,4,1,3,5000,wrewrwer,1
+test,right_stimulus,left_response,red,2,1,3,5000,wrewrwer,1
+test,left_stimulus,right_response,green,4,1,3,5000,wrewrwer,1
+test,right_stimulus,left_response,red,2,1,3,5000,wrewrwer,1
+test,right_stimulus,right_response,green,3,1,3,5000,wrewrwer,1
+test,left_stimulus,right_response,green,4,1,3,5000,wrewrwer,1
+test,left_stimulus,right_response,green,4,1,3,5000,wrewrwer,1
+test,left_stimulus,left_response,red,1,1,3,5000,wrewrwer,1
+test,right_stimulus,right_response,green,3,1,3,5000,wrewrwer,1
+test,left_stimulus,right_response,green,4,1,3,5000,wrewrwer,1
+test,right_stimulus,right_response,green,3,1,3,5000,wrewrwer,1
+test,left_stimulus,right_response,green,4,1,3,5000,wrewrwer,1
+test,right_stimulus,left_response,red,2,1,3,5000,wrewrwer,1
+test,right_stimulus,right_response,green,3,1,3,5000,wrewrwer,1
+test,left_stimulus,right_response,green,4,1,3,5000,wrewrwer,1
+test,left_stimulus,right_response,green,4,1,2,3566,wrewrwer,1
+test,left_stimulus,right_response,green,4,1,2,356,wrewrwer,1
+test,left_stimulus,left_response,red,1,1,1,568,wrewrwer,1
+test,left_stimulus,right_response,green,4,1,2,489,wrewrwer,1
+test,left_stimulus,right_response,green,4,1,2,337,wrewrwer,1
+test,left_stimulus,right_response,green,4,1,2,315,wrewrwer,1
+test,right_stimulus,right_response,green,3,1,2,593,wrewrwer,1
+test,left_stimulus,right_response,green,4,1,2,19,wrewrwer,1
+test,right_stimulus,right_response,green,3,1,2,326,wrewrwer,1
+test,left_stimulus,right_response,green,4,1,2,342,wrewrwer,1
+test,right_stimulus,right_response,green,3,1,2,300,wrewrwer,1
+test,left_stimulus,left_response,red,1,1,1,412,wrewrwer,1
+test,left_stimulus,right_response,green,4,1,2,577,wrewrwer,1
+test,right_stimulus,right_response,green,3,1,2,340,wrewrwer,1
+test,right_stimulus,left_response,red,2,1,1,305,wrewrwer,1
+test,right_stimulus,right_response,green,3,1,2,428,wrewrwer,1
+test,right_stimulus,right_response,green,3,1,2,292,wrewrwer,1
+test,right_stimulus,right_response,green,3,1,2,286,wrewrwer,1
+test,left_stimulus,left_response,red,1,1,1,418,wrewrwer,1
+test,left_stimulus,right_response,green,4,1,2,477,wrewrwer,1
+test,left_stimulus,right_response,green,4,2,1,1475,Sam,2
+test,right_stimulus,left_response,red,2,1,1,616,Sam,2
+test,left_stimulus,right_response,green,4,2,1,587,Sam,2
+test,right_stimulus,left_response,red,2,1,1,453,Sam,2
+test,left_stimulus,right_response,green,4,2,1,534,Sam,2
+test,left_stimulus,right_response,green,4,2,1,528,Sam,2
+test,right_stimulus,left_response,red,2,1,1,407,Sam,2
+test,left_stimulus,right_response,green,4,2,1,1267,Sam,2
+test,right_stimulus,left_response,red,2,1,1,555,Sam,2
+test,right_stimulus,right_response,green,3,2,1,905,Sam,2
+test,right_stimulus,right_response,green,3,2,1,478,Sam,2
+test,right_stimulus,right_response,green,3,2,1,404,Sam,2
+test,left_stimulus,left_response,red,1,1,1,457,Sam,2
+test,right_stimulus,left_response,red,2,1,1,522,Sam,2
+test,right_stimulus,left_response,red,2,1,1,437,Sam,2
+test,left_stimulus,left_response,red,1,1,1,436,Sam,2
+test,right_stimulus,left_response,red,2,1,1,453,Sam,2
+test,left_stimulus,left_response,red,1,1,1,389,Sam,2
+test,left_stimulus,right_response,green,4,2,1,492,Sam,2
+test,left_stimulus,left_response,red,1,1,1,456,Sam,2
+test,right_stimulus,right_response,green,3,2,1,416,Sam,2
+test,left_stimulus,right_response,green,4,2,1,439,Sam,2
+test,right_stimulus,left_response,red,2,1,1,482,Sam,2
+test,right_stimulus,right_response,green,3,1,2,423,Sam,2
+test,left_stimulus,left_response,red,1,1,1,1069,Sam,2
+test,left_stimulus,right_response,green,4,2,1,698,Sam,2
+test,right_stimulus,left_response,red,2,1,1,622,Sam,2
+test,right_stimulus,left_response,red,2,1,1,463,Sam,2
+test,left_stimulus,left_response,red,1,1,1,581,Sam,2
+test,left_stimulus,left_response,red,1,1,1,549,Sam,2
+test,right_stimulus,left_response,red,2,1,1,520,Sam,2
+test,left_stimulus,right_response,green,4,2,1,541,Sam,2
+test,left_stimulus,right_response,green,4,2,1,486,Sam,2
+test,right_stimulus,right_response,green,3,2,1,444,Sam,2
+test,right_stimulus,left_response,red,2,1,1,405,Sam,2
+test,right_stimulus,right_response,green,3,2,1,1205,Sam,2
+test,right_stimulus,left_response,red,2,1,1,524,Sam,2
+test,left_stimulus,left_response,red,1,1,1,512,Sam,2
+test,right_stimulus,right_response,green,3,2,1,493,Sam,2
+test,left_stimulus,left_response,red,1,1,1,428,Sam,2

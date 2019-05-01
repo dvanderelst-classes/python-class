@@ -28,13 +28,14 @@ print(data['rt'].describe())
 #
 
 data = data.query('rt > 150 and rt < 1000')
-data = data.query('name != "zorro"')
+data = data.query('name != "dieter"')
+data = data.query('name != "wrewrwer"')
 print('+' * 30)
 print('Filtered Descriptives')
 print(data['rt'].describe())
 
 # %%
-##
+##172
 ## Reaction time analysis
 ##
 #
@@ -51,6 +52,7 @@ print(correct_data['rt'].describe())
 grp = correct_data.groupby(['consistent', 'name'])
 mns_rt = grp.mean()
 mns_rt = mns_rt.reset_index()
+
 table_rt = mns_rt.pivot(index='name',columns='consistent', values='rt')
 
 print('+' * 30)
@@ -96,6 +98,7 @@ print('+' * 30)
 print('T-test result')
 result = ttest_rel(table_rt[True], table_rt[False])
 dof = len(table_rt) - 1
+
 text = 't(%i) = %.2f, p = %.2f' % (dof, result[0], result[1])
 print(result)
 print(text)
@@ -105,6 +108,7 @@ print(text)
 print('+' * 30)
 print('Wilcoxon result')
 result = wilcoxon(table_cr[True], table_cr[False])
+
 text = 'W = %.2f, p = %.2f' % result
 print(result)
 print(text)

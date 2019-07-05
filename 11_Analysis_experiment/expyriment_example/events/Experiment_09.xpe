@@ -1,0 +1,37 @@
+#Expyriment 0.9.0 (Python 3.6.4), .xpe-file, coding: UTF-8
+#date: Fri Aug 03 2018 20:40:08
+#sha1: None
+#modules: 
+#display: size=(800, 600), window_mode=True, open_gl=2
+#os: uname_result(system='Linux', node='xps', release='4.15.0-29-generic', version='#31~16.04.1-Ubuntu SMP Wed Jul 18 08:54:04 UTC 2018', machine='x86_64', processor='x86_64')
+Time,Type,Event,Value,Detail,Detail2
+2133,design,log,
+#design: #exp: First Experiment
+#design: #dvn: name,trial,word,condition,valence,btn,rt,correct
+#design: block_cnt,block_id,trial_cnt,trial_id,word,condition,valence
+#design: 0,0,0,2,CIVIL,short,negative
+#design: 0,0,1,1,APART,short,negative
+#design: 0,0,2,0,DOGMA,short,negative
+2133,design,logged,
+2133,Experiment,started
+2151,Stimulus,presented,0
+2159,Stimulus,presented,0
+2165,Stimulus,presented,0
+2171,Stimulus,presented,1
+3054,Stimulus,presented,1
+3181,Stimulus,presented,1
+3293,Stimulus,presented,1
+3374,Stimulus,presented,1
+4430,TextInput,entered,b'erer'
+4431,Stimulus,presented,3
+4933,Stimulus,presented,2
+5511,Keyboard,received,108,wait
+5519,Stimulus,presented,4
+6021,Stimulus,presented,3
+6523,Stimulus,presented,1
+6526,Keyboard,received,97,wait
+6528,Stimulus,presented,3
+7030,Stimulus,presented,0
+7054,Keyboard,received,97,wait
+7054,Experiment,ended
+7055,Data,saved

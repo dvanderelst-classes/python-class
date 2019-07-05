@@ -1,0 +1,25 @@
+version: 2.5.3
+server-time: 2019-04-17-21-39
+user_agent: mozilla/5.0 (x11; ubuntu; linux x86_64; rv:66.0) gecko/20100101 firefox/66.0
+screen_width: 1920
+screen_height: 1080
+html_width: 1144
+html_height: 565
+user_time: Wed, 17 Apr 2019 19:39:38 GMT
+T: 2682
+l: gender
+stime: 2019-04-17-21-39
+T: 1994
+t: radio
+a: 1
+l: nick
+stime: 2019-04-17-21-39
+T: 1770
+t: textline
+a: wrewrwer
+l: Experiment
+stime: 2019-04-17-21-43
+T: 213023
+t: experiment
+endcode: 
+end 2019-04-17-21-43

@@ -1,0 +1,53 @@
+#Expyriment 0.9.0 (Python 3.6.4), .xpe-file, coding: UTF-8
+#date: Fri Aug 03 2018 20:08:56
+#sha1: None
+#modules: 
+#display: size=(800, 600), window_mode=True, open_gl=2
+#os: uname_result(system='Linux', node='xps', release='4.15.0-29-generic', version='#31~16.04.1-Ubuntu SMP Wed Jul 18 08:54:04 UTC 2018', machine='x86_64', processor='x86_64')
+Time,Type,Event,Value,Detail,Detail2
+500,Stimulus,presented,60
+502,Stimulus,presented,37
+1504,Stimulus,presented,60
+1507,Stimulus,presented,14
+2508,Stimulus,presented,60
+2510,Stimulus,presented,54
+3512,Stimulus,presented,60
+3514,Stimulus,presented,43
+4516,Stimulus,presented,60
+4518,Stimulus,presented,17
+5520,Stimulus,presented,60
+5522,Stimulus,presented,46
+6523,Stimulus,presented,60
+6525,Stimulus,presented,53
+7527,Stimulus,presented,60
+7530,Stimulus,presented,15
+8532,Stimulus,presented,60
+8534,Stimulus,presented,20
+9535,Stimulus,presented,60
+9537,Stimulus,presented,23
+10538,Stimulus,presented,60
+10539,Stimulus,presented,35
+11541,Stimulus,presented,60
+11544,Stimulus,presented,0
+12547,Stimulus,presented,60
+12549,Stimulus,presented,57
+13550,Stimulus,presented,60
+13553,Stimulus,presented,6
+14554,Stimulus,presented,60
+14556,Stimulus,presented,22
+15557,Stimulus,presented,60
+15559,Stimulus,presented,49
+16561,Stimulus,presented,60
+16564,Stimulus,presented,24
+17566,Stimulus,presented,60
+17569,Stimulus,presented,56
+18571,Stimulus,presented,60
+18574,Stimulus,presented,1
+19576,Stimulus,presented,60
+19578,Stimulus,presented,4
+19735,stderr,received,'Traceback (most recent call last):'
+19736,stderr,received,'  File "/home/dieter/Dropbox/PythonCourse/22_Experiment_Analysis/Experiment.py", line 42, in <module>'
+19736,stderr,received,'    exp.clock.wait(1000)'
+19736,stderr,received,'  File "/home/dieter/anaconda3/lib/python3.6/site-packages/expyriment/misc/_clock.py", line 164, in wait'
+19736,stderr,received,'    pygame.event.pump()'
+19736,stderr,received,'KeyboardInterrupt'

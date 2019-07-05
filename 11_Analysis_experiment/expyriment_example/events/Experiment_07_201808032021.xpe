@@ -1,0 +1,87 @@
+#Expyriment 0.9.0 (Python 3.6.4), .xpe-file, coding: UTF-8
+#date: Fri Aug 03 2018 20:21:12
+#sha1: None
+#modules: 
+#display: size=(1920, 1080), window_mode=False, open_gl=2
+#os: uname_result(system='Linux', node='xps', release='4.15.0-29-generic', version='#31~16.04.1-Ubuntu SMP Wed Jul 18 08:54:04 UTC 2018', machine='x86_64', processor='x86_64')
+Time,Type,Event,Value,Detail,Detail2
+12384,design,log,
+#design: #exp: First Experiment
+#design: #dvn: block,trial,btn,RT
+#design: block_cnt,block_id,trial_cnt,trial_id,condition,valence
+#design: 0,0,0,57,long,positive
+#design: 0,0,1,59,long,positive
+#design: 0,0,2,32,long,negative
+#design: 0,0,3,46,long,positive
+#design: 0,0,4,50,long,positive
+#design: 0,0,5,2,short,negative
+#design: 0,0,6,8,short,negative
+#design: 0,0,7,52,long,positive
+#design: 0,0,8,53,long,positive
+#design: 0,0,9,51,long,positive
+#design: 0,0,10,38,long,negative
+#design: 0,0,11,41,long,negative
+#design: 0,0,12,36,long,negative
+#design: 0,0,13,24,short,positive
+#design: 0,0,14,7,short,negative
+#design: 0,0,15,43,long,negative
+#design: 0,0,16,11,short,negative
+#design: 0,0,17,20,short,positive
+#design: 0,0,18,15,short,positive
+#design: 0,0,19,45,long,positive
+#design: 0,0,20,19,short,positive
+#design: 0,0,21,29,short,positive
+#design: 0,0,22,39,long,negative
+#design: 0,0,23,42,long,negative
+#design: 0,0,24,22,short,positive
+#design: 0,0,25,6,short,negative
+#design: 0,0,26,0,short,negative
+#design: 0,0,27,33,long,negative
+#design: 0,0,28,16,short,positive
+#design: 0,0,29,26,short,positive
+#design: 0,0,30,1,short,negative
+#design: 0,0,31,55,long,positive
+#design: 0,0,32,13,short,negative
+#design: 0,0,33,30,long,negative
+#design: 0,0,34,3,short,negative
+#design: 0,0,35,25,short,positive
+#design: 0,0,36,10,short,negative
+#design: 0,0,37,9,short,negative
+#design: 0,0,38,27,short,positive
+#design: 0,0,39,56,long,positive
+#design: 0,0,40,28,short,positive
+#design: 0,0,41,49,long,positive
+#design: 0,0,42,12,short,negative
+#design: 0,0,43,4,short,negative
+#design: 0,0,44,17,short,positive
+#design: 0,0,45,21,short,positive
+#design: 0,0,46,34,long,negative
+#design: 0,0,47,31,long,negative
+#design: 0,0,48,48,long,positive
+#design: 0,0,49,54,long,positive
+#design: 0,0,50,35,long,negative
+#design: 0,0,51,37,long,negative
+#design: 0,0,52,23,short,positive
+#design: 0,0,53,58,long,positive
+#design: 0,0,54,47,long,positive
+#design: 0,0,55,40,long,negative
+#design: 0,0,56,5,short,negative
+#design: 0,0,57,18,short,positive
+#design: 0,0,58,14,short,negative
+#design: 0,0,59,44,long,negative
+12385,design,logged,
+12385,Experiment,started
+12388,Stimulus,presented,60
+12891,Stimulus,presented,57
+13174,Keyboard,received,276,wait
+13175,Stimulus,presented,60
+13677,Stimulus,presented,59
+13901,Keyboard,received,276,wait
+13903,Stimulus,presented,60
+14405,Stimulus,presented,32
+14410,Experiment,paused
+14412,Stimulus,presented,1
+15095,Keyboard,received,b'y',wait_char
+15095,Experiment,ended
+15096,Data,saved
+15099,Stimulus,presented,1

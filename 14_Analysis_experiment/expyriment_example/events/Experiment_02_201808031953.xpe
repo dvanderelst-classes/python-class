@@ -1,0 +1,14 @@
+#Expyriment 0.9.0 (Python 3.6.4), .xpe-file, coding: UTF-8
+#date: Fri Aug 03 2018 19:53:10
+#sha1: None
+#modules: 
+#display: size=(1920, 1080), window_mode=False, open_gl=2
+#os: uname_result(system='Linux', node='xps', release='4.15.0-29-generic', version='#31~16.04.1-Ubuntu SMP Wed Jul 18 08:54:04 UTC 2018', machine='x86_64', processor='x86_64')
+Time,Type,Event,Value,Detail,Detail2
+10956,design,log,
+#design: #exp: First Experiment
+#design: block_cnt,block_id,trial_cnt,trial_id
+10956,design,logged,
+10956,Experiment,started
+10957,Experiment,ended
+10960,Stimulus,presented,1

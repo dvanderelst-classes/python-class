@@ -1,0 +1,25 @@
+version: 2.5.3
+server-time: 2019-04-18-17-04
+user_agent: mozilla/5.0 (macintosh; intel mac os x 10_13_6) applewebkit/605.1.15 (khtml, like gecko) version/12.1 safari/605.1.15
+screen_width: 1280
+screen_height: 800
+html_width: 1280
+html_height: 585
+user_time: Thu, 18 Apr 2019 15:04:26 GMT
+T: 116553
+l: gender
+stime: 2019-04-18-17-04
+T: 2574
+t: radio
+a: 2
+l: nick
+stime: 2019-04-18-17-04
+T: 5318
+t: textline
+a: Sam
+l: Experiment
+stime: 2019-04-18-17-05
+T: 67554
+t: experiment
+endcode: 
+end 2019-04-18-17-05

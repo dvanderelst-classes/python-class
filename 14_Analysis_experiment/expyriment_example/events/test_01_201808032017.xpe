@@ -1,0 +1,27 @@
+#Expyriment 0.9.0 (Python 3.6.4), .xpe-file, coding: UTF-8
+#date: Fri Aug 03 2018 20:17:55
+#sha1: None
+#modules: 
+#display: size=(1920, 1080), window_mode=False, open_gl=2
+#os: uname_result(system='Linux', node='xps', release='4.15.0-29-generic', version='#31~16.04.1-Ubuntu SMP Wed Jul 18 08:54:04 UTC 2018', machine='x86_64', processor='x86_64')
+Time,Type,Event,Value,Detail,Detail2
+10745,design,log,
+#design: #exp: Text Experiment
+#design: block_cnt,block_id,trial_cnt,trial_id
+#design: 0,0,0,0
+#design: 0,0,1,1
+#design: 1,1,0,0
+#design: 1,1,1,1
+10745,design,logged,
+10745,Experiment,started
+10746,Stimulus,presented,0
+11136,Keyboard,received,275,wait
+11138,Stimulus,presented,1
+11727,Keyboard,received,276,wait
+11727,Stimulus,presented,2
+11933,Keyboard,received,275,wait
+11935,Stimulus,presented,3
+12642,Keyboard,received,275,wait
+12642,Experiment,ended
+12643,Data,saved
+12645,Stimulus,presented,5

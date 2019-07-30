@@ -5,7 +5,7 @@ from matplotlib import pyplot
 import savReaderWriter as spss
 import numpy
 
-filename = 'Pew Research Center Fall 2017 Media and Politics in Western Europe Survey.sav'
+filename = 'data.sav'
 
 raw_data = spss.SavReader(filename, returnHeader=True, ioUtf8=True)
 raw_data_list = list(raw_data)
@@ -35,7 +35,6 @@ data = data.replace(98, numpy.NAN)
 data = data.replace(99, numpy.NAN)
 
 data.to_csv('media.csv', index=False)
-data.to_html('media.html')
 # %% Check to see whether the countries have been assigned correctly.
 
 # compare these numbers with the numbers in table 1 of the pdf

@@ -1,0 +1,15 @@
+l: gender
+t: radio
+q: What is your gender?
+- Female
+- Male
+- Do not wish to disclose
+
+l: nick
+t: textline
+q: Choose a nick name, if you want to be able to look at your data later.
+- Nick name
+
+l: Experiment
+t: experiment
+- arrows

@@ -31,14 +31,8 @@ Demonstrating basic programming skills, Write programs to control behavioral exp
 + Critical Thinking:  Analyze complex issues and formulate insightful conclusions.
 
 + Quantitative Reasoning: Apply quantitative reasoning skills and accurately interpret findings.
+
 + Information and Technological Literacy: Locate, evaluate and effectively use information from a wide range of sources.
-
-## Grades 
-
-+ Quizzes (75% of the grade): After most weeks, I will open up quizzes on blackboard concerning the covered topic(s). Each quiz consists of one or more questions, each graded on a scale from 1 to 10. The sum of these grades for the whole course will be converted to 75% of your final grade.
-
-+ Project (25% of the grades): At the end of the course, a final project will be assigned. The project will be graded on a scale from 0 to 10. In this project, you will be expected to demonstrate the programming skills you learned
-
 
 ## Missed assignments
 

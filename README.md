@@ -13,7 +13,9 @@ My website: www.bitsofbats.net
 
 Syllabus: [syllabus.md](syllabus.md)
 
-## Using the GitHub files
+## Materials
+
+### GitHub
 
 All materials for the course are available on the UC GitHub. Every section of the class has a dedicated folder with some files and folders in it:
 
@@ -22,13 +24,22 @@ All materials for the course are available on the UC GitHub. Every section of th
 - Files ending in ```odp```: These files are presentations. If you click these files, you will get a notice that the file can not be displayed. However, a *download* button will appear. Clicking this button will allow you to download the file and open it in PowerPoint or OpenOffice/LibreOffice (free alternatives to Office).
 - Data files (ending in ```csv```, ```txt``` or ```dat```): For some sections of the course, you will need to download data files. These can typically be found in a sub folder called *data*. To download a data file click it.  You will see a rendering of the data file. Now click the *raw* button. This will give you access to the data file itself. Now, use your browser menu to save the file (For example, ```File> Save Page...```).
 
-## Quizzes FAQ
+### Datacamp courses
 
-**Where can I find the Quizzes?** All quizzes can be found on the GitHub page, in the `Quizzes` folder.
+As part of this course, you will complete courses on datacamp.com. Use this link to enroll in these:
 
-**How should I submit a quiz?** Copy paste your answers into a Word file or any other text document. Please include the question numbers, you name and the quiz name into the document. You can use the Word template in the Quizzes folder. Quizzes should be submitted in Blackboard. Goto `Course Content` and submit the quiz under the appropriate Assignment.
+[datacamp group](https://www.datacamp.com/groups/shared_links/04902021eeb0264251a7a6486a02929cb2221259) 
 
-**When should I submit an assignment?** Each assignment has a due date, typically one week after being assigned, unless specified differently.
+**You need to use your UC email address to register.**
+
+## Grading
+
+You will be graded in two parts:
+
++ Part 1: 30% of your grade is determined by the timely completion of the datacamp courses.  If you complete the datacamp courses by the deadline, you will receive full credit. You will loose 3 percent points per day you are late completing these.
+
++ Part 2: 70% of your grade will be earned by analysing data, creating posters and presenting them. You will be peer graded.
+
 
 ## Course package
 

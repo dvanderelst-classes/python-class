@@ -1,7 +1,5 @@
 # Programming for behavioral scientists
 
-[TOC]
-
 ## Contact details
 
 Dieter Vanderelst

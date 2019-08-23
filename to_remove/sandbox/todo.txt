@@ -1,5 +1,0 @@
-data science for python @ Lynda
---> use this to build up the second part of the course
---> use this to include a seperate lecture on (1) regression, (2) logisitc regression
-
-Do seaborn session?

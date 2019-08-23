@@ -1,4 +1,0 @@
-#!/bin/bash
-cd ~/Dropbox/PythonCourse
-/home/dieter/anaconda3/bin/jupyter-notebook --browser=chromium-browser
-

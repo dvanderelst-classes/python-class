@@ -12,9 +12,7 @@
 
 I obtained my Master degree in Experimental Psychology from Ghent University (Belgium). I completed my Ph.D. on modeling the echolocation system of bats at the University of Antwerp (Belgium). After a postdoctoral fellowship at the University of Bristol and the University of the West of England in the UK, I joined UC in August 2016.  More here: www.bitsofbats.net
 
-
 ## Resources   
-
 
 The course will be taught using a combination of powerpoint presentations, demonstrations, and class exercises. No textbook is required. Throughout the course, I might refer to (free) online materials or resources available at the UC library, in addition to the conactent presented during class. Description The course will teach practical programming skills for basic social and behavioral science research.
 

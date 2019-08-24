@@ -1,7 +1,8 @@
 import pandas
 from matplotlib import pyplot
 
-from course import mapping
+from ClassPackage import mapping
+
 
 data = pandas.read_csv('overdoses.csv')
 

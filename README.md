@@ -15,16 +15,16 @@ Syllabus: [syllabus.md](syllabus.md)
 
 ### GitHub
 
-All materials for the course are available on the UC GitHub. Every section of the class has a dedicated folder with some files and folders in it:
+All materials for the class are available from this GitHub repository. Every section of the class has a dedicated folder with some files and folders in it:
 
-- File ending in ```ipynb```: These are the course note files I use in class. When clicked, these files render in your browser.
+- File ending in ```ipynb```: These are the class note files I use in class. When clicked, these files render in your browser.
 - Files ending in ```md```: These are formatted text files. When clicked, they will render in your browser allowing you to read them.
 - Files ending in ```odp```: These files are presentations. If you click these files, you will get a notice that the file can not be displayed. However, a *download* button will appear. Clicking this button will allow you to download the file and open it in PowerPoint or OpenOffice/LibreOffice (free alternatives to Office).
-- Data files (ending in ```csv```, ```txt``` or ```dat```): For some sections of the course, you will need to download data files. These can typically be found in a sub folder called *data*. To download a data file click it.  You will see a rendering of the data file. Now click the *raw* button. This will give you access to the data file itself. Now, use your browser menu to save the file (For example, ```File> Save Page...```).
+- Data files (ending in ```csv```, ```txt``` or ```dat```): For some sections of the class, you will need to download data files. These can typically be found in a sub folder called *data*. To download a data file click it.  You will see a rendering of the data file. Now click the *raw* button. This will give you access to the data file itself. Now, use your browser menu to save the file (For example, ```File> Save Page...```).
 
 ### Datacamp courses
 
-As part of this course, you will complete courses on datacamp.com. Use this link to enroll in these:
+As part of this class, you will complete courses on datacamp.com. Use this link to enroll in these:
 
 [datacamp group](https://www.datacamp.com/groups/shared_links/04902021eeb0264251a7a6486a02929cb2221259) 
 
@@ -38,16 +38,13 @@ You will be graded in two parts:
 
 + Part 2: 70% of your grade will be earned by analysing data, creating posters and presenting them. You will be peer graded.
 
+## PyClass package
 
-## Course package
-
-For some parts of the course, we will be using a Python package I wrote for this course. This package can be downloaded here:  https://github.uc.edu/vanderdt/Course
-
-We will be using the pyboard, based on the [Micro Maestro 6](https://www.pololu.com/product/1350). Most computers do not require a driver to be installed. However, if needed, the driver can be found here: https://www.pololu.com/docs/0J40/3.a
+For some parts of the class, we might use a Python package I wrote providing some functions. This package is called ```PyClass```. You can find this on also the GitHub.
 
 ## Anaconda
 
-In this course, we use the Anaconda Python distribution. This is a version of Python that comes with many scientific modules included. Also, it comes with a package manager that allows installing additional packages more easily. https://anaconda.org/. You do not need to make an account to download/use Anaconda. Head over to the download page at https://www.anaconda.com/download/.
+In this class, we use the Anaconda Python distribution. This is a version of Python that comes with many scientific modules included. Also, it comes with a package manager that allows installing additional packages more easily. https://anaconda.org/. You do not need to make an account to download/use Anaconda. Head over to the download page at https://www.anaconda.com/download/.
 
 Some helpful resources on Anaconda:
 

@@ -452,8 +452,3 @@ Write a script that calculates the surface area of a circle from a given diamete
 The surface is 6.23553
 ```
 
-
-
-```python
-
-```

@@ -1,6 +1,6 @@
 #!/bin/bash
-cd ~/Dropbox/PythonCourse
+cd ~/Dropbox/Python-Class
 source activate default
-spyder & jupyter-notebook & firefox https://github.uc.edu/vanderdt/PythonCourse
+spyder & jupyter-notebook & firefox https://github.com/dvanderelst-classes/python-class
 conda info
 

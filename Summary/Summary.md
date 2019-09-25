@@ -9,7 +9,7 @@ This is the basic use of the `read_csv()` function:
 ```python
 import pandas
 data = pandas.read_csv('cars.txt', sep = ' ')
-data.head()
+print(data.head())
 ```
 
 

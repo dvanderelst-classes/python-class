@@ -12,176 +12,28 @@ data = pandas.read_csv('cars.txt', sep = ' ')
 print(data.head())
 ```
 
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>make</th>
-      <th>model</th>
-      <th>type</th>
-      <th>min_price</th>
-      <th>mid_price</th>
-      <th>max_price</th>
-      <th>mpg_city</th>
-      <th>mpg_hgw</th>
-      <th>airbag</th>
-      <th>drive</th>
-      <th>...</th>
-      <th>tank</th>
-      <th>passengers</th>
-      <th>length</th>
-      <th>wheelbase</th>
-      <th>width</th>
-      <th>uturn</th>
-      <th>rearseat</th>
-      <th>luggage</th>
-      <th>weight</th>
-      <th>domestic</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Acura</td>
-      <td>Integra</td>
-      <td>Small</td>
-      <td>12.9</td>
-      <td>15.9</td>
-      <td>18.8</td>
-      <td>25</td>
-      <td>31</td>
-      <td>0</td>
-      <td>1</td>
-      <td>...</td>
-      <td>13.2</td>
-      <td>5</td>
-      <td>177</td>
-      <td>102</td>
-      <td>68</td>
-      <td>37</td>
-      <td>26.5</td>
-      <td>11</td>
-      <td>2705</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Acura</td>
-      <td>Legend</td>
-      <td>Midsize</td>
-      <td>29.2</td>
-      <td>33.9</td>
-      <td>38.7</td>
-      <td>18</td>
-      <td>25</td>
-      <td>2</td>
-      <td>1</td>
-      <td>...</td>
-      <td>18.0</td>
-      <td>5</td>
-      <td>195</td>
-      <td>115</td>
-      <td>71</td>
-      <td>38</td>
-      <td>30.0</td>
-      <td>15</td>
-      <td>3560</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Audi</td>
-      <td>90</td>
-      <td>Compact</td>
-      <td>25.9</td>
-      <td>29.1</td>
-      <td>32.3</td>
-      <td>20</td>
-      <td>26</td>
-      <td>1</td>
-      <td>1</td>
-      <td>...</td>
-      <td>16.9</td>
-      <td>5</td>
-      <td>180</td>
-      <td>102</td>
-      <td>67</td>
-      <td>37</td>
-      <td>28.0</td>
-      <td>14</td>
-      <td>3375</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Audi</td>
-      <td>100</td>
-      <td>Midsize</td>
-      <td>30.8</td>
-      <td>37.7</td>
-      <td>44.6</td>
-      <td>19</td>
-      <td>26</td>
-      <td>2</td>
-      <td>1</td>
-      <td>...</td>
-      <td>21.1</td>
-      <td>6</td>
-      <td>193</td>
-      <td>106</td>
-      <td>70</td>
-      <td>37</td>
-      <td>31.0</td>
-      <td>17</td>
-      <td>3405</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>BMW</td>
-      <td>535i</td>
-      <td>Midsize</td>
-      <td>23.7</td>
-      <td>30.0</td>
-      <td>36.2</td>
-      <td>22</td>
-      <td>30</td>
-      <td>1</td>
-      <td>0</td>
-      <td>...</td>
-      <td>21.1</td>
-      <td>4</td>
-      <td>186</td>
-      <td>109</td>
-      <td>69</td>
-      <td>39</td>
-      <td>27.0</td>
-      <td>13</td>
-      <td>3640</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
-<p>5 rows × 26 columns</p>
-</div>
-
+        make    model     type  min_price  mid_price  max_price  mpg_city  \
+    0  Acura  Integra    Small       12.9       15.9       18.8        25   
+    1  Acura   Legend  Midsize       29.2       33.9       38.7        18   
+    2   Audi       90  Compact       25.9       29.1       32.3        20   
+    3   Audi      100  Midsize       30.8       37.7       44.6        19   
+    4    BMW     535i  Midsize       23.7       30.0       36.2        22   
+    
+       mpg_hgw  airbag  drive  ...  tank  passengers  length  wheelbase  width  \
+    0       31       0      1  ...  13.2           5     177        102     68   
+    1       25       2      1  ...  18.0           5     195        115     71   
+    2       26       1      1  ...  16.9           5     180        102     67   
+    3       26       2      1  ...  21.1           6     193        106     70   
+    4       30       1      0  ...  21.1           4     186        109     69   
+    
+       uturn  rearseat  luggage  weight  domestic  
+    0     37      26.5       11    2705         0  
+    1     38      30.0       15    3560         0  
+    2     37      28.0       14    3375         0  
+    3     37      31.0       17    3405         0  
+    4     39      27.0       13    3640         0  
+    
+    [5 rows x 26 columns]
 
 
 The `read_csv()` can take **many** arguments to specify the format of the file you want to read in. The most important ones are the following:
@@ -300,10 +152,102 @@ pyplot.legend(['Ford', 'Dodge'])
 
 
 
-    <matplotlib.legend.Legend at 0x7f68bd94ab70>
+    <matplotlib.legend.Legend at 0x7ff9f4b83fd0>
 
 
 
 
 ![png](Summary_files/Summary_17_1.png)
+
+
+## Scatterplots: the `scatter()` function
+
+
+```python
+data.columns
+pyplot.scatter(data['mpg_city'], data['mpg_hgw'], c = data['horsepower'])
+pyplot.set_cmap('jet')
+pyplot.colorbar()
+```
+
+
+
+
+    <matplotlib.colorbar.Colorbar at 0x7ff9f2784e80>
+
+
+
+
+![png](Summary_files/Summary_19_1.png)
+
+
+## Seaborn
+
+
+```python
+import seaborn
+```
+
+
+```python
+seaborn.scatterplot(x='mpg_city', y='mpg_hgw', hue='type', data = data)
+```
+
+
+
+
+    <matplotlib.axes._subplots.AxesSubplot at 0x7ff9f3508a90>
+
+
+
+
+![png](Summary_files/Summary_22_1.png)
+
+
+
+```python
+seaborn.barplot(x='type', y='mpg_hgw', data = data)
+```
+
+
+
+
+    <matplotlib.axes._subplots.AxesSubplot at 0x7ff9eedaa860>
+
+
+
+
+![png](Summary_files/Summary_23_1.png)
+
+
+
+```python
+seaborn.lmplot(x='mpg_city', y='mpg_hgw', data = data)
+```
+
+
+
+
+    <seaborn.axisgrid.FacetGrid at 0x7ff9eedc3f98>
+
+
+
+
+![png](Summary_files/Summary_24_1.png)
+
+
+
+```python
+seaborn.boxplot(x='type', y='mpg_hgw', data = data)
+```
+
+
+
+
+    <matplotlib.axes._subplots.AxesSubplot at 0x7ff9eec84d30>
+
+
+
+
+![png](Summary_files/Summary_25_1.png)
 

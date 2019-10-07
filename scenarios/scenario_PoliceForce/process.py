@@ -43,3 +43,6 @@ table = cnt.pivot(index='OFFICER_GENDER', columns='SUBJECT_GENDER', values='rati
 table = table.iloc[0:2, 0:2]
 
 print(table)
+
+#%%
+for x in data.columns: print(x)

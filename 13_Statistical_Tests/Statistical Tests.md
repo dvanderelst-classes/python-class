@@ -1,6 +1,6 @@
 
 <h1>Table of Contents<span class="tocSkip"></span></h1>
-<div class="toc"><ul class="toc-item"><li><span><a href="#Sources" data-toc-modified-id="Sources-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>Sources</a></span></li><li><span><a href="#The-course-package" data-toc-modified-id="The-course-package-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>The course package</a></span></li><li><span><a href="#Pearson-correlation:-scipy" data-toc-modified-id="Pearson-correlation:-scipy-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>Pearson correlation: scipy</a></span><ul class="toc-item"><li><span><a href="#Running-the-Pearson-correlation" data-toc-modified-id="Running-the-Pearson-correlation-3.1"><span class="toc-item-num">3.1&nbsp;&nbsp;</span>Running the Pearson correlation</a></span></li><li><span><a href="#Excersise" data-toc-modified-id="Excersise-3.2"><span class="toc-item-num">3.2&nbsp;&nbsp;</span>Excersise</a></span></li></ul></li><li><span><a href="#Independent-samples-t-test" data-toc-modified-id="Independent-samples-t-test-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>Independent samples t-test</a></span><ul class="toc-item"><li><span><a href="#Running-the-t-test" data-toc-modified-id="Running-the-t-test-4.1"><span class="toc-item-num">4.1&nbsp;&nbsp;</span>Running the t-test</a></span></li><li><span><a href="#Looking-at-the-descriptive-statistics" data-toc-modified-id="Looking-at-the-descriptive-statistics-4.2"><span class="toc-item-num">4.2&nbsp;&nbsp;</span>Looking at the descriptive statistics</a></span></li><li><span><a href="#The-non-parametric-equivalent:--Kruskal-Wallis-H-test" data-toc-modified-id="The-non-parametric-equivalent:--Kruskal-Wallis-H-test-4.3"><span class="toc-item-num">4.3&nbsp;&nbsp;</span>The non-parametric equivalent:  Kruskal-Wallis H-test</a></span></li><li><span><a href="#Excersise" data-toc-modified-id="Excersise-4.4"><span class="toc-item-num">4.4&nbsp;&nbsp;</span>Excersise</a></span></li></ul></li><li><span><a href="#Dependent-samples-t-test" data-toc-modified-id="Dependent-samples-t-test-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>Dependent samples t-test</a></span><ul class="toc-item"><li><span><a href="#Example-1" data-toc-modified-id="Example-1-5.1"><span class="toc-item-num">5.1&nbsp;&nbsp;</span>Example 1</a></span></li><li><span><a href="#Example-2" data-toc-modified-id="Example-2-5.2"><span class="toc-item-num">5.2&nbsp;&nbsp;</span>Example 2</a></span></li><li><span><a href="#The-non-paramtric-equivalent:-Wilcoxon-test" data-toc-modified-id="The-non-paramtric-equivalent:-Wilcoxon-test-5.3"><span class="toc-item-num">5.3&nbsp;&nbsp;</span>The non-paramtric equivalent: Wilcoxon test</a></span></li><li><span><a href="#T-test-using-the-course-package" data-toc-modified-id="T-test-using-the-course-package-5.4"><span class="toc-item-num">5.4&nbsp;&nbsp;</span>T-test using the <code>course</code> package</a></span></li></ul></li><li><span><a href="#Regression-using-the-course-package" data-toc-modified-id="Regression-using-the-course-package-6"><span class="toc-item-num">6&nbsp;&nbsp;</span>Regression using the <code>course</code> package</a></span><ul class="toc-item"><li><span><a href="#Simple-lineair-regression:-one-predictor" data-toc-modified-id="Simple-lineair-regression:-one-predictor-6.1"><span class="toc-item-num">6.1&nbsp;&nbsp;</span>Simple lineair regression: one predictor</a></span></li><li><span><a href="#Exercises" data-toc-modified-id="Exercises-6.2"><span class="toc-item-num">6.2&nbsp;&nbsp;</span>Exercises</a></span></li><li><span><a href="#Multiple-Regression" data-toc-modified-id="Multiple-Regression-6.3"><span class="toc-item-num">6.3&nbsp;&nbsp;</span>Multiple Regression</a></span></li><li><span><a href="#Multiple-Regression---with-a-categorical-variable" data-toc-modified-id="Multiple-Regression---with-a-categorical-variable-6.4"><span class="toc-item-num">6.4&nbsp;&nbsp;</span>Multiple Regression - with a categorical variable</a></span></li><li><span><a href="#Multiple-regression-plot" data-toc-modified-id="Multiple-regression-plot-6.5"><span class="toc-item-num">6.5&nbsp;&nbsp;</span>Multiple regression plot</a></span></li><li><span><a href="#Logistic-Regression:-one-predictor" data-toc-modified-id="Logistic-Regression:-one-predictor-6.6"><span class="toc-item-num">6.6&nbsp;&nbsp;</span>Logistic Regression: one predictor</a></span></li><li><span><a href="#Logistic-regression-plot-using-seaborn" data-toc-modified-id="Logistic-regression-plot-using-seaborn-6.7"><span class="toc-item-num">6.7&nbsp;&nbsp;</span>Logistic regression plot using <code>seaborn</code></a></span></li><li><span><a href="#Multiple-Logistic-Regression" data-toc-modified-id="Multiple-Logistic-Regression-6.8"><span class="toc-item-num">6.8&nbsp;&nbsp;</span>Multiple Logistic Regression</a></span></li></ul></li><li><span><a href="#Exercises" data-toc-modified-id="Exercises-7"><span class="toc-item-num">7&nbsp;&nbsp;</span>Exercises</a></span><ul class="toc-item"><li><span><a href="#Purchases" data-toc-modified-id="Purchases-7.1"><span class="toc-item-num">7.1&nbsp;&nbsp;</span>Purchases</a></span></li><li><span><a href="#Weight-loss" data-toc-modified-id="Weight-loss-7.2"><span class="toc-item-num">7.2&nbsp;&nbsp;</span>Weight loss</a></span></li><li><span><a href="#Mice" data-toc-modified-id="Mice-7.3"><span class="toc-item-num">7.3&nbsp;&nbsp;</span>Mice</a></span></li></ul></li><li><span><a href="#Regression-using-the-Statsmodels-package" data-toc-modified-id="Regression-using-the-Statsmodels-package-8"><span class="toc-item-num">8&nbsp;&nbsp;</span>Regression using the <code>Statsmodels</code> package</a></span><ul class="toc-item"><li><span><a href="#Example-1" data-toc-modified-id="Example-1-8.1"><span class="toc-item-num">8.1&nbsp;&nbsp;</span>Example 1</a></span></li><li><span><a href="#Example-2" data-toc-modified-id="Example-2-8.2"><span class="toc-item-num">8.2&nbsp;&nbsp;</span>Example 2</a></span></li><li><span><a href="#Plot-the-model" data-toc-modified-id="Plot-the-model-8.3"><span class="toc-item-num">8.3&nbsp;&nbsp;</span>Plot the model</a></span></li><li><span><a href="#Template-for-a-linear-regression" data-toc-modified-id="Template-for-a-linear-regression-8.4"><span class="toc-item-num">8.4&nbsp;&nbsp;</span>Template for a linear regression</a></span></li></ul></li></ul></div>
+<div class="toc"><ul class="toc-item"><li><span><a href="#Sources" data-toc-modified-id="Sources-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>Sources</a></span></li><li><span><a href="#Pearson-correlation:-scipy" data-toc-modified-id="Pearson-correlation:-scipy-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>Pearson correlation: scipy</a></span><ul class="toc-item"><li><span><a href="#Running-the-Pearson-correlation" data-toc-modified-id="Running-the-Pearson-correlation-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>Running the Pearson correlation</a></span></li><li><span><a href="#Excersise" data-toc-modified-id="Excersise-2.2"><span class="toc-item-num">2.2&nbsp;&nbsp;</span>Excersise</a></span></li></ul></li><li><span><a href="#Independent-samples-t-test" data-toc-modified-id="Independent-samples-t-test-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>Independent samples t-test</a></span><ul class="toc-item"><li><span><a href="#Running-the-t-test" data-toc-modified-id="Running-the-t-test-3.1"><span class="toc-item-num">3.1&nbsp;&nbsp;</span>Running the t-test</a></span></li><li><span><a href="#Looking-at-the-descriptive-statistics" data-toc-modified-id="Looking-at-the-descriptive-statistics-3.2"><span class="toc-item-num">3.2&nbsp;&nbsp;</span>Looking at the descriptive statistics</a></span></li><li><span><a href="#The-non-parametric-equivalent:--Kruskal-Wallis-H-test" data-toc-modified-id="The-non-parametric-equivalent:--Kruskal-Wallis-H-test-3.3"><span class="toc-item-num">3.3&nbsp;&nbsp;</span>The non-parametric equivalent:  Kruskal-Wallis H-test</a></span></li><li><span><a href="#Excersise" data-toc-modified-id="Excersise-3.4"><span class="toc-item-num">3.4&nbsp;&nbsp;</span>Excersise</a></span></li></ul></li><li><span><a href="#Dependent-samples-t-test" data-toc-modified-id="Dependent-samples-t-test-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>Dependent samples t-test</a></span><ul class="toc-item"><li><span><a href="#Example-1" data-toc-modified-id="Example-1-4.1"><span class="toc-item-num">4.1&nbsp;&nbsp;</span>Example 1</a></span></li><li><span><a href="#Example-2" data-toc-modified-id="Example-2-4.2"><span class="toc-item-num">4.2&nbsp;&nbsp;</span>Example 2</a></span></li><li><span><a href="#The-non-paramtric-equivalent:-Wilcoxon-test" data-toc-modified-id="The-non-paramtric-equivalent:-Wilcoxon-test-4.3"><span class="toc-item-num">4.3&nbsp;&nbsp;</span>The non-paramtric equivalent: Wilcoxon test</a></span></li><li><span><a href="#T-test-using-the-stats-module" data-toc-modified-id="T-test-using-the-stats-module-4.4"><span class="toc-item-num">4.4&nbsp;&nbsp;</span>T-test using the <code>stats</code> module</a></span></li></ul></li><li><span><a href="#Regression-using-the-stats-package" data-toc-modified-id="Regression-using-the-stats-package-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>Regression using the <code>stats</code> package</a></span><ul class="toc-item"><li><span><a href="#Simple-lineair-regression:-one-predictor" data-toc-modified-id="Simple-lineair-regression:-one-predictor-5.1"><span class="toc-item-num">5.1&nbsp;&nbsp;</span>Simple lineair regression: one predictor</a></span></li><li><span><a href="#Exercises" data-toc-modified-id="Exercises-5.2"><span class="toc-item-num">5.2&nbsp;&nbsp;</span>Exercises</a></span></li><li><span><a href="#Multiple-Regression" data-toc-modified-id="Multiple-Regression-5.3"><span class="toc-item-num">5.3&nbsp;&nbsp;</span>Multiple Regression</a></span></li><li><span><a href="#Multiple-Regression---with-a-categorical-variable" data-toc-modified-id="Multiple-Regression---with-a-categorical-variable-5.4"><span class="toc-item-num">5.4&nbsp;&nbsp;</span>Multiple Regression - with a categorical variable</a></span></li><li><span><a href="#Multiple-regression-plot" data-toc-modified-id="Multiple-regression-plot-5.5"><span class="toc-item-num">5.5&nbsp;&nbsp;</span>Multiple regression plot</a></span></li><li><span><a href="#Logistic-Regression:-one-predictor" data-toc-modified-id="Logistic-Regression:-one-predictor-5.6"><span class="toc-item-num">5.6&nbsp;&nbsp;</span>Logistic Regression: one predictor</a></span></li><li><span><a href="#Logistic-regression-plot-using-seaborn" data-toc-modified-id="Logistic-regression-plot-using-seaborn-5.7"><span class="toc-item-num">5.7&nbsp;&nbsp;</span>Logistic regression plot using <code>seaborn</code></a></span></li><li><span><a href="#Multiple-Logistic-Regression" data-toc-modified-id="Multiple-Logistic-Regression-5.8"><span class="toc-item-num">5.8&nbsp;&nbsp;</span>Multiple Logistic Regression</a></span></li></ul></li><li><span><a href="#Exercises" data-toc-modified-id="Exercises-6"><span class="toc-item-num">6&nbsp;&nbsp;</span>Exercises</a></span><ul class="toc-item"><li><span><a href="#Purchases" data-toc-modified-id="Purchases-6.1"><span class="toc-item-num">6.1&nbsp;&nbsp;</span>Purchases</a></span></li><li><span><a href="#Weight-loss" data-toc-modified-id="Weight-loss-6.2"><span class="toc-item-num">6.2&nbsp;&nbsp;</span>Weight loss</a></span></li><li><span><a href="#Mice" data-toc-modified-id="Mice-6.3"><span class="toc-item-num">6.3&nbsp;&nbsp;</span>Mice</a></span></li></ul></li><li><span><a href="#Regression-using-the-Statsmodels-package" data-toc-modified-id="Regression-using-the-Statsmodels-package-7"><span class="toc-item-num">7&nbsp;&nbsp;</span>Regression using the <code>Statsmodels</code> package</a></span><ul class="toc-item"><li><span><a href="#Example-1" data-toc-modified-id="Example-1-7.1"><span class="toc-item-num">7.1&nbsp;&nbsp;</span>Example 1</a></span></li><li><span><a href="#Example-2" data-toc-modified-id="Example-2-7.2"><span class="toc-item-num">7.2&nbsp;&nbsp;</span>Example 2</a></span></li><li><span><a href="#Plot-the-model" data-toc-modified-id="Plot-the-model-7.3"><span class="toc-item-num">7.3&nbsp;&nbsp;</span>Plot the model</a></span></li><li><span><a href="#Template-for-a-linear-regression" data-toc-modified-id="Template-for-a-linear-regression-7.4"><span class="toc-item-num">7.4&nbsp;&nbsp;</span>Template for a linear regression</a></span></li></ul></li></ul></div>
 
 # Statistical Tests
 
@@ -13,25 +13,6 @@
     + statsmodels: http://www.statsmodels.org/stable/index.html
     
 + ANOVA and Repeated Measures: https://www.marsja.se/repeated-measures-anova-in-python-using-statsmodels/
-
-## The course package
-
-Various Python packages have functions to run regression analyses. I have written some code to make running regressions a bit easier. This code is part of the `course` package. The code is based on the `statsmodels` and ```scipy```packages.
-
-*The following code is needed to be able to import `course` on my computer. You can ignore this if you have downloaded the `course` package to your working directory*
-
-
-```python
-import sys
-import os
-print(os.getcwd())
-sys.path.append('/home/dieter/Dropbox/PythonRepos/')
-print(sys.path)
-```
-
-    /home/dieter/Dropbox/PythonCourse/21_Statistical_tests
-    ['/home/dieter/Dropbox/PythonCourse/21_Statistical_tests', '/home/dieter/anaconda3/envs/default/lib/python37.zip', '/home/dieter/anaconda3/envs/default/lib/python3.7', '/home/dieter/anaconda3/envs/default/lib/python3.7/lib-dynload', '', '/home/dieter/anaconda3/envs/default/lib/python3.7/site-packages', '/home/dieter/anaconda3/envs/default/lib/python3.7/site-packages/IPython/extensions', '/home/dieter/.ipython', '/home/dieter/Dropbox/PythonRepos/', '/home/dieter/Dropbox/PythonRepos/']
-
 
 
 ```python
@@ -230,7 +211,7 @@ pyplot.scatter(var1,var2);
 ```
 
 
-![png](Statistical%20Tests_files/Statistical%20Tests_7_0.png)
+![png](Statistical%20Tests_files/Statistical%20Tests_4_0.png)
 
 
 
@@ -349,7 +330,7 @@ pyplot.hist(men.Waist);
 ```
 
 
-![png](Statistical%20Tests_files/Statistical%20Tests_18_0.png)
+![png](Statistical%20Tests_files/Statistical%20Tests_15_0.png)
 
 
 
@@ -361,7 +342,7 @@ kruskal(women.Waist, men.Waist)
 
 
 
-    KruskalResult(statistic=106.38891861171466, pvalue=6.059563376631113e-25)
+    KruskalResult(statistic=251.4232515704874, pvalue=1.2710465503343314e-56)
 
 
 
@@ -376,7 +357,7 @@ pyplot.title('Age distribution in data set');
 ```
 
 
-![png](Statistical%20Tests_files/Statistical%20Tests_21_0.png)
+![png](Statistical%20Tests_files/Statistical%20Tests_18_0.png)
 
 
 ## Dependent samples t-test
@@ -522,7 +503,7 @@ pyplot.hist(data.heated);
 ```
 
 
-![png](Statistical%20Tests_files/Statistical%20Tests_29_0.png)
+![png](Statistical%20Tests_files/Statistical%20Tests_26_0.png)
 
 
 
@@ -542,11 +523,11 @@ wilcoxon(data.heated, data.ambient)
 
 
 
-### T-test using the ```course``` package
+### T-test using the ```stats``` module
 
 
 ```python
-from course import stats
+import stats
 
 # Independent t-test
 result = stats.ttest(data.heated, data.ambient, independent=True)
@@ -570,19 +551,19 @@ print(result[3])
     t(8) = 3.11, p = 0.01
 
 
-## Regression using the `course` package
+## Regression using the `stats` package
 
 ### Simple lineair regression: one predictor
 
 
 ```python
-from course import stats
+import stats
 data = pandas.read_csv('data/body.csv')
 result = stats.simple_regression('Weight','Height', data)
 ```
 
 
-![png](Statistical%20Tests_files/Statistical%20Tests_36_0.png)
+![png](Statistical%20Tests_files/Statistical%20Tests_33_0.png)
 
 
 
@@ -606,10 +587,10 @@ result['summary']
         <td>Model:</td>               <td>OLS</td>         <td>Adj. R-squared:</td>     <td>0.514</td>  
 </tr>
 <tr>
-  <td>Dependent Variable:</td>      <td>Weight</td>             <td>AIC:</td>         <td>3702.9106</td>
+  <td>Dependent Variable:</td>     <td>dependent</td>           <td>AIC:</td>         <td>3702.9106</td>
 </tr>
 <tr>
-         <td>Date:</td>        <td>2019-04-16 11:35</td>        <td>BIC:</td>         <td>3711.3676</td>
+         <td>Date:</td>        <td>2019-10-03 13:58</td>        <td>BIC:</td>         <td>3711.3676</td>
 </tr>
 <tr>
    <td>No. Observations:</td>         <td>507</td>         <td>Log-Likelihood:</td>    <td>-1849.5</td> 
@@ -626,13 +607,13 @@ result['summary']
 </table>
 <table class="simpletable">
 <tr>
-      <td></td>        <th>Coef.</th>   <th>Std.Err.</th>     <th>t</th>     <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th> 
+       <td></td>         <th>Coef.</th>   <th>Std.Err.</th>     <th>t</th>     <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th> 
 </tr>
 <tr>
-  <th>Intercept</th> <td>-105.0113</td>  <td>7.5394</td>  <td>-13.9283</td> <td>0.0000</td> <td>-119.8237</td> <td>-90.1988</td>
+  <th>Intercept</th>   <td>-105.0113</td>  <td>7.5394</td>  <td>-13.9283</td> <td>0.0000</td> <td>-119.8237</td> <td>-90.1988</td>
 </tr>
 <tr>
-  <th>Height</th>     <td>1.0176</td>    <td>0.0440</td>   <td>23.1346</td> <td>0.0000</td>  <td>0.9312</td>    <td>1.1040</td> 
+  <th>independent</th>  <td>1.0176</td>    <td>0.0440</td>   <td>23.1346</td> <td>0.0000</td>  <td>0.9312</td>    <td>1.1040</td> 
 </tr>
 </table>
 <table class="simpletable">
@@ -678,7 +659,7 @@ result['summary']
   <td>Dependent Variable:</td>      <td>Weight</td>             <td>AIC:</td>         <td>3200.7034</td>
 </tr>
 <tr>
-         <td>Date:</td>        <td>2019-04-16 11:35</td>        <td>BIC:</td>         <td>3217.6175</td>
+         <td>Date:</td>        <td>2019-10-03 13:58</td>        <td>BIC:</td>         <td>3217.6175</td>
 </tr>
 <tr>
    <td>No. Observations:</td>         <td>507</td>         <td>Log-Likelihood:</td>    <td>-1596.4</td> 
@@ -747,7 +728,7 @@ result['summary']
   <td>Dependent Variable:</td>      <td>Weight</td>             <td>AIC:</td>         <td>3647.4550</td>
 </tr>
 <tr>
-         <td>Date:</td>        <td>2019-04-16 11:39</td>        <td>BIC:</td>         <td>3664.3690</td>
+         <td>Date:</td>        <td>2019-10-03 13:58</td>        <td>BIC:</td>         <td>3664.3690</td>
 </tr>
 <tr>
    <td>No. Observations:</td>         <td>507</td>         <td>Log-Likelihood:</td>    <td>-1819.7</td> 
@@ -809,7 +790,7 @@ pyplot.plot(women.Height,women.Weight,'g.');
 ```
 
 
-![png](Statistical%20Tests_files/Statistical%20Tests_44_0.png)
+![png](Statistical%20Tests_files/Statistical%20Tests_41_0.png)
 
 
 ### Multiple regression plot
@@ -822,12 +803,8 @@ import seaborn
 seaborn.lmplot(x='Height', y='Weight', hue='Gender', data=data);
 ```
 
-    /home/dieter/anaconda3/envs/default/lib/python3.7/importlib/_bootstrap.py:219: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
-      return f(*args, **kwds)
 
-
-
-![png](Statistical%20Tests_files/Statistical%20Tests_46_1.png)
+![png](Statistical%20Tests_files/Statistical%20Tests_43_0.png)
 
 
 
@@ -846,7 +823,7 @@ result['summary']
   <td>Dependent Variable:</td>      <td>Weight</td>             <td>AIC:</td>         <td>3647.4550</td>
 </tr>
 <tr>
-         <td>Date:</td>        <td>2019-04-16 10:23</td>        <td>BIC:</td>         <td>3664.3690</td>
+         <td>Date:</td>        <td>2019-10-03 13:58</td>        <td>BIC:</td>         <td>3664.3690</td>
 </tr>
 <tr>
    <td>No. Observations:</td>         <td>507</td>         <td>Log-Likelihood:</td>    <td>-1819.7</td> 
@@ -903,7 +880,7 @@ pyplot.scatter(data.Height, data.Gender);
 ```
 
 
-![png](Statistical%20Tests_files/Statistical%20Tests_49_0.png)
+![png](Statistical%20Tests_files/Statistical%20Tests_46_0.png)
 
 
 
@@ -917,7 +894,7 @@ result = stats.simple_regression('Gender', 'Height', data, typ='log');
 
 
 
-![png](Statistical%20Tests_files/Statistical%20Tests_50_1.png)
+![png](Statistical%20Tests_files/Statistical%20Tests_47_1.png)
 
 
 
@@ -933,10 +910,10 @@ result['summary']
         <td>Model:</td>              <td>Logit</td>      <td>Pseudo R-squared:</td>    <td>0.445</td>  
 </tr>
 <tr>
-  <td>Dependent Variable:</td>      <td>Gender</td>            <td>AIC:</td>         <td>393.5864</td> 
+  <td>Dependent Variable:</td>     <td>dependent</td>          <td>AIC:</td>         <td>393.5864</td> 
 </tr>
 <tr>
-         <td>Date:</td>        <td>2019-04-16 10:23</td>       <td>BIC:</td>         <td>402.0434</td> 
+         <td>Date:</td>        <td>2019-10-03 13:59</td>       <td>BIC:</td>         <td>402.0434</td> 
 </tr>
 <tr>
    <td>No. Observations:</td>         <td>507</td>        <td>Log-Likelihood:</td>    <td>-194.79</td> 
@@ -956,13 +933,13 @@ result['summary']
 </table>
 <table class="simpletable">
 <tr>
-      <td></td>        <th>Coef.</th>  <th>Std.Err.</th>     <th>z</th>     <th>P>|z|</th>  <th>[0.025</th>   <th>0.975]</th> 
+       <td></td>         <th>Coef.</th>  <th>Std.Err.</th>     <th>z</th>     <th>P>|z|</th>  <th>[0.025</th>   <th>0.975]</th> 
 </tr>
 <tr>
-  <th>Intercept</th> <td>-46.7633</td>  <td>4.0062</td>  <td>-11.6729</td> <td>0.0000</td> <td>-54.6152</td> <td>-38.9114</td>
+  <th>Intercept</th>   <td>-46.7633</td>  <td>4.0062</td>  <td>-11.6729</td> <td>0.0000</td> <td>-54.6152</td> <td>-38.9114</td>
 </tr>
 <tr>
-  <th>Height</th>     <td>0.2729</td>   <td>0.0234</td>   <td>11.6692</td> <td>0.0000</td>  <td>0.2271</td>   <td>0.3188</td> 
+  <th>independent</th>  <td>0.2729</td>   <td>0.0234</td>   <td>11.6692</td> <td>0.0000</td>  <td>0.2271</td>   <td>0.3188</td> 
 </tr>
 </table>
 
@@ -976,7 +953,7 @@ seaborn.lmplot(y='Gender',x='Height', logistic=True, data=data);
 ```
 
 
-![png](Statistical%20Tests_files/Statistical%20Tests_53_0.png)
+![png](Statistical%20Tests_files/Statistical%20Tests_50_0.png)
 
 
 ### Multiple Logistic Regression
@@ -1497,7 +1474,7 @@ pyplot.plot(predictors, prediction,'r-');
 ```
 
 
-![png](Statistical%20Tests_files/Statistical%20Tests_73_0.png)
+![png](Statistical%20Tests_files/Statistical%20Tests_70_0.png)
 
 
 ### Template for a linear regression

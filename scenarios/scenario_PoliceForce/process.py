@@ -6,10 +6,17 @@ Created on Wed May  1 14:06:34 2019
 @author: dieter
 """
 
+
+
+
 import numpy
 import pandas
 
-data = pandas.read_csv('PoliceForce.csv', thousands=',')
+data = pandas.read_csv('PoliceForce.csv', parse_dates=['INCIDENT_DATE'])
+
+dates = data['INCIDENT_DATE']
+year = dates.dt.year
+data['year'] = year
 
 grp = data.groupby(['OFFICER_GENDER', 'SUBJECT_GENDER'])
 cnt = grp.DISTRICT.count()
@@ -45,4 +52,44 @@ table = table.iloc[0:2, 0:2]
 print(table)
 
 #%%
+from matplotlib import pyplot
+
 for x in data.columns: print(x)
+
+grp = data.groupby('DISTRICT')
+cnt = grp.count()
+
+cnt = cnt.reset_index()
+cnt = cnt.sort_values(by='INCIDENT_NO', ascending=False)
+
+pyplot.figure(figsize=(12,10))
+pyplot.bar(range(15), cnt['INCIDENT_NO'])
+pyplot.xticks(range(15), cnt['DISTRICT'], rotation=90)
+
+pyplot.show()
+
+##
+district1 = data.query('DISTRICT == "DISTRICT 1"')
+grp = data.groupby('INCIDENT_TYPE')
+cnt = grp.count()
+cnt = cnt.reset_index()
+
+nr = cnt['INCIDENT_NO']
+sm = nr.sum()
+
+nr = nr/sm
+#%%
+
+explode = nr.size * [0]
+explode[5] = 0.25
+
+pyplot.figure(figsize=(6,3))
+pyplot.subplot(1,2,1)
+patches, texts = pyplot.pie(nr, explode=explode)
+pyplot.subplot(1,2,2)
+pyplot.box(False)
+pyplot.axis('off')
+pyplot.legend(patches, ['asssssssssssssssssssssssssss','b','c','d','e','f'], loc="right")
+pyplot.show()
+
+#%%

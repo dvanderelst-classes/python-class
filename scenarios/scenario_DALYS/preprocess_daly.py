@@ -1,106 +1,81 @@
 import pandas
 import copy
+import string
 
-sheet_names = ['All ages', '0-4','5-14','15-29','30-49','50-59','60-69','70+']
-#sheet_names = [sheet_names[5]]
+sheet_names = ['All ages', '0-4', '5-14', '15-29', '30-49', '50-59', '60-69', '70+']
+# sheet_names = ['All ages']
 
-# in raw
-sex_column = 0
-ghe_column = 1
-first_data_column = 7 #afghanistan
-first_data_row = 5 #country name
-last_data_row = 659
+statistic_type = 'daly' #daly or yll
 
-# in data
-first_row = 4
+data_rows = 215
+first_data_column = 8
+country_row = 5
+iso_row = 6
 
+sex_column = 1
+ghe_column = 2
+
+population_persons_row = 8
+population_males_row = 226
+population_females_row = 444
+
+populations = ['persons', 'males', 'females']
+
+result = pandas.DataFrame()
 for sheet_name in sheet_names:
-    sheet = 'DALYs ' + sheet_name
-    print(sheet)
 
-    read = pandas.read_excel('daly.xlsx', sheet_name= sheet, na_values='.')
+    if statistic_type == 'daly':
+        sheet = 'DALYs ' + sheet_name
+        read = pandas.read_excel('daly.xlsx', sheet_name=sheet, na_values='.')
 
-    #%%
+    if statistic_type == 'yll':
+        sheet = 'YLL ' + sheet_name
+        read = pandas.read_excel('yll.xlsx', sheet_name=sheet, na_values='.')
+
+    # %%
     raw = copy.copy(read)
     raw = raw.reset_index()
 
-    data = pandas.concat((raw.iloc[first_data_row:last_data_row+1, sex_column],
-                          raw.iloc[first_data_row:last_data_row+1, ghe_column],
-                          raw.iloc[first_data_row:last_data_row+1, first_data_column:]), axis=1)
+    for population in populations:
+        if population == 'persons': start_row = population_persons_row
+        if population == 'males': start_row = population_males_row
+        if population == 'females': start_row = population_females_row
 
-    header = data.iloc[0, :]
-    iso = data.iloc[1, :]
-    data.columns = header.values
+        print(sheet_name, population)
+        first_data_row = start_row + 1
+        last_data_row = population_persons_row + data_rows
 
-    data = data.iloc[4:,:]
+        sex_data = raw.iloc[first_data_row:last_data_row + 1, sex_column]
+        ghe_data = raw.iloc[first_data_row:last_data_row + 1, ghe_column]
+        dta_data = raw.iloc[first_data_row:last_data_row + 1, first_data_column:]
+        cnt_data = raw.iloc[country_row, first_data_column:]
+        iso_data = raw.iloc[iso_row, first_data_column:]
 
-    not_na = -pandas.isna(data['GHE code'])
-    data = data.loc[not_na.values, :]
+        per_pop = raw.iloc[population_persons_row, first_data_column:]
+        mal_pop = raw.iloc[population_males_row, first_data_column:]
+        fem_pop = raw.iloc[population_females_row, first_data_column:]
 
-    #%%
+        iso_data_frame = pandas.DataFrame({'country': cnt_data.values, 'iso': iso_data.values})
 
-    countries = raw.iloc[5,8:]
-    population_persons = raw.iloc[8,8:]
-    population_males = raw.iloc[226, 8:]
-    population_females = raw.iloc[444, 8:]
+        per_data_frame = pandas.DataFrame({'country': cnt_data.values, 'population': per_pop.values})
+        mal_data_frame = pandas.DataFrame({'country': cnt_data.values, 'population': mal_pop.values})
+        fem_data_frame = pandas.DataFrame({'country': cnt_data.values, 'population': fem_pop.values})
 
-    norm_persons = pandas.DataFrame()
-    norm_persons['country'] = countries
-    norm_persons['population'] = population_persons
-    norm_persons['sex'] = 'Persons'
-    norm_persons['ISO'] = iso
+        header = ['sex', 'ghe'] + list(cnt_data.values)
+        data = pandas.concat((sex_data, ghe_data, dta_data), axis=1, sort=True)
+        data.columns = header
 
-    norm_males = pandas.DataFrame()
-    norm_males['country'] = countries
-    norm_males['population'] = population_males
-    norm_males['sex'] = 'Males'
-    norm_males['ISO'] = iso
+        molten = pandas.melt(data, id_vars=['ghe', 'sex'])
+        molten.columns = ['ghe', 'sex', 'country', statistic_type]
+        molten['group'] = sheet_name
 
-    norm_females = pandas.DataFrame()
-    norm_females['country'] = countries
-    norm_females['population'] = population_females
-    norm_females['sex'] = 'Females'
-    norm_females['ISO'] = iso
+        # Add population
+        if population == 'persons': molten = pandas.merge(molten, per_data_frame, on='country')
+        if population == 'males': molten = pandas.merge(molten, mal_data_frame, on='country')
+        if population == 'females': molten = pandas.merge(molten, fem_data_frame, on='country')
 
-    norm = pandas.concat((norm_persons, norm_males, norm_females))
+        result = pandas.concat((result, molten))
 
-    #%%
-    molten = pandas.melt(data, id_vars=['GHE code', 'Sex'])
-    molten.columns = ['GHE','sex', 'country', 'daly']
-
-    molten = pandas.merge(molten, norm, on=['country', 'sex'])
-    molten['daly_norm_pm'] = (molten['daly'] / molten['population']) * 1000
-    molten['group'] = sheet
-
-    file_name = sheet.replace(' ', '_')
-    file_name = file_name + '.csv'
-
-    molten = molten.dropna(axis=0, how='all')
-
-    molten.to_csv(file_name, index=False)
-
-#%% Concatenate
-
-age1 = pandas.read_csv('DALYs_0-4.csv')
-age2 = pandas.read_csv('DALYs_5-14.csv')
-age3 = pandas.read_csv('DALYs_15-29.csv')
-age4 = pandas.read_csv('DALYs_30-49.csv')
-age5 = pandas.read_csv('DALYs_50-59.csv')
-age6 = pandas.read_csv('DALYs_60-69.csv')
-age7 = pandas.read_csv('DALYs_70+.csv')
-
-all = pandas.concat((age1, age2, age3, age4, age5, age6, age7))
-
-#%% Add gdp
-
-gdp = pandas.read_excel('gdp.xlsx', sheet_name= 'Data')
-gdp = gdp.loc[:, ['ISO', '2016']]
-gdp.columns = ['ISO', 'gdp']
-
-all = pandas.merge(all, gdp, on='ISO')
-
-
-
-#%% write
-
-all.to_csv('DALYS.csv', index=False)
+result = pandas.merge(result, iso_data_frame, on='country')
+result['normalized_pm'] = (result[statistic_type] / result['population']) * 1000000
+result.to_csv(statistic_type+'.csv', index=False, na_rep='NA')

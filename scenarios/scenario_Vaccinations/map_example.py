@@ -6,6 +6,14 @@ codes = pandas.read_csv('states.txt',sep='\t')
 data = pandas.read_csv('vaccinations.csv')
 data = pandas.merge(data, codes, left_on="STATE", right_on='State')
 
+pyplot.figure()`
+
+labels = data.country.values
+values = data.percentage.values
+popdensity = {}
+for l,v in zip(labels, values):
+     popdensity[l] = v
+
 
 
 pio.renderers.default = "browser"

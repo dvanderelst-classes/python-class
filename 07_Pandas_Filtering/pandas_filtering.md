@@ -456,8 +456,8 @@ selection.head()
 
 
 ```python
-selection = data.query('Age < 5 and not(PClass == "3rd")')
-selection.head()
+selection = data.query('Age < 5 and not (PClass == "3rd")')
+selection.describe()
 ```
 
 
@@ -481,59 +481,59 @@ selection.head()
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>Name</th>
-      <th>PClass</th>
       <th>Age</th>
-      <th>Sex</th>
       <th>Survived</th>
       <th>SexCode</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>2</th>
-      <td>Allison, Miss Helen Loraine</td>
-      <td>1st</td>
-      <td>2.00</td>
-      <td>female</td>
-      <td>0</td>
-      <td>1</td>
+      <th>count</th>
+      <td>17.000000</td>
+      <td>17.000000</td>
+      <td>17.000000</td>
     </tr>
     <tr>
-      <th>5</th>
-      <td>Allison, Master Hudson Trevor</td>
-      <td>1st</td>
-      <td>0.92</td>
-      <td>male</td>
-      <td>1</td>
-      <td>0</td>
+      <th>mean</th>
+      <td>2.150000</td>
+      <td>0.941176</td>
+      <td>0.352941</td>
     </tr>
     <tr>
-      <th>87</th>
-      <td>Dodge, Master Washington</td>
-      <td>1st</td>
-      <td>4.00</td>
-      <td>male</td>
-      <td>1</td>
-      <td>0</td>
+      <th>std</th>
+      <td>1.161701</td>
+      <td>0.242536</td>
+      <td>0.492592</td>
     </tr>
     <tr>
-      <th>339</th>
-      <td>Becker, Miss Marion Louise</td>
-      <td>2nd</td>
-      <td>4.00</td>
-      <td>female</td>
-      <td>1</td>
-      <td>1</td>
+      <th>min</th>
+      <td>0.800000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
-      <th>340</th>
-      <td>Becker, Master Richard F</td>
-      <td>2nd</td>
-      <td>1.00</td>
-      <td>male</td>
-      <td>1</td>
-      <td>0</td>
+      <th>25%</th>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>2.000000</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>3.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>4.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
     </tr>
   </tbody>
 </table>
@@ -547,7 +547,7 @@ A trick for using multiple value or a range of values: the ```in``` keyword.
 
 
 ```python
-result = data.query('PClass in["1st", "3rd"]')
+result = data.query('PClass in ["1st", "3rd"]')
 result.head()
 ```
 

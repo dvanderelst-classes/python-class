@@ -1052,8 +1052,8 @@ sys.path.append('/home/dieter/Dropbox/PythonRepos/')
 print(sys.path)
 ```
 
-    /home/dieter/Dropbox/PythonCourse/08_Pandas_Statistics
-    ['/home/dieter/Dropbox/PythonCourse/08_Pandas_Statistics', '/home/dieter/anaconda3/envs/default/lib/python37.zip', '/home/dieter/anaconda3/envs/default/lib/python3.7', '/home/dieter/anaconda3/envs/default/lib/python3.7/lib-dynload', '', '/home/dieter/anaconda3/envs/default/lib/python3.7/site-packages', '/home/dieter/anaconda3/envs/default/lib/python3.7/site-packages/IPython/extensions', '/home/dieter/.ipython', '/home/dieter/Dropbox/PythonRepos/']
+    /home/dieter/Dropbox/Python-Class/08_Pandas_Statistics
+    ['/home/dieter/Dropbox/Python-Class/08_Pandas_Statistics', '/home/dieter/anaconda3/envs/default/lib/python37.zip', '/home/dieter/anaconda3/envs/default/lib/python3.7', '/home/dieter/anaconda3/envs/default/lib/python3.7/lib-dynload', '', '/home/dieter/.local/lib/python3.7/site-packages', '/home/dieter/anaconda3/envs/default/lib/python3.7/site-packages', '/home/dieter/anaconda3/envs/default/lib/python3.7/site-packages/IPython/extensions', '/home/dieter/.ipython', '/home/dieter/Dropbox/PythonRepos/']
 
 
 The ```course.stats``` module contains a function ```group()``` that simplifies getting group statistics from a dataframe.
@@ -1066,132 +1066,17 @@ result.head()
 ```
 
 
+    ---------------------------------------------------------------------------
+
+    ModuleNotFoundError                       Traceback (most recent call last)
+
+    <ipython-input-10-92417da88919> in <module>
+    ----> 1 from course import stats
+          2 result = stats.group(data, ['sex', 'Age'], 'mean')
+          3 result.head()
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>sex</th>
-      <th>age</th>
-      <th>case</th>
-      <th>site</th>
-      <th>hdlngth</th>
-      <th>skullw</th>
-      <th>totlngth</th>
-      <th>taill</th>
-      <th>footlgth</th>
-      <th>earconch</th>
-      <th>eye</th>
-      <th>chest</th>
-      <th>belly</th>
-      <th>young</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>f</td>
-      <td>1</td>
-      <td>20.666667</td>
-      <td>1.333333</td>
-      <td>90.833333</td>
-      <td>58.000000</td>
-      <td>85.000000</td>
-      <td>35.333333</td>
-      <td>71.700000</td>
-      <td>53.400000</td>
-      <td>13.966667</td>
-      <td>28.000000</td>
-      <td>29.333333</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>f</td>
-      <td>2</td>
-      <td>41.428571</td>
-      <td>2.571429</td>
-      <td>90.614286</td>
-      <td>55.885714</td>
-      <td>84.785714</td>
-      <td>35.500000</td>
-      <td>69.271429</td>
-      <td>49.528571</td>
-      <td>14.457143</td>
-      <td>26.357143</td>
-      <td>31.142857</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>f</td>
-      <td>3</td>
-      <td>64.272727</td>
-      <td>4.363636</td>
-      <td>92.409091</td>
-      <td>56.418182</td>
-      <td>88.136364</td>
-      <td>37.772727</td>
-      <td>67.218182</td>
-      <td>46.318182</td>
-      <td>14.863636</td>
-      <td>26.681818</td>
-      <td>33.000000</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>f</td>
-      <td>4</td>
-      <td>48.000000</td>
-      <td>3.166667</td>
-      <td>91.900000</td>
-      <td>55.750000</td>
-      <td>88.333333</td>
-      <td>38.083333</td>
-      <td>68.466667</td>
-      <td>48.633333</td>
-      <td>15.066667</td>
-      <td>27.666667</td>
-      <td>35.000000</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>f</td>
-      <td>5</td>
-      <td>39.666667</td>
-      <td>2.500000</td>
-      <td>93.066667</td>
-      <td>56.900000</td>
-      <td>87.833333</td>
-      <td>36.500000</td>
-      <td>68.460000</td>
-      <td>46.333333</td>
-      <td>15.450000</td>
-      <td>28.000000</td>
-      <td>34.750000</td>
-      <td>False</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
+    ModuleNotFoundError: No module named 'course'
 
 
 
@@ -1201,132 +1086,16 @@ result.head()
 ```
 
 
+    ---------------------------------------------------------------------------
+
+    NameError                                 Traceback (most recent call last)
+
+    <ipython-input-11-e77c16bfba34> in <module>
+    ----> 1 result = stats.group(data, ['sex', 'Age'], 'std')
+          2 result.head()
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>sex</th>
-      <th>age</th>
-      <th>case</th>
-      <th>site</th>
-      <th>hdlngth</th>
-      <th>skullw</th>
-      <th>totlngth</th>
-      <th>taill</th>
-      <th>footlgth</th>
-      <th>earconch</th>
-      <th>eye</th>
-      <th>chest</th>
-      <th>belly</th>
-      <th>young</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>f</td>
-      <td>1</td>
-      <td>16.802778</td>
-      <td>0.577350</td>
-      <td>5.371530</td>
-      <td>8.560958</td>
-      <td>8.674676</td>
-      <td>1.258306</td>
-      <td>2.598076</td>
-      <td>0.200000</td>
-      <td>0.873689</td>
-      <td>2.645751</td>
-      <td>3.785939</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>f</td>
-      <td>2</td>
-      <td>26.462912</td>
-      <td>2.225395</td>
-      <td>1.049490</td>
-      <td>1.493797</td>
-      <td>2.530763</td>
-      <td>2.432420</td>
-      <td>3.206095</td>
-      <td>3.305911</td>
-      <td>0.886674</td>
-      <td>2.230738</td>
-      <td>1.749149</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>f</td>
-      <td>3</td>
-      <td>27.291357</td>
-      <td>2.248232</td>
-      <td>2.568445</td>
-      <td>2.002907</td>
-      <td>3.918488</td>
-      <td>1.633457</td>
-      <td>5.676939</td>
-      <td>3.909685</td>
-      <td>1.246814</td>
-      <td>1.692228</td>
-      <td>2.924038</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>f</td>
-      <td>4</td>
-      <td>26.750701</td>
-      <td>2.483277</td>
-      <td>3.736844</td>
-      <td>2.520913</td>
-      <td>4.966555</td>
-      <td>1.800463</td>
-      <td>6.289568</td>
-      <td>4.444172</td>
-      <td>0.422690</td>
-      <td>1.861899</td>
-      <td>2.366432</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>f</td>
-      <td>5</td>
-      <td>20.353542</td>
-      <td>1.516575</td>
-      <td>2.671080</td>
-      <td>1.532319</td>
-      <td>3.356586</td>
-      <td>1.264911</td>
-      <td>4.087542</td>
-      <td>5.358607</td>
-      <td>1.139737</td>
-      <td>0.632456</td>
-      <td>3.416870</td>
-      <td>0.0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
+    NameError: name 'stats' is not defined
 
 
 
@@ -1335,137 +1104,24 @@ result = stats.group(data, ['gender', 'Age'], 'std')
 result.head()
 ```
 
-    Warning: Can not find variable gender
+
+    ---------------------------------------------------------------------------
+
+    NameError                                 Traceback (most recent call last)
+
+    <ipython-input-12-f32684430d3a> in <module>
+    ----> 1 result = stats.group(data, ['gender', 'Age'], 'std')
+          2 result.head()
 
 
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>age</th>
-      <th>case</th>
-      <th>site</th>
-      <th>hdlngth</th>
-      <th>skullw</th>
-      <th>totlngth</th>
-      <th>taill</th>
-      <th>footlgth</th>
-      <th>earconch</th>
-      <th>eye</th>
-      <th>chest</th>
-      <th>belly</th>
-      <th>young</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1</td>
-      <td>16.802778</td>
-      <td>0.577350</td>
-      <td>5.371530</td>
-      <td>8.560958</td>
-      <td>8.674676</td>
-      <td>1.258306</td>
-      <td>2.598076</td>
-      <td>0.200000</td>
-      <td>0.873689</td>
-      <td>2.645751</td>
-      <td>3.785939</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2</td>
-      <td>26.462912</td>
-      <td>2.225395</td>
-      <td>1.049490</td>
-      <td>1.493797</td>
-      <td>2.530763</td>
-      <td>2.432420</td>
-      <td>3.206095</td>
-      <td>3.305911</td>
-      <td>0.886674</td>
-      <td>2.230738</td>
-      <td>1.749149</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>3</td>
-      <td>27.291357</td>
-      <td>2.248232</td>
-      <td>2.568445</td>
-      <td>2.002907</td>
-      <td>3.918488</td>
-      <td>1.633457</td>
-      <td>5.676939</td>
-      <td>3.909685</td>
-      <td>1.246814</td>
-      <td>1.692228</td>
-      <td>2.924038</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>4</td>
-      <td>26.750701</td>
-      <td>2.483277</td>
-      <td>3.736844</td>
-      <td>2.520913</td>
-      <td>4.966555</td>
-      <td>1.800463</td>
-      <td>6.289568</td>
-      <td>4.444172</td>
-      <td>0.422690</td>
-      <td>1.861899</td>
-      <td>2.366432</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>5</td>
-      <td>20.353542</td>
-      <td>1.516575</td>
-      <td>2.671080</td>
-      <td>1.532319</td>
-      <td>3.356586</td>
-      <td>1.264911</td>
-      <td>4.087542</td>
-      <td>5.358607</td>
-      <td>1.139737</td>
-      <td>0.632456</td>
-      <td>3.416870</td>
-      <td>0.0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
+    NameError: name 'stats' is not defined
 
 
 ## Reorganizing a dataframe
 
 
 ```python
-c = new.pivot(index='young',columns='Pop', values='taill')
+c = new.pivot(index='young',columns='Pop', values='footlgth')
 c
 ```
 
@@ -1502,13 +1158,13 @@ c
   <tbody>
     <tr>
       <th>False</th>
-      <td>37.15625</td>
-      <td>38.029412</td>
+      <td>73.953333</td>
+      <td>64.317647</td>
     </tr>
     <tr>
       <th>True</th>
-      <td>34.68750</td>
-      <td>38.500000</td>
+      <td>71.275000</td>
+      <td>64.900000</td>
     </tr>
   </tbody>
 </table>

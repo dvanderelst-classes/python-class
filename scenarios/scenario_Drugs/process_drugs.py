@@ -1,6 +1,5 @@
 # https://think.cs.vt.edu/corgis/python/drugs/drugs.html
 import pandas
-from course import stats
 from matplotlib import pyplot
 data = pandas.read_csv('drugs.csv')
 for x in data.columns: print(x)
@@ -34,6 +33,4 @@ pyplot.show()
 
 dep = "Rates_Alcohol_Need Treatment Past Year_26+"
 ind = "Rates_Alcohol_Perceptions of Risk_18-25"
-stats.simple_regression(dep, ind, latest)
-
 pyplot.show()

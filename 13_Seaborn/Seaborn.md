@@ -22,14 +22,6 @@ data = pandas.read_csv('body.csv');
 data.head()
 ```
 
-    /home/dieter/anaconda3/envs/default/lib/python3.7/importlib/_bootstrap.py:219: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
-      return f(*args, **kwds)
-    /home/dieter/anaconda3/envs/default/lib/python3.7/importlib/_bootstrap.py:219: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
-      return f(*args, **kwds)
-    /home/dieter/anaconda3/envs/default/lib/python3.7/importlib/_bootstrap.py:219: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
-      return f(*args, **kwds)
-
-
 
 
 
@@ -242,7 +234,7 @@ Seaborn provides a number of functions that allow specifying lists of colors (pa
 
 ```python
 # https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors#Standard_colors
-colors = ['Sunset Orange', 'Denim']
+colors = ['Sunset Orange', 'Inchworm']
 my_colors = seaborn.crayon_palette(colors)
 seaborn.lmplot(x='Bicep', y='Forearm', hue='Gender', data=data, palette=my_colors);
 ```
@@ -291,7 +283,7 @@ Seaborn makes it easy to plot complex barplots. This is more difficult in ```mat
 ```python
 data['Group'] = data.Age < 25
 seaborn.set_style('darkgrid')
-seaborn.barplot(x='Group', y='Bicep', hue='Gender', data=data);
+seaborn.lmplot(x='Height', y='Bicep', hue='Gender', data=data);
 ```
 
 

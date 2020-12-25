@@ -1,6 +1,6 @@
 
 <h1>Table of Contents<span class="tocSkip"></span></h1>
-<div class="toc"><ul class="toc-item"><li><span><a href="#Get-example-data" data-toc-modified-id="Get-example-data-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>Get example data</a></span></li><li><span><a href="#Read-in-the-data" data-toc-modified-id="Read-in-the-data-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>Read in the data</a></span></li><li><span><a href="#Scatter" data-toc-modified-id="Scatter-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>Scatter</a></span><ul class="toc-item"><li><span><a href="#Documentation" data-toc-modified-id="Documentation-3.1"><span class="toc-item-num">3.1&nbsp;&nbsp;</span>Documentation</a></span></li><li><span><a href="#Set-colors" data-toc-modified-id="Set-colors-3.2"><span class="toc-item-num">3.2&nbsp;&nbsp;</span>Set colors</a></span></li></ul></li><li><span><a href="#Histograms" data-toc-modified-id="Histograms-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>Histograms</a></span></li><li><span><a href="#Multiple-plots:-the-subplot-command" data-toc-modified-id="Multiple-plots:-the-subplot-command-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>Multiple plots: the subplot command</a></span></li><li><span><a href="#Themes" data-toc-modified-id="Themes-6"><span class="toc-item-num">6&nbsp;&nbsp;</span>Themes</a></span></li><li><span><a href="#Complete-Example:-From-data-to-production-plot" data-toc-modified-id="Complete-Example:-From-data-to-production-plot-7"><span class="toc-item-num">7&nbsp;&nbsp;</span>Complete Example: From data to production plot</a></span></li></ul></div>
+<div class="toc"><ul class="toc-item"><li><span><a href="#Read-in-the-data" data-toc-modified-id="Read-in-the-data-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>Read in the data</a></span></li><li><span><a href="#Scatter" data-toc-modified-id="Scatter-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>Scatter</a></span><ul class="toc-item"><li><span><a href="#Documentation" data-toc-modified-id="Documentation-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>Documentation</a></span></li><li><span><a href="#Set-colors" data-toc-modified-id="Set-colors-2.2"><span class="toc-item-num">2.2&nbsp;&nbsp;</span>Set colors</a></span></li></ul></li><li><span><a href="#Histograms" data-toc-modified-id="Histograms-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>Histograms</a></span></li><li><span><a href="#Multiple-plots:-the-subplot-command" data-toc-modified-id="Multiple-plots:-the-subplot-command-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>Multiple plots: the subplot command</a></span></li><li><span><a href="#Themes" data-toc-modified-id="Themes-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>Themes</a></span></li><li><span><a href="#Complete-Example:-From-data-to-production-plot" data-toc-modified-id="Complete-Example:-From-data-to-production-plot-6"><span class="toc-item-num">6&nbsp;&nbsp;</span>Complete Example: From data to production plot</a></span></li></ul></div>
 
 
 ```python
@@ -16,10 +16,6 @@ import pandas
 data = pandas.read_csv('data/body.csv') 
 data.head()
 ```
-
-    /home/dieter/anaconda3/envs/default/lib/python3.7/importlib/_bootstrap.py:219: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
-      return f(*args, **kwds)
-
 
 
 
@@ -230,13 +226,14 @@ selection = data.query('Age < 61')
 pyplot.scatter(selection.Height,selection.Weight, c=selection.Waist);
 pyplot.xlabel('Height')
 pyplot.ylabel('Weight')
+pyplot.set_cmap('rainbow')
 pyplot.colorbar()
 ```
 
 
 
 
-    <matplotlib.colorbar.Colorbar at 0x7f0442653748>
+    <matplotlib.colorbar.Colorbar at 0x7f3a91605940>
 
 
 
@@ -252,19 +249,27 @@ women = data[data.Gender==0]
 men = data[data.Gender==1]
 
 #using histtype='barstacked' ensures the bars for the two data sets align
-pyplot.hist(men.Bicep,alpha=0.5,histtype='barstacked');
-pyplot.hist(women.Bicep,alpha=0.5,histtype='barstacked');
+pyplot.hist(men.Bicep,alpha=0.5,histtype='barstacked', bins=25);
+pyplot.hist(women.Bicep,alpha=0.5,histtype='barstacked', bins= 25);
+pyplot.legend(['Men', 'Women'])
 ```
 
 
-![png](Advanced%20Plotting_files/Advanced%20Plotting_9_0.png)
+
+
+    <matplotlib.legend.Legend at 0x7f3abc30a390>
+
+
+
+
+![png](Advanced%20Plotting_files/Advanced%20Plotting_9_1.png)
 
 
 ## Multiple plots: the subplot command
 
 
 ```python
-pyplot.figure(figsize=(12,4))
+pyplot.figure(figsize=(10,5))
 
 blue = '#FD6E8A'
 pink = '#80B3FF'

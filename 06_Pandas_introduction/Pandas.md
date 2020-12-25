@@ -373,7 +373,12 @@ print(b)
 
 ```python
 sex = data.SexCode
+#print(sex)
+
+sex = data['SexCode']
 print(sex)
+
+sex.mean()
 ```
 
     1       1
@@ -441,6 +446,13 @@ print(sex)
 
 
 
+
+
+    0.3518659558263519
+
+
+
+
 ```python
 name = data.Age
 print(name.head())
@@ -460,7 +472,7 @@ You can make new variables (columns) based on existing variables. And add the ne
 
 
 ```python
-data['Months'] = data.Age * 12
+data['Months'] = data['Age'] * 12
 data.head()
 ```
 
@@ -553,7 +565,7 @@ data.head()
 
 
 ```python
-data['Child'] = data.Age < 18
+data['Kids'] = data['Months'] < 15
 data.head()
 ```
 
@@ -585,7 +597,8 @@ data.head()
       <th>Survived</th>
       <th>SexCode</th>
       <th>Months</th>
-      <th>Child</th>
+      <th>Kids</th>
+      <th>Silly</th>
     </tr>
   </thead>
   <tbody>
@@ -599,6 +612,7 @@ data.head()
       <td>1</td>
       <td>348.00</td>
       <td>False</td>
+      <td>12.0</td>
     </tr>
     <tr>
       <th>2</th>
@@ -609,7 +623,8 @@ data.head()
       <td>0</td>
       <td>1</td>
       <td>24.00</td>
-      <td>True</td>
+      <td>False</td>
+      <td>12.0</td>
     </tr>
     <tr>
       <th>3</th>
@@ -621,6 +636,7 @@ data.head()
       <td>0</td>
       <td>360.00</td>
       <td>False</td>
+      <td>12.0</td>
     </tr>
     <tr>
       <th>4</th>
@@ -632,6 +648,7 @@ data.head()
       <td>1</td>
       <td>300.00</td>
       <td>False</td>
+      <td>12.0</td>
     </tr>
     <tr>
       <th>5</th>
@@ -643,6 +660,7 @@ data.head()
       <td>0</td>
       <td>11.04</td>
       <td>True</td>
+      <td>12.0</td>
     </tr>
   </tbody>
 </table>
@@ -652,7 +670,112 @@ data.head()
 
 
 ```python
-data['Silly'] = data.Months / data.Age
+data['Silly'] = data['Months'] / data['Age']
+data.head()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>PClass</th>
+      <th>Age</th>
+      <th>Sex</th>
+      <th>Survived</th>
+      <th>SexCode</th>
+      <th>Months</th>
+      <th>Kids</th>
+      <th>Silly</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>Allen, Miss Elisabeth Walton</td>
+      <td>1st</td>
+      <td>29.00</td>
+      <td>female</td>
+      <td>1</td>
+      <td>1</td>
+      <td>348.00</td>
+      <td>False</td>
+      <td>12.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Allison, Miss Helen Loraine</td>
+      <td>1st</td>
+      <td>2.00</td>
+      <td>female</td>
+      <td>0</td>
+      <td>1</td>
+      <td>24.00</td>
+      <td>False</td>
+      <td>12.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Allison, Mr Hudson Joshua Creighton</td>
+      <td>1st</td>
+      <td>30.00</td>
+      <td>male</td>
+      <td>0</td>
+      <td>0</td>
+      <td>360.00</td>
+      <td>False</td>
+      <td>12.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Allison, Mrs Hudson JC (Bessie Waldo Daniels)</td>
+      <td>1st</td>
+      <td>25.00</td>
+      <td>female</td>
+      <td>0</td>
+      <td>1</td>
+      <td>300.00</td>
+      <td>False</td>
+      <td>12.0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Allison, Master Hudson Trevor</td>
+      <td>1st</td>
+      <td>0.92</td>
+      <td>male</td>
+      <td>1</td>
+      <td>0</td>
+      <td>11.04</td>
+      <td>True</td>
+      <td>12.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+data['Child'] =  data.Age < 18
 data.head()
 ```
 
@@ -755,114 +878,13 @@ data.head()
 
 
 
-
-```python
-data['Child'] =  data.Age < 18
-data.head()
-```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Name</th>
-      <th>PClass</th>
-      <th>Age</th>
-      <th>Sex</th>
-      <th>Survived</th>
-      <th>SexCode</th>
-      <th>Months</th>
-      <th>Child</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>1</th>
-      <td>Allen, Miss Elisabeth Walton</td>
-      <td>1st</td>
-      <td>29.00</td>
-      <td>female</td>
-      <td>1</td>
-      <td>1</td>
-      <td>348.00</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Allison, Miss Helen Loraine</td>
-      <td>1st</td>
-      <td>2.00</td>
-      <td>female</td>
-      <td>0</td>
-      <td>1</td>
-      <td>24.00</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Allison, Mr Hudson Joshua Creighton</td>
-      <td>1st</td>
-      <td>30.00</td>
-      <td>male</td>
-      <td>0</td>
-      <td>0</td>
-      <td>360.00</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Allison, Mrs Hudson JC (Bessie Waldo Daniels)</td>
-      <td>1st</td>
-      <td>25.00</td>
-      <td>female</td>
-      <td>0</td>
-      <td>1</td>
-      <td>300.00</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>Allison, Master Hudson Trevor</td>
-      <td>1st</td>
-      <td>0.92</td>
-      <td>male</td>
-      <td>1</td>
-      <td>0</td>
-      <td>11.04</td>
-      <td>True</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
 ## Exercises
 
 ### Exercise 1
 
 + Read in the cars.txt file (download it or read it in from http://tinyurl.com/ybbw5gwg)
 + Print the first lines of the data
-+ Print the number of rows and columns of data
 + Print the column names
-+ Assign one of the columns to a variable
 + Calculate the difference in mpg on the highway and the city, add this difference as a new variable to the data frame.
 
 
@@ -884,8 +906,6 @@ More info on the data can be found in this paper:  Boot, H.M. 1995. How Skilled 
 Write a script that does the following:
 
 * Read in the data as a pandas dataframe
-* Prints the column names
-* Prints the first 7 lines of the data
 * Adds a new variable that lists the difference between the number of male and female workers
 * Adds a new variable ```diff_pct``` that gives the difference in average wage between the male and female workers expressed as a percentage of the female wage. For example, if the average female wage is 90 and the male wage is 135, this new column lists the number 50. In the form of an equation, this gives:
 

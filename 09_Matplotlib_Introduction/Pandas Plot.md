@@ -21,10 +21,6 @@ data = pandas.read_csv('data/body.csv')
 data.head()
 ```
 
-    /home/dieter/anaconda3/envs/default/lib/python3.7/importlib/_bootstrap.py:219: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
-      return f(*args, **kwds)
-
-
 
 
 
@@ -202,6 +198,250 @@ data.head()
 data.describe()
 ```
 
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Biacromial</th>
+      <th>Biiliac</th>
+      <th>Bitrochanteric</th>
+      <th>ChestDepth</th>
+      <th>ChestDia</th>
+      <th>ElbowDia</th>
+      <th>WristDia</th>
+      <th>KneeDia</th>
+      <th>AnkleDia</th>
+      <th>Shoulder</th>
+      <th>...</th>
+      <th>Bicep</th>
+      <th>Forearm</th>
+      <th>Knee</th>
+      <th>Calf</th>
+      <th>Ankle</th>
+      <th>Wrist</th>
+      <th>Age</th>
+      <th>Weight</th>
+      <th>Height</th>
+      <th>Gender</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>507.000000</td>
+      <td>507.000000</td>
+      <td>507.000000</td>
+      <td>507.000000</td>
+      <td>507.000000</td>
+      <td>507.000000</td>
+      <td>507.000000</td>
+      <td>507.000000</td>
+      <td>507.000000</td>
+      <td>507.000000</td>
+      <td>...</td>
+      <td>507.000000</td>
+      <td>507.000000</td>
+      <td>507.000000</td>
+      <td>507.000000</td>
+      <td>507.000000</td>
+      <td>507.000000</td>
+      <td>507.000000</td>
+      <td>507.000000</td>
+      <td>507.000000</td>
+      <td>507.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>38.811440</td>
+      <td>27.829980</td>
+      <td>31.980473</td>
+      <td>19.226036</td>
+      <td>27.973767</td>
+      <td>13.385207</td>
+      <td>10.542604</td>
+      <td>18.810651</td>
+      <td>13.863314</td>
+      <td>108.195069</td>
+      <td>...</td>
+      <td>31.169625</td>
+      <td>25.942998</td>
+      <td>36.202959</td>
+      <td>36.078304</td>
+      <td>22.157396</td>
+      <td>16.097436</td>
+      <td>30.181460</td>
+      <td>69.147535</td>
+      <td>171.143787</td>
+      <td>0.487179</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>3.059132</td>
+      <td>2.206308</td>
+      <td>2.030916</td>
+      <td>2.515877</td>
+      <td>2.741650</td>
+      <td>1.352906</td>
+      <td>0.944361</td>
+      <td>1.347595</td>
+      <td>1.247351</td>
+      <td>10.374834</td>
+      <td>...</td>
+      <td>4.246941</td>
+      <td>2.830579</td>
+      <td>2.617570</td>
+      <td>2.847661</td>
+      <td>1.862337</td>
+      <td>1.380931</td>
+      <td>9.608472</td>
+      <td>13.345762</td>
+      <td>9.407205</td>
+      <td>0.500329</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>32.400000</td>
+      <td>18.700000</td>
+      <td>24.700000</td>
+      <td>14.300000</td>
+      <td>22.200000</td>
+      <td>9.900000</td>
+      <td>8.100000</td>
+      <td>15.700000</td>
+      <td>9.900000</td>
+      <td>85.900000</td>
+      <td>...</td>
+      <td>22.400000</td>
+      <td>19.600000</td>
+      <td>29.000000</td>
+      <td>28.400000</td>
+      <td>16.400000</td>
+      <td>13.000000</td>
+      <td>18.000000</td>
+      <td>42.000000</td>
+      <td>147.200000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>36.200000</td>
+      <td>26.500000</td>
+      <td>30.600000</td>
+      <td>17.300000</td>
+      <td>25.650000</td>
+      <td>12.400000</td>
+      <td>9.800000</td>
+      <td>17.900000</td>
+      <td>13.000000</td>
+      <td>99.450000</td>
+      <td>...</td>
+      <td>27.600000</td>
+      <td>23.600000</td>
+      <td>34.400000</td>
+      <td>34.100000</td>
+      <td>21.000000</td>
+      <td>15.000000</td>
+      <td>23.000000</td>
+      <td>58.400000</td>
+      <td>163.800000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>38.700000</td>
+      <td>28.000000</td>
+      <td>32.000000</td>
+      <td>19.000000</td>
+      <td>27.800000</td>
+      <td>13.300000</td>
+      <td>10.500000</td>
+      <td>18.700000</td>
+      <td>13.800000</td>
+      <td>108.200000</td>
+      <td>...</td>
+      <td>31.000000</td>
+      <td>25.800000</td>
+      <td>36.000000</td>
+      <td>36.000000</td>
+      <td>22.000000</td>
+      <td>16.100000</td>
+      <td>27.000000</td>
+      <td>68.200000</td>
+      <td>170.300000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>41.150000</td>
+      <td>29.250000</td>
+      <td>33.350000</td>
+      <td>20.900000</td>
+      <td>29.950000</td>
+      <td>14.400000</td>
+      <td>11.200000</td>
+      <td>19.600000</td>
+      <td>14.800000</td>
+      <td>116.550000</td>
+      <td>...</td>
+      <td>34.450000</td>
+      <td>28.400000</td>
+      <td>37.950000</td>
+      <td>38.000000</td>
+      <td>23.300000</td>
+      <td>17.100000</td>
+      <td>36.000000</td>
+      <td>78.850000</td>
+      <td>177.800000</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>47.400000</td>
+      <td>34.700000</td>
+      <td>38.000000</td>
+      <td>27.500000</td>
+      <td>35.600000</td>
+      <td>16.700000</td>
+      <td>13.300000</td>
+      <td>24.300000</td>
+      <td>17.200000</td>
+      <td>134.800000</td>
+      <td>...</td>
+      <td>42.400000</td>
+      <td>32.500000</td>
+      <td>49.000000</td>
+      <td>47.700000</td>
+      <td>29.300000</td>
+      <td>19.600000</td>
+      <td>67.000000</td>
+      <td>116.400000</td>
+      <td>198.100000</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+<p>8 rows × 25 columns</p>
+</div>
+
+
+
 ## The plot function
 
 The plot function is the most basic graphing function in matplotlib.
@@ -230,7 +470,7 @@ pyplot.plot(data.Height, data.Weight, marker='.', linestyle='None')
 
 
 
-    [<matplotlib.lines.Line2D at 0x7fde86b9e160>]
+    [<matplotlib.lines.Line2D at 0x7fa7f70b1ac8>]
 
 
 

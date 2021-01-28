@@ -1,4 +1,3 @@
-
 <h1>Table of Contents<span class="tocSkip"></span></h1>
 <div class="toc"><ul class="toc-item"><li><span><a href="#Read-in-the-data" data-toc-modified-id="Read-in-the-data-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>Read in the data</a></span></li><li><span><a href="#Scatter" data-toc-modified-id="Scatter-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>Scatter</a></span><ul class="toc-item"><li><span><a href="#Documentation" data-toc-modified-id="Documentation-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>Documentation</a></span></li><li><span><a href="#Set-colors" data-toc-modified-id="Set-colors-2.2"><span class="toc-item-num">2.2&nbsp;&nbsp;</span>Set colors</a></span></li></ul></li><li><span><a href="#Histograms" data-toc-modified-id="Histograms-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>Histograms</a></span></li><li><span><a href="#Multiple-plots:-the-subplot-command" data-toc-modified-id="Multiple-plots:-the-subplot-command-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>Multiple plots: the subplot command</a></span></li><li><span><a href="#Themes" data-toc-modified-id="Themes-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>Themes</a></span></li><li><span><a href="#Complete-Example:-From-data-to-production-plot" data-toc-modified-id="Complete-Example:-From-data-to-production-plot-6"><span class="toc-item-num">6&nbsp;&nbsp;</span>Complete Example: From data to production plot</a></span></li></ul></div>
 
@@ -198,7 +197,9 @@ pyplot.scatter(data.Height,data.Weight);
 ```
 
 
+    
 ![png](Advanced%20Plotting_files/Advanced%20Plotting_5_0.png)
+    
 
 
 ### Documentation
@@ -238,7 +239,9 @@ pyplot.colorbar()
 
 
 
+    
 ![png](Advanced%20Plotting_files/Advanced%20Plotting_7_1.png)
+    
 
 
 ## Histograms
@@ -262,7 +265,9 @@ pyplot.legend(['Men', 'Women'])
 
 
 
+    
 ![png](Advanced%20Plotting_files/Advanced%20Plotting_9_1.png)
+    
 
 
 ## Multiple plots: the subplot command
@@ -296,7 +301,9 @@ pyplot.savefig('graph.png', dpi=300)
 ```
 
 
+    
 ![png](Advanced%20Plotting_files/Advanced%20Plotting_11_0.png)
+    
 
 
 ## Themes
@@ -323,7 +330,9 @@ pyplot.hist(women.height,alpha=0.5, histtype='stepfilled')
 
 
 
+    
 ![png](Advanced%20Plotting_files/Advanced%20Plotting_13_1.png)
+    
 
 
 
@@ -345,7 +354,9 @@ pyplot.hist(women.height,alpha=0.5, histtype='stepfilled')
 
 
 
+    
 ![png](Advanced%20Plotting_files/Advanced%20Plotting_14_1.png)
+    
 
 
 
@@ -365,7 +376,9 @@ pyplot.scatter(women.height,women.weight,c=blue,alpha=0.5, s=10)
 
 
 
+    
 ![png](Advanced%20Plotting_files/Advanced%20Plotting_15_1.png)
+    
 
 
 ## Complete Example: From data to production plot
@@ -472,7 +485,9 @@ pyplot.savefig('weight_women_men.png')
 
 
 
+    
 ![png](Advanced%20Plotting_files/Advanced%20Plotting_17_1.png)
+    
 
 
 # Recreating a graph from the Economist
@@ -487,6 +502,8 @@ Image("hiv.png")
 
 
 
+    
 ![png](Advanced%20Plotting_files/Advanced%20Plotting_19_0.png)
+    
 
 

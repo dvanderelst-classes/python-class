@@ -1,4 +1,3 @@
-
 # Summary
 
 ## Reading data: the `read_csv()` function
@@ -129,7 +128,9 @@ pyplot.ylabel('MPG on the highway')
 
 
 
+    
 ![png](Summary_files/Summary_15_1.png)
+    
 
 
 Per default, the `plot()` function keeps plotting on the same graph until you start a new figure or close the current one. We can exploit this to plot multiple series of points on a single graph.
@@ -157,7 +158,9 @@ pyplot.legend(['Ford', 'Dodge'])
 
 
 
+    
 ![png](Summary_files/Summary_17_1.png)
+    
 
 
 ## Scatterplots: the `scatter()` function
@@ -178,7 +181,9 @@ pyplot.colorbar()
 
 
 
+    
 ![png](Summary_files/Summary_19_1.png)
+    
 
 
 ## Seaborn
@@ -201,7 +206,9 @@ seaborn.scatterplot(x='mpg_city', y='mpg_hgw', hue='type', data = data)
 
 
 
+    
 ![png](Summary_files/Summary_22_1.png)
+    
 
 
 
@@ -217,7 +224,9 @@ seaborn.barplot(x='type', y='mpg_hgw', data = data)
 
 
 
+    
 ![png](Summary_files/Summary_23_1.png)
+    
 
 
 
@@ -233,7 +242,9 @@ seaborn.lmplot(x='mpg_city', y='mpg_hgw', data = data)
 
 
 
+    
 ![png](Summary_files/Summary_24_1.png)
+    
 
 
 
@@ -249,5 +260,7 @@ seaborn.boxplot(x='type', y='mpg_hgw', data = data)
 
 
 
+    
 ![png](Summary_files/Summary_25_1.png)
+    
 

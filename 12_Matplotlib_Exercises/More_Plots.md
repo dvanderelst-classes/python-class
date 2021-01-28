@@ -1,4 +1,3 @@
-
 # Examples
 
 ##  Consideration of Future Consequences

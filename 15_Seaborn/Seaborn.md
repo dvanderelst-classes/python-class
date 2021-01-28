@@ -1,4 +1,3 @@
-
 # Seaborn
 
 The documentation of the functions can be found here: https://seaborn.pydata.org/api.html
@@ -202,7 +201,9 @@ seaborn.lmplot(x='ChestDepth', y='Forearm', hue='Gender', data=data);
 ```
 
 
+    
 ![png](Seaborn_files/Seaborn_3_0.png)
+    
 
 
 
@@ -224,7 +225,9 @@ seaborn.lmplot(x='ChestDepth', y='Forearm', hue='Sex', data=data);
 ```
 
 
+    
 ![png](Seaborn_files/Seaborn_5_0.png)
+    
 
 
 ## Colors
@@ -240,7 +243,9 @@ seaborn.lmplot(x='Bicep', y='Forearm', hue='Gender', data=data, palette=my_color
 ```
 
 
+    
 ![png](Seaborn_files/Seaborn_7_0.png)
+    
 
 
 ## Trick: Showing a color palette
@@ -251,7 +256,9 @@ seaborn.palplot(my_colors)
 ```
 
 
+    
 ![png](Seaborn_files/Seaborn_9_0.png)
+    
 
 
 ## Plot style
@@ -270,7 +277,9 @@ seaborn.lmplot(x='Age', y='Height', hue='Gender',scatter=False, data=data);
 ```
 
 
+    
 ![png](Seaborn_files/Seaborn_11_0.png)
+    
 
 
 ## Other types of plots
@@ -287,7 +296,9 @@ seaborn.lmplot(x='Height', y='Bicep', hue='Gender', data=data);
 ```
 
 
+    
 ![png](Seaborn_files/Seaborn_13_0.png)
+    
 
 
 ### Boxplot: showing non-gaussian spread
@@ -298,7 +309,9 @@ seaborn.boxplot(x='Group', y='Weight', hue='Gender', data=selection);
 ```
 
 
+    
 ![png](Seaborn_files/Seaborn_15_0.png)
+    
 
 
 ### Categorical plot
@@ -310,7 +323,9 @@ seaborn.catplot(x='Gender', y='Weight',hue='Group', data=data, kind='point');
 ```
 
 
+    
 ![png](Seaborn_files/Seaborn_17_0.png)
+    
 
 
 
@@ -320,7 +335,9 @@ seaborn.catplot(x='Gender', y='Weight',hue='Group', data=data, kind='bar');
 ```
 
 
+    
 ![png](Seaborn_files/Seaborn_18_0.png)
+    
 
 
 

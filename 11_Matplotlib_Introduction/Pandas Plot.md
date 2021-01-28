@@ -1,4 +1,3 @@
-
 <h1>Table of Contents<span class="tocSkip"></span></h1>
 <div class="toc"><ul class="toc-item"><li><span><a href="#Read-in-data" data-toc-modified-id="Read-in-data-1">Read in data</a></span></li><li><span><a href="#The-plot-function" data-toc-modified-id="The-plot-function-2">The plot function</a></span><ul class="toc-item"><li><span><a href="#As-simple-as-it-gets" data-toc-modified-id="As-simple-as-it-gets-2.1">As simple as it gets</a></span></li><li><span><a href="#Changing-the-markers" data-toc-modified-id="Changing-the-markers-2.2">Changing the markers</a></span></li><li><span><a href="#Changing-the-color" data-toc-modified-id="Changing-the-color-2.3">Changing the color</a></span></li></ul></li><li><span><a href="#Dressing-up-the-graph" data-toc-modified-id="Dressing-up-the-graph-3">Dressing up the graph</a></span></li><li><span><a href="#Multiple-data-sets-on-one-graph" data-toc-modified-id="Multiple-data-sets-on-one-graph-4">Multiple data sets on one graph</a></span></li><li><span><a href="#Exercises" data-toc-modified-id="Exercises-5">Exercises</a></span><ul class="toc-item"><li><span><a href="#Exercise-1:-scatter-plot" data-toc-modified-id="Exercise-1:-scatter-plot-5.1">Exercise 1: scatter plot</a></span></li><li><span><a href="#Exercise-2" data-toc-modified-id="Exercise-2-5.2">Exercise 2</a></span></li><li><span><a href="#Exercise-3" data-toc-modified-id="Exercise-3-5.3">Exercise 3</a></span></li></ul></li></ul></div>
 
@@ -455,7 +454,9 @@ pyplot.plot(data.Height, data.Weight);
 ```
 
 
+    
 ![png](Pandas%20Plot_files/Pandas%20Plot_7_0.png)
+    
 
 
 ### Changing the markers
@@ -475,7 +476,9 @@ pyplot.plot(data.Height, data.Weight, marker='.', linestyle='None')
 
 
 
+    
 ![png](Pandas%20Plot_files/Pandas%20Plot_9_1.png)
+    
 
 
 
@@ -484,7 +487,9 @@ pyplot.plot(data.Height, data.Weight, marker='*', linestyle='None');
 ```
 
 
+    
 ![png](Pandas%20Plot_files/Pandas%20Plot_10_0.png)
+    
 
 
 ### Changing the color
@@ -499,7 +504,9 @@ pyplot.plot(data.Height, data.Weight, marker='.', linestyle='None', color='salmo
 ```
 
 
+    
 ![png](Pandas%20Plot_files/Pandas%20Plot_12_0.png)
+    
 
 
 
@@ -509,7 +516,9 @@ pyplot.plot(data.Height, data.Weight, marker='s', linestyle='None', color= my_co
 ```
 
 
+    
 ![png](Pandas%20Plot_files/Pandas%20Plot_13_0.png)
+    
 
 
 ## Dressing up the graph
@@ -525,7 +534,9 @@ pyplot.title('Weight as a function of height');
 ```
 
 
+    
 ![png](Pandas%20Plot_files/Pandas%20Plot_15_0.png)
+    
 
 
 ## Multiple data sets on one graph
@@ -722,7 +733,9 @@ pyplot.legend(['Men', 'Women']);
 ```
 
 
+    
 ![png](Pandas%20Plot_files/Pandas%20Plot_18_0.png)
+    
 
 
 ## Exercises

@@ -1,7 +1,7 @@
 # Self-esteem data
 
 Source: Open-Source Psychometrics Project, [https://openpsychometrics.org/_rawdata/](https://openpsychometrics.org/_rawdata/).
-
+ss
 
 This data was collected online with an interactive version of the Rosenberg Self-Esteem Scale. The following items were rated on the following scale where 1=strongly disagree, 2=disagree, 3=agree, and 4=strongly agree (0=no answer):
 

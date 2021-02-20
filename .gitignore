@@ -77,3 +77,5 @@ target/
 !/.gitignore
 
 *.pptx
+
+assignment_data/prepare_not_to_push/

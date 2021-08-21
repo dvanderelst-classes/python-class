@@ -41,7 +41,7 @@ X = sm.add_constant(predictors)
 # Define the dependent
 dependent = data['Age']
 
-pyplot.figer()
+giytpyplot.figer()
 # Run the analysis and get the results
 model = OLS(dependent, X)
 fitted = model.fit()

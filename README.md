@@ -1,6 +1,0 @@
-All materials for the class are available from this GitHub repository. Every section of the class has a dedicated folder with some files and folders in it:
-
-- File ending in ```ipynb```: These are the class note files I use in class. When clicked, these files render in your browser.
-- Files ending in ```md```: These are formatted text files. When clicked, they will render in your browser allowing you to read them.
-- Files ending in ```odp```: These files are presentations. If you click these files, you will get a notice that the file can not be displayed. However, a *download* button will appear. Clicking this button will allow you to download the file and open it in PowerPoint or OpenOffice/LibreOffice (free alternatives to Office).
-- Data files (ending in ```csv```, ```txt``` or ```dat```): For some sections of the class, you will need to download data files. These can typically be found in a sub folder called *data*. To download a data file click it.  You will see a rendering of the data file. Now click the *raw* button. This will give you access to the data file itself. Now, use your browser menu to save the file (For example, ```File> Save Page...```).

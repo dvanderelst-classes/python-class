@@ -6,20 +6,17 @@ Created on Wed Sep  1 17:23:21 2021
 @author: dieter
 """
 import urllib
-import string
+
 import nltk
 import collections
 from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk import WordNetLemmatizer
-from nltk.corpus import stopwords
-from nltk.stem.snowball import SnowballStemmer
 from nltk import pos_tag
-
 
 #nltk.download('punkt')
 #nltk.download('stopwords')
-nltk.download('wordnet')
-nltk.download('averaged_perceptron_tagger')
+#nltk.download('wordnet')
+#nltk.download('averaged_perceptron_tagger')
 
 
 url = 'https://www.gutenberg.org/cache/epub/16370/pg16370.txt'

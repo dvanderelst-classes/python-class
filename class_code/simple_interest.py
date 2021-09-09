@@ -14,3 +14,11 @@ duration = 25
 interest = captial * (1 + (rate / 100))** duration
 
 print('The client gets', interest, 'dollars from us.')
+
+output = 'The client gets ' + str(int(interest)) + ' dollars from us.'
+
+f = open('output.txt', 'w')
+f.write(output)
+f.close()
+
+print(output)

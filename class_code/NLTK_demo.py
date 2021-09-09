@@ -13,10 +13,10 @@ from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk import WordNetLemmatizer
 from nltk import pos_tag
 
-#nltk.download('punkt')
-#nltk.download('stopwords')
-#nltk.download('wordnet')
-#nltk.download('averaged_perceptron_tagger')
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('averaged_perceptron_tagger')
 
 
 url = 'https://www.gutenberg.org/cache/epub/16370/pg16370.txt'
@@ -27,8 +27,6 @@ for line in file:
     text = text + decoded_line
 text = text.replace('\r\n', ' ')
 for x in range(10): text = text.replace('  ',' ')
-
-
 
 
 #%% Pos tagging and lemmatization
@@ -67,7 +65,7 @@ print(occurrences)
 a = len(occurrences)
 b = len(word_tokenize(text))
 
-c = a/b
+c = b/a
 print(a)
 print(b)
 print(c)

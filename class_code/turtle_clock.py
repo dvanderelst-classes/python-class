@@ -23,30 +23,36 @@ while True:
     
     turtle.clearscreen()
     
-    my_turtle = turtle.Turtle()	# make a variable called robot
+    my_turtle = turtle.Turtle()	
     my_turtle.shape('turtle')		
     
     for h in range(12):
-         indicator_angle =  - (h - 3) * 30
-         my_turtle.setheading(indicator_angle)
-         my_turtle.pu()
-         my_turtle.fd(200)
-         my_turtle.pd()
-         my_turtle.fd(20)
-         my_turtle.pu()
-         my_turtle.home()
+          indicator_angle =  - (h - 3) * 30
+          my_turtle.setheading(indicator_angle)
+          my_turtle.pu()
+          my_turtle.fd(200)
+          my_turtle.pd()
+          my_turtle.pensize(3)
+          my_turtle.pencolor('red')
+          my_turtle.fd(20)
+          my_turtle.pu()
+          my_turtle.home()
          
         
-
+    my_turtle.pencolor('black')
     my_turtle.setheading(angle_hours)
+    my_turtle.pensize(10)
     my_turtle.pd()
     my_turtle.fd(100)
     my_turtle.pu()
+    
     my_turtle.home()
     
     my_turtle.setheading(angle_minutes)
     my_turtle.pd()
+    my_turtle.pensize(5)
     my_turtle.fd(150)
+    
     time.sleep(10)
     my_turtle.pu()
-    
+        

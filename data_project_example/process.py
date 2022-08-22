@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
@@ -77,7 +78,7 @@ pyplot.title('Blue and fin whales trajectories')
 pyplot.savefig('map.png',dpi=150)
 pyplot.show()
 
-
+#%%
 #
 # End of creation of map
 #
